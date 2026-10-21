@@ -46,6 +46,19 @@ A4 pages of 794 x 1123 px (CSS), one HTML file per page, exported to PDF. Keep m
 4. Narrative section, Chart 1 (reported vs. consensus bars), Base case and implications, then two columns "What would strengthen our view" and "What would change our view".
 5. Page 2 onwards: "Beyond the key takeaways" (Results, Outlook), then sources and disclaimer.
 
+**One-pager (fast ad-hoc opinion, e.g. ahead of a print)**
+
+Same thinking and editorial rules as the longer notes, in a more direct format: everything on one A4 page, with the disclaimer on page 2.
+1. Section label "Ad-hoc opinion · Sector", a headline that states the view in a few words, and the date line with the event timing ("Results due after the US close today").
+2. A lead paragraph of two or three sentences giving the house view and what the share reaction would hinge on.
+3. A boxed row of four KPIs (market data, consensus for the event, one or two figures behind the key debate).
+4. Two columns with three or four short numbered sections, ordered from what is most likely to what matters most (e.g. 1. The quarter should hold up, 2. The emerging growth driver, 3. The real debate, 4. Other risks). One idea per section, at most two paragraphs.
+5. A split box "What would strengthen our view" / "What would change our view", three bullets each, with observable triggers instead of chart levels or target prices.
+6. A "What this means for investors" box: how to position before the event (size, staging) and what to do after it, separately for a new investor and for an investor already holding the share.
+7. A one-line sources line, then the footer. Page 2: Important information.
+
+Rebuild the argument from the facts only: a research pack full of broker views turns into consensus figures, company data, press reports and Syz calculations, and broker names, ratings and targets disappear.
+
 ## 4. Visual identity (Syz Visual Guidelines)
 
 ### Colour palette
