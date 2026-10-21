@@ -36,9 +36,6 @@ b,strong{font-weight:700}
 .company{display:flex;align-items:baseline;gap:12px;margin-top:16px}
 .company .name{font-size:26px;font-weight:800}
 .company .ticker{color:var(--blueberry);font-weight:700;font-size:12px;letter-spacing:.12em}
-.tech{margin-top:10px}
-.tech .grid4{border:0;border-radius:0}
-.tech .caption{border-top:1px solid var(--line);padding:7px 14px;font-size:10.5px;font-weight:300}
 .conclusion{margin-top:8px}
 .conclusion p:last-child{margin-bottom:0}
 .chart{margin-top:10px}
