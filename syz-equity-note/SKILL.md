@@ -50,7 +50,7 @@ A4 pages of 794 x 1123 px (CSS), one HTML file per page, exported to PDF. Keep m
 
 Same thinking and editorial rules as the longer notes, in a more direct format: everything on one A4 page, with the disclaimer on page 2.
 1. Section label "Ad-hoc opinion · Sector", a headline that states the view in a few words, and the date line with the event timing ("Results due after the US close today").
-2. A lead paragraph of two or three sentences giving the house view and what the share reaction would hinge on.
+2. A lead paragraph of two or three sentences: whether the stock is on the Syz focus list, the house view on two horizons (long term and into the event, e.g. "constructive on the long term and cautiously optimistic into the results"), and what the share reaction would hinge on.
 3. A boxed row of four KPIs (market data, consensus for the event, one or two figures behind the key debate).
 4. Two columns with three or four short numbered sections, ordered from what is most likely to what matters most (e.g. 1. The quarter should hold up, 2. The emerging growth driver, 3. The real debate, 4. Other risks). One idea per section, at most two paragraphs.
 5. A split box "What would strengthen our view" / "What would change our view", three bullets each, with observable triggers instead of chart levels or target prices.
