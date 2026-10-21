@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+:root{--space:#202945;--blueberry:#4B5F80;--tiger:#FF6C0E;--mango:#FFA400;--gold:#FFC545;--mint:#3BAF90;--line:#D9D9D9;
+  --grad-orange:linear-gradient(90deg,#FF6C0E 0%,#FFA400 50%,#FFC545 100%)}
+@page{size:794px 1123px;margin:0}
+html,body{margin:0;padding:0;background:#fff}
+.page{width:794px;height:1123px;box-sizing:border-box;padding:28px 52px 30px;display:flex;flex-direction:column;
+  background:#fff;color:var(--space);font-family:'Maison Neue',Nunito,Arial,sans-serif;font-weight:400;font-size:13px;line-height:1.5;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+header .running{font-size:10.5px;font-weight:300;color:var(--space);padding-bottom:4px}
+.logo{height:46px;min-width:40px}
+.cover .logo{height:70px}
+.bar{height:4px;background:var(--grad-orange);margin-top:10px}
+.label{margin-top:22px;color:var(--blueberry);font-weight:300;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase}
+.headline{margin:8px 0 4px;font-size:29px;line-height:1.2;font-weight:800;color:var(--tiger);
+  background:var(--grad-orange);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub1{font-weight:300;font-size:15px}
+.sub2{font-weight:700;color:var(--tiger);font-size:13.5px;margin:0 0 4px}
+h2{margin:16px 0 6px;font-size:17px;line-height:1.3;font-weight:800;color:var(--space)}
+h3{margin:12px 0 4px;font-size:13.5px;font-weight:700;color:var(--tiger)}
+p{margin:0 0 10px;text-align:justify}
+ul{margin:0 0 10px;padding-left:16px}
+li{margin:0 0 6px;text-align:justify}
+b,strong{font-weight:700}
+.box{background:#fff;border:2px solid var(--space);border-radius:14px;color:var(--space);padding:12px 16px}
+.notice{margin-top:16px;font-size:11.5px;line-height:1.5}
+.notice p{margin:0}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:0;overflow:hidden}
+.grid4>div{padding:9px 14px;border-left:1px solid var(--line)}
+.grid4>div:first-child{border-left:0}
+.boxlabel{color:var(--tiger);font-weight:700;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.kpilabel{color:var(--blueberry);font-weight:700;font-size:11px}
+.boxvalue{font-size:16px;font-weight:800;line-height:1.3}
+.kpisub{font-size:10.5px;font-weight:400}
+.pos{color:var(--mint)}.neg{color:var(--tiger)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}
+.rule{height:2px;background:var(--grad-orange);margin:20px 0 4px}
+.company{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px}
+.company h1{margin:0;font-size:30px;font-weight:800;line-height:1.1}
+.company .ticker{font-size:12px;font-weight:400;color:var(--blueberry)}
+.tagline{font-weight:700;color:var(--tiger);font-size:14px;margin:4px 0 12px}
+.fiche{font-size:12.4px;line-height:1.47}
+.fiche h3{margin:10px 0 3px}
+.fiche li{margin-bottom:4px}
+.conclusion{margin-top:6px;border-top:2px solid var(--space);padding-top:8px}
+.conclusion h4{margin:0 0 3px;font-size:13.5px;font-weight:800}
+table.compact{width:100%;border-collapse:collapse;font-size:11.5px;margin:4px 0 4px}
+.tabletitle{color:var(--tiger);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-top:14px}
+table.compact th{color:var(--blueberry);font-weight:700;text-transform:uppercase;font-size:9.5px;letter-spacing:.04em;text-align:right;padding:5px 6px;border-bottom:1.5px solid var(--space)}
+table.compact th:first-child,table.compact td:first-child{text-align:left}
+table.compact thead tr:first-child th{border-top:1.5px solid var(--space)}
+table.compact td{padding:3px 6px;text-align:right;border-bottom:1px solid var(--line);font-weight:400}
+table.compact tbody tr:last-child td{border-bottom:1.5px solid var(--space)}
+.note{font-size:10px;font-weight:300;color:var(--space);margin-top:2px}
+.engines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:4px}
+.engines .box{padding:8px 13px;font-size:11.8px;line-height:1.42}
+.engines .box p{margin:0}
+.chartcap{margin-top:10px;font-weight:700;font-size:13.5px}
+.chartcap span{color:var(--tiger)}
+.chartsub{color:var(--blueberry);font-size:11px;font-weight:400;margin-bottom:4px}
+.chartbox{padding:4px 8px}
+.chartbox img{width:100%;display:block}
+.source{font-size:10.5px;margin-top:4px}
+.disclaimer p{font-size:10.6px;line-height:1.45;margin:0 0 7px}
+footer{margin-top:auto;display:flex;justify-content:space-between;font-size:10.5px;padding-top:8px}
+.page>*{flex-shrink:0}
+.dense h2{margin:12px 0 4px}.dense .tabletitle{margin-top:10px}
