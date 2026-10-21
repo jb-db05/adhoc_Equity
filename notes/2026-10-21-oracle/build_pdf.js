@@ -2,7 +2,7 @@
 const { chromium } = require('playwright');
 const path = require('path');
 
-const pages = [1, 2, 3, 4, 5].map(n => `page${n}.html`);
+const pages = [1, 2, 3, 4].map(n => `page${n}.html`);
 
 (async () => {
   const browser = await chromium.launch();
