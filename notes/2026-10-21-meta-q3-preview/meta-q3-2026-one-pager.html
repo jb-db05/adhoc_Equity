@@ -34,11 +34,12 @@ p{margin:0 0 9px;text-align:justify}
 .kpinote{font-size:9.8px;font-weight:400}
 .pos{color:var(--mint)}.neg{color:var(--tiger)}
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:26px}
-.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:0;overflow:hidden;margin:2px 0 10px}
+.merged{padding:0;overflow:hidden;margin:2px 0 8px}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 .split>div{padding:9px 14px}.split>div+div{border-left:1px solid var(--line)}
 .boxlabel{color:var(--tiger);font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
 ul{margin:0;padding-left:15px}li{margin:0 0 3px}
-.concl{margin-bottom:8px}
+.concl{border-top:1px solid var(--line);padding:9px 16px 10px}
 .concl p{margin:0 0 6px}
 .concl p:last-child{margin:0}
 .sources{font-size:9.6px;color:var(--blueberry);line-height:1.4;margin-top:2px}
@@ -83,7 +84,8 @@ footer{margin-top:auto;padding-top:6px;display:flex;justify-content:space-betwee
     </div>
   </div>
 
-  <div class="box split">
+  <div class="box merged">
+  <div class="split">
     <div>
       <div class="boxlabel">What would strengthen our view</div>
       <ul>
@@ -101,11 +103,11 @@ footer{margin-top:auto;padding-top:6px;display:flex;justify-content:space-betwee
       </ul>
     </div>
   </div>
-
-  <div class="box concl">
+  <div class="concl">
     <div class="sub2">What this means for investors</div>
     <p>Our long-term stance is constructive: the advertising franchise can fund the AI strategy for now. This note is not a recommendation to buy the share, which is not on the Syz focus list.</p>
     <p>Results nights can bring sharp moves in both directions. The key test tonight is less the quarter than the 2027 spending signal: management would need to show AI turning into a return-on-investment story, rather than a revenue story for chip suppliers and data-centre builders. The points above are those we would watch to judge whether the long-term case strengthens or weakens.</p>
+  </div>
   </div>
 
   <div class="sources">Sources: Syz Research, FactSet (consensus), Bloomberg (market data), both as of 21 October 2026; Meta Platforms Q2 2026 results and Form 10-Q; press reports (legal settlement, Muse usage, publishers). Lease-to-cash-flow ratio: Syz calculation.</div>
