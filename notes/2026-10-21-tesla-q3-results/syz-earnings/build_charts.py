@@ -10,8 +10,8 @@ PARAMS = {
     "ticker": "TSLA",
     "asof": "21 Oct 2026",
     "last_date": "2026-10-21",      # pre-results close; later rows are dropped
-    # reported vs. pre-results consensus; filled once the consensus table is confirmed
-    "lines": [],
+    # automotive gross margin excluding regulatory credits, %
+    "auto_gm": [("Q2 2026 reported", 16.3), ("Q3 2026 consensus", 16.7), ("Q3 2026 reported", 18.1)],
 }
 
 
@@ -40,14 +40,13 @@ if __name__ == "__main__":
     src, out = sys.argv[1], sys.argv[2]
     sc.setup_fonts()
     p = PARAMS
-    if p["lines"]:
-        labels = [l for l, _, _ in p["lines"]]
-        surprises = [(r / c - 1) * 100 for _, r, c in p["lines"]]
-        sc.bar_chart(f"{out}/Chart1_TSLA_Q32026_vs_consensus.png", labels, surprises,
-                     f"{p['ticker']}: Q3 2026 results vs. consensus", "Surprise vs. pre-results consensus, %",
-                     sc.source_line("FactSet", p["asof"], "Consensus: FactSet pre-results"))
-        sc.crop_for_pdf(f"{out}/Chart1_TSLA_Q32026_vs_consensus.png", f"{out}/c1_crop.png", "bar")
-        print("surprises", [round(s, 1) for s in surprises])
+    # Chart 1, trading-update variant: the decisive line (automotive gross margin excl. credits) in absolute terms
+    labels = [l for l, _ in p["auto_gm"]]
+    sc.bar_chart(f"{out}/Chart1_TSLA_auto_gross_margin.png", labels, [v for _, v in p["auto_gm"]],
+                 f"{p['ticker']}: automotive gross margin excluding regulatory credits", "% of automotive revenue",
+                 sc.source_line("company filings", p["asof"], "Consensus: pre-results analyst estimates"),
+                 colors=[sc.BLUEB, sc.BLUEB, sc.ORANGE], fmt="{:.1f}%", zero_line=False)
+    sc.crop_for_pdf(f"{out}/Chart1_TSLA_auto_gross_margin.png", f"{out}/c1_crop.png", "bar")
     df = load_daily_as_weekly(src, p["last_date"])
     stats = sc.price_eps_pe_chart(
         f"{out}/Chart2_TSLA_price_eps_pe.png", df, "Tesla", f"{p['ticker']}: share price vs. consensus earnings and valuation",

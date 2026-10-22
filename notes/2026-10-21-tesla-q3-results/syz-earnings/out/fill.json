@@ -1,0 +1,96 @@
+{
+ "LOGO": "/home/claude/syz_logo_hq.png",
+ "GRADBAR": "/home/claude/syz_gradbar.png",
+ "DOC_TYPE": "Earnings update",
+ "THEME": "",
+ "DATE": "22 October 2026",
+ "TITLE": "Tesla Q3 2026: margins recover, the valuation still rides on AI",
+ "QUOTE": "We are in a huge investment cycle to set us up for the future. Therefore, as previously guided, operating expenses continue to increase sequentially.",
+ "QUOTE_WHO": "Vaibhav Taneja, Chief Financial Officer, Q3 2026 earnings call, 21 October 2026",
+ "TAKEAWAYS": [
+  {
+   "tag": "pos",
+   "label": "Beat",
+   "text": "Adjusted EPS of USD 0.48, 9% above consensus, on flat revenue; reported EPS was USD 0.22."
+  },
+  {
+   "tag": "pos",
+   "label": "Margin",
+   "text": "Automotive gross margin excluding credits rose to 18.1% from 16.3%, 1.4 points above consensus."
+  },
+  {
+   "tag": "neg",
+   "label": "Watch",
+   "text": "Operating expenses keep rising with AI and robotics spending; capex to expand beyond the 2026 level."
+  },
+  {
+   "tag": "neu",
+   "label": "Valuation",
+   "text": "223.7x forward earnings, 64% above the 2020 to 2026 average: the price discounts autonomy and robots."
+  }
+ ],
+ "KPIS": [
+  {
+   "label": "Revenue",
+   "value": "USD 28.05bn",
+   "sub": "In line with consensus",
+   "sign": "neu"
+  },
+  {
+   "label": "Adjusted EPS",
+   "value": "USD 0.48",
+   "sub": "+9.1% vs. consensus",
+   "sign": "pos"
+  },
+  {
+   "label": "Auto gross margin excl. credits",
+   "value": "18.1%",
+   "sub": "+140bp vs. consensus",
+   "sign": "pos"
+  },
+  {
+   "label": "Free cash flow",
+   "value": "USD 1.53bn",
+   "sub": "Capex guide about USD 20bn",
+   "sign": "neu"
+  }
+ ],
+ "H_P1": "Margins buy time for the AI investment cycle",
+ "P1_PARAGRAPH": "The quarter was better than feared on profitability. The automotive gross margin recovered, energy and services margins rose, and free cash flow stayed positive despite heavy spending. Revenue, however, was flat and reported net income fell 43%, as research and development for autonomy, Optimus and chips keeps lifting operating expenses. The core business is stabilising, but it does not yet carry a valuation built on robotaxis and humanoid robots.",
+ "C1_TITLE": "TSLA: automotive gross margin excluding regulatory credits",
+ "C1_SUB": "% of automotive revenue · Q2 2026 reported, Q3 2026 pre-results consensus and Q3 2026 reported",
+ "C1_IMG": "/home/user/adhoc_Equity/notes/2026-10-21-tesla-q3-results/syz-earnings/out/c1_crop.png",
+ "C1_ASPECT": 0.312,
+ "W1": 66,
+ "C1_COMMENT": "The margin recovery is the main positive surprise. At 18.1%, the automotive gross margin excluding regulatory credits is 1.8 points above Q2 and 1.4 points above consensus, helped by a higher share of deliveries in Asia-Pacific. Management flags rising commodity costs and interest rates as continuing headwinds, so we read the gain as mix, not as a new run-rate.",
+ "BASE_CASE": "Our stance on Tesla is neutral and cautious. The share is on neither the Syz master list nor the focus list, and this update is not a recommendation to buy it. The car business is stabilising, with the highest order backlog in four years, but the earnings base remains thin: 12-month forward consensus EPS is only USD 1.73. The valuation rests on autonomy, Optimus and the Terafab chip project, none yet generating revenue at scale, while capex will keep rising. Results move the share sharply: it fell 14.5% after the July print. The next tests are EU approval of Full Self-Driving and Cybercab launches beyond Austin.",
+ "UPSIDE": "EU-wide approval of supervised Full Self-Driving by the first quarter of 2027. Cybercab launches in other cities before year-end, with the cost per paid mile approaching the USD 0.30 target. External Optimus deliveries around the end of 2027, as planned.",
+ "DOWNSIDE": "The automotive margin falling back below 17% as the Asia mix normalises. Capex and Terafab spending drawing on the new USD 30bn credit lines. Robotaxi miles failing to turn into revenue in 2027. A SpaceX combination on terms unfavourable to Tesla shareholders.",
+ "P2_TITLE": "Beyond the key takeaways",
+ "H_A1": "Results: margins up, revenue and profit down",
+ "A1_PARAGRAPHS": [
+  "Revenue was USD 28.05bn, essentially flat on a year earlier, as automotive revenue fell 3% to USD 20.6bn. Deliveries of 486,532 vehicles were 2% lower, but this was the second consecutive quarter above 480,000 and Tesla ended the quarter with its highest backlog in four years, with deliveries limited by production. Full Self-Driving is the main demand driver: over 75% of North American buyers took a paid subscription at delivery, and the paid base passed 1.7 million customers. Energy storage deployments reached 13.7 GWh, the second-best quarter, with Megapacks for 2027 almost sold out, and services and other margins hit a record 15.9%.",
+  "Energy gross margin jumped to 33.1% from 20.4%, but mostly on tariff refunds and warranty adjustments, which we treat as one-offs. Operating expenses rose again on AI compute, chip development and pre-production costs for Optimus, Megapack 3 and the Semi, and management expects them to keep rising until these products are commercialised. Reported net income fell 43% to USD 787m, or USD 0.22 per share, including a USD 142m loss on the SpaceX stake and a USD 290m Bitcoin gain. Free cash flow was USD 1.53bn and cash and investments exceed USD 45bn."
+ ],
+ "H_A2": "Outlook: capex rises, robotaxis scale in 2027",
+ "A2_PARAGRAPH": [
+  "Capex guidance for 2026 was revised to about USD 20bn, funded mainly from operating cash flow, but management expects capex to keep expanding for several years with the robotaxi fleet, Optimus, solar, compute and a chip fab. Tesla secured USD 30bn of credit lines, undrawn this year. The Terafab will need tens of billions of dollars by early 2028 and over USD 100bn in the long run, shared with SpaceX in proportions still open. The CFO expects robotaxis to become a significant part of revenue and profit in 2027, and external Optimus deliveries are targeted around the end of 2027. A potential SpaceX merger was not discussed."
+ ],
+ "H_C2": "Valuation: the price runs ahead of earnings",
+ "C2_TITLE": "TSLA: share price vs. consensus earnings and valuation",
+ "C2_SUB": "Weekly, January 2020 to 21 October 2026 (window starts when 12m-forward consensus EPS turns positive) · last price is the 21 October close, before the release · 40-week moving average · log scale · P/E vs. its average since 2020",
+ "C2_IMG": "/home/user/adhoc_Equity/notes/2026-10-21-tesla-q3-results/syz-earnings/out/c2_crop.png",
+ "C2_ASPECT": 0.5984,
+ "W2": 80,
+ "C2_COMMENT": "At USD 386.5, before the release, Tesla trades on 223.7x 12-month forward consensus earnings, 64% above its 136.6x average since 2020 and close to its one-year average of 218.5x. Over 12 months the share fell 13.9% while forward earnings rose 3.0%, but since the July results the price has rebounded 20.9% as forward earnings slipped 4.8%. The share sits just above its 40-week average of USD 383.6. At an unchanged price, consensus earnings would have to rise 64% to bring the multiple back to its 2020 to 2026 average.",
+ "SOURCE_LINE": "Source: Syz Research, Bloomberg, Tesla Q3 2026 update and earnings call transcript of 21 October 2026, press reports",
+ "DISCLAIMER": [
+  "This communication has been issued and made available to recipients for the purpose of advertising investment services and/or financial instruments. It has been sent for information purposes and cannot be considered as an offer or a personalised recommendation to buy or sell a financial instrument or any other investment or currency. This communication does not constitute investment research within the meaning of regulatory rules applicable in the European Economic Area, or research under the rules of the U.S. Self-Regulatory Organizations.",
+  "This information is made solely for professional and institutional clients as defined by the Swiss Financial Services Act, as well as qualified investors according to the Swiss Collective Investment Schemes Act. It is not intended for retail clients or non-qualified investors and consequently cannot be transmitted to any third party.",
+  "This communication is not directed to any person in any jurisdiction where, by reason of that person’s nationality, residence or otherwise, its dissemination or use is prohibited. It cannot be quoted, reproduced, disclosed, distributed or otherwise referred to, in whole or in part, to any third party without the Bank’s prior written consent.",
+  "This communication may contain information on past performances of a financial product, all kinds of economic and financial valuations and analyses, as well as opinions of the Bank or of third parties. Any market valuations, terms and calculation methods, yields and opinions expressed are subject to change without notice. The information and opinions contained herein have been compiled and provided in good faith, based on information obtained from sources believed to be trustworthy. However, such information has not been independently verified. No guarantee, representation, or warranty of any kind, whether express or implied, is provided by the Bank or by relevant data vendors and other sources with respect to the accuracy, reliability, currentness or exhaustiveness of the information communicated, the methodology employed or the prices contained herein.",
+  "Past performance is not a reliable indicator of current or future results. Any reference to the past performance of an investment does not guarantee its future performance. Fluctuations in exchange rates may adversely affect the value, price or income of any investment.",
+  "Nothing in the present communication constitutes investment, legal, accounting or tax advice. This information is purely objective since it does not take into consideration the personal situation (including financial knowledge and experience), the investment objectives and risk profile of any recipient. Moreover, certain financial instruments mentioned (in particular, but not exclusively, derivatives, options and futures) involve a high risk of loss and may not be suitable. Accordingly, recipients should consult their own advisors on such matters, including but not limited to the possible tax consequences of investing in any financial product mentioned herein, and make their own assessment of the suitability of such investment product.",
+  "Should a recipient make an investment on the basis of the present communication, the recipient alone shall bear the consequences thereof. In no event shall the Bank, its directors, employees, affiliates or agents be held responsible for damages of any kind arising out of the use of all or part of the information provided herein."
+ ]
+}

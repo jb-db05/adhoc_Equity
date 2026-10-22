@@ -14,7 +14,7 @@ import content as C
 OUT = sys.argv[1]
 W1 = int(sys.argv[2]) if len(sys.argv) > 2 else 80
 W2 = int(sys.argv[3]) if len(sys.argv) > 3 else 88
-PDF = f"{OUT}/Earnings_Update_META_Q32026.pdf"
+PDF = f"{OUT}/Earnings_Update_{C.TICKER}_Q32026.pdf"
 
 
 def words(s):
@@ -24,7 +24,7 @@ def words(s):
 def budget():
     rows = [("quote", C.QUOTE, 20, 35), ("P1", C.P1, 65, 85), ("C1 comment", C.C1_COMMENT, 55, 65),
             ("base case", C.BASE_CASE, 95, 110), ("upside", C.UPSIDE, 36, 45), ("downside", C.DOWNSIDE, 36, 45),
-            ("A1 #1", C.A1[0], 100, 115), ("A1 #2", C.A1[1], 90, 105), ("A2 #1", C.A2[0], 70, 90), ("A2 #2 Muse", C.A2[1], 95, 115),
+            ("A1 #1", C.A1[0], 100, 115), ("A1 #2", C.A1[1], 90, 105), *[(f"A2 #{i + 1}", p, 95 if len(C.A2) == 1 else 70, 110) for i, p in enumerate(C.A2)],
             ("C2 comment", C.C2_COMMENT, 85, 100)]
     rows += [(f"takeaway {i + 1}", t, 0, 18) for i, (_, _, t) in enumerate(C.TAKEAWAYS)]
     for name, text, lo, hi in rows:
