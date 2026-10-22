@@ -4,7 +4,7 @@ DOC_TYPE = "Earnings update"
 THEME = ""   # no sector in the kicker
 DATE = "22 October 2026"
 TICKER = "TSLA"
-TITLE = "Tesla Q3 2026: margins up, profit down, all eyes on SpaceX"
+TITLE = "Tesla Q3 2026: gross margin up, profit down, eyes on SpaceX"
 
 STATUS = ("Tesla is on neither the Syz master list nor the focus list, and this update is not a "
           "recommendation to buy the share.")
