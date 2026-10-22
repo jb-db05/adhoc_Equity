@@ -58,6 +58,15 @@ table.sc td{padding:4px 8px 4px 0;border-top:1px solid var(--line);vertical-alig
 table.sc td:first-child{width:40%}
 table.sc td:nth-child(2){width:13%;font-weight:800}
 .scbox{padding:10px 16px 6px}
+.charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;margin-top:16px}
+.chartbox{padding:10px 12px 8px}
+.ctitle{font-weight:800;font-size:12px}.ctitle .c{color:var(--tiger)}
+.csub{color:var(--blueberry);font-size:10px;margin:1px 0 6px;line-height:1.35}
+.chartbox img{display:block;width:100%;height:auto}
+.legend{font-size:9.5px;margin-top:4px}.legend span{display:inline-block;width:9px;height:9px;margin:0 4px -1px 8px}.legend span:first-child{margin-left:0}
+.csrc{font-size:9.6px;color:var(--blueberry);margin-top:6px}
+.disc h2{font-size:17px;margin:18px 0 8px}
+.disc p{font-size:10.5px;line-height:1.45;margin:0 0 7px}
 </style>
 </head>
 <body>
@@ -96,7 +105,7 @@ table.sc td:nth-child(2){width:13%;font-weight:800}
       <h2><span class="n">3.</span> The cash question is postponed, not solved</h2>
       <p>Free cash flow was negative at USD -2.1 bn, and debt (USD 83.7 bn) now slightly exceeds cash (USD 82.4 bn). Expense guidance moved to USD 175 to 179 bn, the previous range plus the charge, and 2026 capex was narrowed to USD 135 to 145 bn. For 2027, management expects to keep investing aggressively and to sustain strong revenue growth, with Reality Labs losses narrowing to about USD 15 bn; figures come with Q4. Meta will also distribute one new non-voting share per existing share from late January 2027, which works like a two-for-one split but also creates a share usable for capital raising or acquisitions. No financing plan was announced.</p>
       <h2><span class="n">4.</span> First market reaction</h2>
-      <p>The share came into the print about 9% below its level after the Muse Wonder launch, closing at USD 697.50. It spiked by up to about 7% in after-hours trading, then gave back most of the gain after management said Muse's serving costs would rise: the market rewards the quarter but waits for 2027.</p>
+      <p>The share came into the print 8.5% below its close on 13 October, the day of the Muse Wonder launch, at USD 697.52 (Chart 1). It spiked by up to about 7% in after-hours trading, then gave back most of the gain after management said Muse's serving costs would rise: the market rewards the quarter but waits for 2027.</p>
     </div>
   </div>
 
@@ -123,6 +132,21 @@ table.sc td:nth-child(2){width:13%;font-weight:800}
 
 <div class="page disc">
   <header><img class="logo" src="syz-logo.png" alt="Syz"><div class="bar"></div></header>
+  <div class="charts">
+    <div class="box chartbox">
+      <div class="ctitle"><span class="c">Chart 1</span> · META: share price over 12 months</div>
+      <div class="csub">USD, daily close, with the next-day move after each of the last four results</div>
+      <img src="chart1-price.svg" alt="Meta share price over 12 months">
+      <div class="legend"><span style="background:#202945"></span>Share price<span style="background:#FF6C0E"></span>200-day average</div>
+    </div>
+    <div class="box chartbox">
+      <div class="ctitle"><span class="c">Chart 2</span> · META: forward P/E over 3 years</div>
+      <div class="csub">Price to next 12 months' consensus earnings, against its 3-year average</div>
+      <img src="chart2-pe.svg" alt="Meta forward P/E over 3 years">
+      <div class="legend"><span style="background:#202945"></span>Forward P/E<span style="background:#4B5F80"></span>3-year average (22.0x)</div>
+    </div>
+  </div>
+  <div class="csrc">Source: Syz Research, Bloomberg. Data as of the close on 21 October 2026.</div>
   <h2>Important information</h2>
   <p>This communication has been issued and made available to recipients for the purpose of advertising investment services and/or financial instruments. It has been sent for information purposes and cannot be considered as an offer or a personalised recommendation to buy or sell a financial instrument or any other investment or currency. This communication does not constitute investment research within the meaning of regulatory rules applicable in the European Economic Area, or research under the rules of the U.S. Self-Regulatory Organizations.</p>
   <p>This information is made solely for professional and institutional clients as defined by the Swiss Financial Services Act, as well as qualified investors according to the Swiss Collective Investment Schemes Act. It is not intended for retail clients or non-qualified investors and consequently cannot be transmitted to any third party.</p>
