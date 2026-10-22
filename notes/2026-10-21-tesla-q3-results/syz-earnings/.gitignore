@@ -1,0 +1,5 @@
+out/slides/
+out/page*.png
+out/doc.html
+out/*_crop.png
+__pycache__/

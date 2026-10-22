@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Nunito'; src: url('file:///home/claude/fonts/Nunito-Bold.ttf'); font-weight: 700; }
+@font-face { font-family: 'Nunito'; src: url('file:///home/claude/fonts/Nunito-ExtraBold.ttf'); font-weight: 800; }
+
+@page {
+  size: A4;
+  margin: 18mm 15mm 12.5mm 15mm;
+  @top-right { content: url('file:///home/claude/syz_logo_hq.png'); image-resolution: 370dpi; vertical-align: bottom; padding-top: 9mm; }
+  @bottom-left {
+    content: "Syz Research \0000b7\0000a0{{DOC_TYPE}} \0000b7\0000a0{{DATE}}";
+    font-family: 'Nunito'; font-weight: 700; font-size: 7pt; color: #9AA0A8;
+  }
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    font-family: 'Nunito'; font-weight: 700; font-size: 7pt; color: #9AA0A8;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Nunito'; font-weight: 700; color: #202945; font-size: 8.7pt; line-height: 1.42; }
+
+.gradbar { height: 3.5px; background: linear-gradient(90deg, #FF6C0E 0%, #FFC545 100%); margin-bottom: 4mm; }
+
+.kicker { font-size: 8pt; font-weight: 800; letter-spacing: 1.2px; color: #FF6C0E; margin-bottom: 1.5mm; }
+.page-title { font-size: 14pt; font-weight: 800; color: #202945; line-height: 1.2; margin-bottom: 3.2mm; }
+h1 { font-size: 17pt; font-weight: 800; color: #202945; line-height: 1.22; margin-bottom: 1.5mm; }
+.dateline { font-size: 8.5pt; color: #6B7280; margin-bottom: 3.2mm; }
+
+/* Management quote: orange left rule, no fill */
+.quote { border-left: 1.2mm solid #FF6C0E; padding: 1mm 0 1mm 4mm; margin: 0 0 3.2mm 0; }
+.quote p { font-size: 9.8pt; font-weight: 800; color: #202945; line-height: 1.35; text-align: left; margin-bottom: 1mm; }
+.quote .who { font-size: 7.6pt; color: #6B7280; font-weight: 700; }
+
+/* Section heading */
+.sec { break-inside: avoid; break-after: avoid; margin-top: 3.2mm; }
+.sec.first { margin-top: 0; }
+h2 { font-size: 11pt; font-weight: 800; color: #202945; line-height: 1.2; margin-bottom: 1.4mm; }
+
+p { margin-bottom: 2.2mm; text-align: justify; }
+
+/* Key numbers: the only boxed element on page 1. One Space Blue border, straight corners, no fill,
+   four columns separated by hairlines */
+table.kpi { width: 100%; border-collapse: collapse; border: 0.45mm solid #202945; margin: 0 0 3.2mm 0; break-inside: avoid; }
+table.kpi td { width: 25%; padding: 2.2mm 3mm; vertical-align: top; border-left: 0.2mm solid #D6D9DE; }
+table.kpi td:first-child { border-left: none; }
+.kpi .lbl { font-size: 7.2pt; color: #6B7280; margin-bottom: 0.6mm; }
+.kpi .val { font-size: 13pt; font-weight: 800; color: #202945; line-height: 1.1; }
+.kpi .sub { font-size: 7.2pt; margin-top: 0.8mm; color: #4B5F80; }
+.kpi .sub.pos { color: #3BAF90; }
+.kpi .sub.neg { color: #FF6C0E; }
+
+/* Key takeaways: tagged lines, no box */
+ul.takeaways { list-style: none; margin-bottom: 1.2mm; }
+ul.takeaways li { display: flex; align-items: baseline; margin-bottom: 1.3mm; }
+.tag { flex: 0 0 auto; width: 16mm; font-size: 7pt; font-weight: 800; letter-spacing: 0.8px; }
+.tag.pos { color: #3BAF90; }
+.tag.neg { color: #FF6C0E; }
+.tag.neu { color: #4B5F80; }
+ul.takeaways li span.t { flex: 1 1 auto; text-align: left; }
+
+/* Strengthen / change: two text columns with a hairline divider, no boxes */
+table.duo { break-inside: avoid; width: 100%; border-collapse: collapse; margin-top: 1mm; }
+table.duo td { width: 50%; padding: 0 5mm 0 0; vertical-align: top; }
+table.duo td + td { border-left: 0.2mm solid #D6D9DE; padding: 0 0 0 5mm; }
+table.duo .head { font-size: 7.8pt; font-weight: 800; letter-spacing: 1px; color: #FF6C0E; margin-bottom: 1.2mm; }
+table.duo p { margin-bottom: 0; text-align: left; }
+
+.chart-title { font-size: 9.5pt; font-weight: 800; color: #202945; margin: 1.5mm 0 1.5mm 0; }
+.chart-sub { font-size: 7.2pt; color: #6B7280; margin: -1mm 0 1.2mm 0; }
+.chart-title .num { color: #FF6C0E; }
+img.chart { width: {{W1}}%; display: block; margin: 0 auto 1.2mm auto; }
+img.c2 { width: {{W2}}%; }
+
+/* Page 3: source + disclaimer, pinned to the bottom of the page */
+.legal { font-size: 6.8pt; color: #9AA0A8; line-height: 1.4; position: absolute; bottom: 0; left: 0; right: 0; }
+.legal .syz { color: #FF6C0E; font-weight: 800; }
+.legal .src-line { margin-bottom: 4mm; }
+.legal .disc-head { color: #FF6C0E; font-weight: 800; letter-spacing: 1.2px; margin-bottom: 1.5mm; }
+.legal p { font-size: 6.8pt; margin-bottom: 1.6mm; text-align: justify; }
+
+.pagebreak { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: executive investment summary -->
+<div class="gradbar"></div>
+<div class="kicker">{{DOC_TYPE}} &middot; {{THEME}}</div>
+<h1>{{TITLE}}</h1>
+<div class="dateline">{{DATE}} &middot; Syz Research</div>
+
+{{QUOTE_BLOCK}}
+
+<div class="sec first"><h2>Key takeaways</h2></div>
+<ul class="takeaways">
+{{TAKEAWAYS}}
+</ul>
+
+<table class="kpi"><tr>
+{{KPI_TILES}}
+</tr></table>
+
+<div class="sec"><h2>{{H_P1}}</h2></div>
+{{P1_PARAGRAPH}}
+
+<div class="chart-title"><span class="num">Chart 1</span> &middot; {{C1_TITLE}}</div>
+<div class="chart-sub">{{C1_SUB}}</div>
+<img class="chart" src="file://{{C1_IMG}}">
+{{C1_COMMENT}}
+
+<div class="sec"><h2>Base case and implications</h2></div>
+<p>{{BASE_CASE}}</p>
+
+<table class="duo"><tr>
+  <td><div class="head">What would strengthen our view</div><p>{{UPSIDE}}</p></td>
+  <td><div class="head">What would change our view</div><p>{{DOWNSIDE}}</p></td>
+</tr></table>
+
+<!-- PAGE 2: in-depth analysis -->
+<div class="pagebreak"></div>
+<div class="gradbar"></div>
+<div class="page-title">{{P2_TITLE}}</div>
+
+<div class="sec first"><h2>{{H_A1}}</h2></div>
+{{A1_PARAGRAPHS}}
+
+<div class="sec"><h2>{{H_A2}}</h2></div>
+{{A2_PARAGRAPHS}}
+
+<div class="sec"><h2>{{H_C2}}</h2></div>
+<div class="chart-title"><span class="num">Chart 2</span> &middot; {{C2_TITLE}}</div>
+<div class="chart-sub">{{C2_SUB}}</div>
+<img class="chart c2" src="file://{{C2_IMG}}">
+{{C2_COMMENT}}
+
+
+<!-- PAGE 3: source + disclaimer only, pinned to the bottom -->
+<div class="pagebreak"></div>
+<div class="gradbar"></div>
+<div class="legal">
+  <div class="src-line"><span class="syz">SYZ</span> {{SOURCE_LINE}}</div>
+  <div class="disc-head">Disclaimer</div>
+  <p>This communication has been issued and made available to recipients for the purpose of advertising investment services and/or financial instruments. It has been sent for information purposes and cannot be considered as an offer or a personalised recommendation to buy or sell a financial instrument or any other investment or currency. This communication does not constitute investment research within the meaning of regulatory rules applicable in the European Economic Area, or research under the rules of the U.S. Self-Regulatory Organizations.</p>
+  <p>This information is made solely for professional and institutional clients as defined by the Swiss Financial Services Act, as well as qualified investors according to the Swiss Collective Investment Schemes Act. It is not intended for retail clients or non-qualified investors and consequently cannot be transmitted to any third party.</p>
+  <p>This communication is not directed to any person in any jurisdiction where, by reason of that person&rsquo;s nationality, residence or otherwise, its dissemination or use is prohibited. It cannot be quoted, reproduced, disclosed, distributed or otherwise referred to, in whole or in part, to any third party without the Bank&rsquo;s prior written consent.</p>
+  <p>This communication may contain information on past performances of a financial product, all kinds of economic and financial valuations and analyses, as well as opinions of the Bank or of third parties. Any market valuations, terms and calculation methods, yields and opinions expressed are subject to change without notice. The information and opinions contained herein have been compiled and provided in good faith, based on information obtained from sources believed to be trustworthy. However, such information has not been independently verified. No guarantee, representation, or warranty of any kind, whether express or implied, is provided by the Bank or by relevant data vendors and other sources with respect to the accuracy, reliability, currentness or exhaustiveness of the information communicated, the methodology employed or the prices contained herein.</p>
+  <p>Past performance is not a reliable indicator of current or future results. Any reference to the past performance of an investment does not guarantee its future performance. Fluctuations in exchange rates may adversely affect the value, price or income of any investment.</p>
+  <p>Nothing in the present communication constitutes investment, legal, accounting or tax advice. This information is purely objective since it does not take into consideration the personal situation (including financial knowledge and experience), the investment objectives and risk profile of any recipient. Moreover, certain financial instruments mentioned (in particular, but not exclusively, derivatives, options and futures) involve a high risk of loss and may not be suitable. Accordingly, recipients should consult their own advisors on such matters, including but not limited to the possible tax consequences of investing in any financial product mentioned herein, and make their own assessment of the suitability of such investment product.</p>
+  <p>Should a recipient make an investment on the basis of the present communication, the recipient alone shall bear the consequences thereof. In no event shall the Bank, its directors, employees, affiliates or agents be held responsible for damages of any kind arising out of the use of all or part of the information provided herein.</p>
+</div>
+
+</body>
+</html>
