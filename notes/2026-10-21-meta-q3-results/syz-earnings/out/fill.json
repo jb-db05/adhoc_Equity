@@ -11,7 +11,7 @@
   {
    "tag": "pos",
    "label": "Beat",
-   "text": "Revenue USD 64.6bn, 2% above consensus and the top of guidance, on a 14% higher price per ad."
+   "text": "Revenue +2% vs. consensus; EPS of USD 7.40 (+13%) excludes a USD 9.9bn legal charge, reported USD 3.83."
   },
   {
    "tag": "pos",
@@ -39,7 +39,7 @@
   {
    "label": "EPS excl. legal charge",
    "value": "USD 7.40",
-   "sub": "+13.1% vs. consensus",
+   "sub": "+13.1% vs. cons.; reported 3.83",
    "sign": "pos"
   },
   {
@@ -56,7 +56,7 @@
   }
  ],
  "H_P1": "The core business is funding the AI build-out",
- "P1_PARAGRAPH": "The quarter answered two of the three questions we set before the print. Advertising delivered, with operating income 13% above consensus once the USD 9.9bn legal charge is excluded, and Muse, Meta’s new personal AI agent, came with usage data rather than downloads alone. The third question, the size of the 2027 investment bill, is deferred to the Q4 results in January, while free cash flow turned negative this quarter.",
+ "P1_PARAGRAPH": "The quarter answered two of the three questions we set before the print: advertising delivered, and Muse, Meta’s new personal AI agent, came with usage data rather than downloads alone. Reported earnings, however, need careful reading: the legal settlement charge, partly non-deductible, halves reported EPS, so the headline figure is not an operating miss. The third question, the 2027 investment bill, is deferred to January, while free cash flow turned negative.",
  "C1_TITLE": "META: Q3 2026 results vs. consensus",
  "C1_SUB": "Surprise vs. FactSet pre-results consensus, % · operating income and EPS exclude the USD 9.9bn legal charge · Q4 guide at the mid-point",
  "C1_IMG": "/home/user/adhoc_Equity/notes/2026-10-21-meta-q3-results/syz-earnings/out/c1_crop.png",

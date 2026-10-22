@@ -11,7 +11,7 @@ QUOTE = ("The benefits our AI investments are delivering to the core business, c
 QUOTE_WHO = "Susan Li, Chief Financial Officer, Q3 2026 earnings call, 21 October 2026"
 
 TAKEAWAYS = [
-    ("pos", "Beat", "Revenue USD 64.6bn, 2% above consensus and the top of guidance, on a 14% higher price per ad."),
+    ("pos", "Beat", "Revenue +2% vs. consensus; EPS of USD 7.40 (+13%) excludes a USD 9.9bn legal charge, reported USD 3.83."),
     ("pos", "Muse", "Over 10 million Muse users in six weeks; a quarter of them are active on any given day."),
     ("neg", "Watch", "Free cash flow of USD &minus;2.1bn as capex reached USD 34.9bn; no 2027 capex figure until January."),
     ("neu", "Valuation", "21.3x forward earnings, close to the 22.4x average since 2016: the rally since July is all multiple."),
@@ -19,17 +19,17 @@ TAKEAWAYS = [
 
 KPIS = [
     ("Revenue", "USD 64.6bn", "+2.0% vs. consensus", "pos"),
-    ("EPS excl. legal charge", "USD 7.40", "+13.1% vs. consensus", "pos"),
+    ("EPS excl. legal charge", "USD 7.40", "+13.1% vs. cons.; reported 3.83", "pos"),
     ("Q4 revenue guide", "USD 73&ndash;76bn", "Mid-point +1.2% vs. consensus", "pos"),
     ("Free cash flow", "USD &minus;2.1bn", "Capex USD 34.9bn", "neg"),
 ]
 
 H_P1 = "The core business is funding the AI build-out"
-P1 = ("The quarter answered two of the three questions we set before the print. Advertising delivered, with "
-      "operating income 13% above consensus once the USD 9.9bn legal charge is excluded, and Muse, Meta&rsquo;s "
-      "new personal AI agent, came with usage data rather than downloads alone. The third question, the size of "
-      "the 2027 investment bill, is deferred to the Q4 results in January, while free cash flow turned negative "
-      "this quarter.")
+P1 = ("The quarter answered two of the three questions we set before the print: advertising delivered, and Muse, "
+      "Meta&rsquo;s new personal AI agent, came with usage data rather than downloads alone. Reported earnings, "
+      "however, need careful reading: the legal settlement charge, partly non-deductible, halves reported EPS, so the "
+      "headline figure is not an operating miss. The third question, the 2027 investment bill, is deferred to "
+      "January, while free cash flow turned negative.")
 
 C1_TITLE = "META: Q3 2026 results vs. consensus"
 C1_SUB = ("Surprise vs. FactSet pre-results consensus, % &middot; operating income and EPS exclude the USD 9.9bn "
