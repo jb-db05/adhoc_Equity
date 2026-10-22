@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Astera Labs note</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap');
+:root{--space:#202945;--blueberry:#4B5F80;--tiger:#FF6C0E;--mango:#FFA400;--gold:#FFC545;--mint:#3BAF90;--line:#D9D9D9;
+  --grad-orange:linear-gradient(90deg,#FF6C0E 0%,#FFA400 50%,#FFC545 100%)}
+@page{size:794px 1123px;margin:0}
+html,body{margin:0;padding:0;background:#fff}
+.page{width:794px;height:1123px;box-sizing:border-box;padding:28px 52px 30px;display:flex;flex-direction:column;
+  background:#fff;color:var(--space);font-family:'Maison Neue',Nunito,Arial,sans-serif;font-weight:400;font-size:12.5px;line-height:1.48;overflow:hidden;page-break-after:always;break-after:page}
+.page:last-child{page-break-after:auto;break-after:auto}
+header{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.logo{height:46px;min-width:40px}
+.bar{align-self:stretch;height:4px;background:var(--grad-orange)}
+.label{margin-top:16px;color:var(--blueberry);font-weight:300;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase}
+.headline{margin:6px 0 2px;font-size:27px;line-height:1.2;font-weight:800;background:var(--grad-orange);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub1{font-weight:300;font-size:15px}
+.note{font-weight:300;font-size:10.5px;color:var(--blueberry);margin-top:2px}
+.sub2{font-weight:700;color:var(--tiger);font-size:13.5px}
+.company{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px}
+.company .name{font-size:17px;font-weight:800}
+.company .ticker{font-size:11px;font-weight:700;color:var(--blueberry);letter-spacing:.08em}
+p{margin:0 0 8px;text-align:justify}
+.box{background:#fff;border:2px solid var(--space);border-radius:14px;color:var(--space);padding:12px 16px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:0;overflow:hidden;margin-top:10px}
+.grid4>div{padding:9px 14px;border-left:1px solid var(--line)}.grid4>div:first-child{border-left:0}
+.kpilabel{color:var(--blueberry);font-weight:700;font-size:10.5px}
+.boxvalue{font-size:17px;font-weight:800;line-height:1.3}
+.kpisub{font-size:10px;font-weight:400}
+.boxlabel{color:var(--tiger);font-weight:700;font-size:10.5px;letter-spacing:.08em}
+.pos{color:var(--mint)}.neg{color:var(--tiger)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;margin-top:12px}
+h3{margin:2px 0 4px;font-size:13.5px;font-weight:700;color:var(--tiger)}
+h3 .num{color:var(--space);margin-right:4px}
+ul{margin:0 0 8px;padding-left:15px}
+li{margin-bottom:4px;text-align:justify}
+.chart{margin-top:12px;padding:10px 16px 8px}
+.charttitle{font-size:12.5px;font-weight:700}.charttitle .c{color:var(--tiger)}
+.chartsub{font-size:10.5px;color:var(--blueberry);margin-bottom:2px}
+.src{font-size:9.5px;color:var(--blueberry);margin-top:2px}
+.concl{margin-top:4px}
+.concl p:last-child{margin-bottom:0}
+.watch li{margin-bottom:3px}
+.sources{margin-top:12px;font-size:9.5px;line-height:1.4;border-top:1px solid var(--space);padding-top:6px}
+.sources b{color:var(--blueberry)}
+.disc{margin-top:8px;font-size:8px;line-height:1.38;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}
+.disc p{margin:0 0 4px}
+.disc h4{grid-column:1/-1;margin:0 0 3px;font-size:10px;font-weight:700;color:var(--space)}
+footer{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;font-size:10.5px}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <header><img class="logo" src="syz-logo.png" alt="Syz"><div class="bar"></div></header>
+  <div class="label">Ad-hoc opinion · Semiconductors</div>
+  <h1 class="headline">Astera Labs: a leader in AI connectivity, priced for flawless execution</h1>
+  <div class="sub1">22 October 2026 · Syz Research</div>
+  <div class="note">Prices are as of the close on 20 October 2026.</div>
+
+  <div class="company">
+    <span class="name">Astera Labs</span><span class="ticker">ALAB US · NASDAQ · USD</span>
+  </div>
+  <div class="sub2">The chips that let AI accelerators, processors and memory talk to each other inside the rack</div>
+
+  <div class="box grid4">
+    <div><div class="kpilabel">Share price</div><div class="boxvalue">USD 284.80</div><div class="kpisub"><span class="neg">-43%</span> from the June 2026 high</div></div>
+    <div><div class="kpilabel">Market value</div><div class="boxvalue">c. USD 53bn</div><div class="kpisub">c. 185m diluted shares</div></div>
+    <div><div class="kpilabel">Q2 2026 revenue</div><div class="boxvalue">USD 392m</div><div class="kpisub"><span class="pos">+104%</span> year on year</div></div>
+    <div><div class="kpilabel">Q3 2026 guidance</div><div class="boxvalue">USD 540–560m</div><div class="kpisub"><span class="pos">+40%</span> q/q at the midpoint</div></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h3><span class="num">1.</span>What the company does</h3>
+      <p>Astera Labs, listed on Nasdaq since March 2024, designs semiconductors that move data inside AI and cloud servers. It is fabless: it designs the chips and outsources production. As AI clusters grow, data has to travel faster and further between GPUs, custom accelerators, processors, memory and network cards, and signals degrade along the way. Astera sells the parts that keep these links fast and reliable.</p>
+      <p>It has four product families. <b>Aries</b> retimers restore PCIe and CXL signals over longer distances. <b>Taurus</b> modules power active electrical cables for Ethernet. <b>Leo</b> controllers add memory over CXL. <b>Scorpio</b> fabric switches connect processors to accelerators (P-Series) and, more importantly, accelerators to each other in a rack (X-Series). A common software layer, COSMOS, lets customers monitor these links across their fleets. Customers are mainly hyperscalers and AI system makers.</p>
+
+      <h3><span class="num">2.</span>Why it could do well</h3>
+      <ul>
+        <li><b>Growth is accelerating.</b> Revenue reached USD 852.5m in 2025 (+115%). The first half of 2026 alone brought USD 701m, and the Q3 guidance implies another 40% sequential jump.</li>
+        <li><b>Scorpio is taking over.</b> Management expects the switch family to become the largest in Q3, a quarter earlier than planned. Scorpio X entered volume production in Q2, more than ten customers are engaged and additional customers are expected to ship by year end.</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><b>Each new standard raises the content per rack.</b> PCIe 6 products made up more than half of Q2 revenue. Faster links lose more signal, which calls for more retimers and switches.</li>
+        <li><b>Open standards for scale-up.</b> Hyperscalers building their own AI accelerators need an alternative to proprietary links. Astera supports PCIe and UALink fabrics, an opportunity management sizes at about USD 10bn.</li>
+      </ul>
+
+      <h3><span class="num">3.</span>What sets it apart</h3>
+      <ul>
+        <li><b>Pure exposure.</b> Almost all revenue comes from AI and cloud infrastructure, with an early lead on PCIe 6.</li>
+        <li><b>High profitability.</b> In Q2 the gross margin was 73.7% and the operating margin 39.1% (non-GAAP); 73.3% and 22.7% on a GAAP basis.</li>
+        <li><b>Embedded software.</b> COSMOS sits inside customers' fleet management, which makes Astera harder to replace once designed in.</li>
+        <li><b>Solid balance sheet.</b> Cash and marketable securities of USD 1.25bn at end June; operating cash flow of USD 162m in the first half.</li>
+      </ul>
+
+      <div class="box chart">
+        <div class="charttitle"><span class="c">Chart 1</span> · ALAB: quarterly revenue</div>
+        <div class="chartsub">USD m, reported; Q3 2026 at the midpoint of company guidance</div>
+        <svg viewBox="0 0 330 168" width="100%" role="img" aria-label="Quarterly revenue chart">
+          <g font-family="Nunito,Arial,sans-serif" fill="#202945">
+            <line x1="12" y1="140" x2="322" y2="140" stroke="#202945" stroke-width="1"/>
+            <!-- scale: 600 = 112 px; baseline 140 -->
+            <rect x="20"  y="110.2" width="28" height="29.8" fill="#FF6C0E"/>
+            <rect x="64"  y="104.2" width="28" height="35.8" fill="#FF6C0E"/>
+            <rect x="108" y="97.0"  width="28" height="43.0" fill="#FF6C0E"/>
+            <rect x="152" y="89.5"  width="28" height="50.5" fill="#FF6C0E"/>
+            <rect x="196" y="82.4"  width="28" height="57.6" fill="#FF6C0E"/>
+            <rect x="240" y="66.8"  width="28" height="73.2" fill="#FF6C0E"/>
+            <rect x="284" y="37.3"  width="28" height="102.7" fill="#FFC545"/>
+            <g font-size="9" font-weight="700" text-anchor="middle">
+              <text x="34"  y="106">159</text>
+              <text x="78"  y="100">192</text>
+              <text x="122" y="93">231</text>
+              <text x="166" y="85">271</text>
+              <text x="210" y="78">308</text>
+              <text x="254" y="62">392</text>
+              <text x="298" y="33">550</text>
+            </g>
+            <g font-size="8.5" text-anchor="middle">
+              <text x="34"  y="153">Q1 25</text>
+              <text x="78"  y="153">Q2 25</text>
+              <text x="122" y="153">Q3 25</text>
+              <text x="166" y="153">Q4 25</text>
+              <text x="210" y="153">Q1 26</text>
+              <text x="254" y="153">Q2 26</text>
+              <text x="298" y="153">Q3 26e</text>
+            </g>
+            <g font-size="8">
+              <rect x="14" y="10" width="7" height="7" fill="#FF6C0E"/><text x="25" y="17" font-weight="700" fill="#FF6C0E">REPORTED</text>
+              <rect x="82" y="10" width="7" height="7" fill="#FFC545"/><text x="93" y="17" font-weight="700" fill="#202945">GUIDANCE MIDPOINT</text>
+            </g>
+          </g>
+        </svg>
+        <div class="src">Source: Syz Research, Astera Labs results releases</div>
+      </div>
+    </div>
+  </div>
+
+  <footer><span>Syz Research · Ad-hoc opinion · 22 October 2026</span><span>1 / 2</span></footer>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <header><img class="logo" src="syz-logo.png" alt="Syz"><div class="bar"></div></header>
+
+  <div class="cols" style="margin-top:16px">
+    <div>
+      <h3><span class="num">4.</span>Is the share cheap?</h3>
+      <p>Not on usual measures. At USD 284.80 and about 185m diluted shares, the market value is close to USD 53bn, or about USD 51bn net of cash. Annualising the midpoint of the Q3 guidance gives revenue of USD 2.2bn, so the share trades at about 23 times that run rate. On the same basis, adjusted earnings per share would be about USD 4.74, a multiple of about 60. Adjusted figures exclude share-based pay, which is large: on GAAP guidance (USD 0.87 to 0.92 per share) the multiple rises to about 80.</p>
+      <p>The 43% fall from the June high of USD 499.48 has taken out much of the excess, helped by a sharp rise in earnings. Still, the price assumes several more years of strong growth. If growth holds at the guided pace, the multiples would fall quickly; a single disappointing quarter could weigh heavily on the share.</p>
+
+      <h3><span class="num">5.</span>Main risks</h3>
+      <ul>
+        <li><b>Customer concentration.</b> A very small number of hyperscalers account for most of revenue, and the Scorpio X ramp rests mainly on one lead customer until others ship.</li>
+        <li><b>Competition.</b> The company names Broadcom, Marvell, Credo, Microchip, Montage, Parade and Rambus as competitors, most of them larger. Nvidia's own NVLink ecosystem could limit the reach of open standards.</li>
+        <li><b>AI spending cycle.</b> Revenue depends on data centre budgets; a pause or an inventory correction would hit a high-growth supplier first.</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><b>Lower margins.</b> The gross margin is guided at about 72% in Q3, down from 76.4% in Q1, as switches and hardware modules gain weight in the mix.</li>
+        <li><b>Volatility.</b> The share moved between about USD 98 and USD 499 over the past year, and insiders have been regular sellers.</li>
+      </ul>
+
+      <h3><span class="num">6.</span>What to watch next</h3>
+      <ul class="watch">
+        <li><b>Q3 results</b>, expected in early November (press reports point to 3 November): delivery against the USD 540–560m guidance and the tone of the Q4 outlook.</li>
+        <li><b>Scorpio X customers</b> shipping in volume by year end, beyond the lead customer.</li>
+        <li><b>Gross margin</b> as the mix shifts towards switches.</li>
+        <li><b>UALink and PCIe 6/7 roadmaps</b> of hyperscalers' in-house accelerators.</li>
+      </ul>
+
+      <h3>Conclusion</h3>
+      <div class="concl">
+        <p>Astera Labs is one of the purest listed ways to own the connectivity layer of AI data centres. Growth, margins and cash generation are all strong, and the Scorpio switches could make the company a much larger business than its retimer origins suggest.</p>
+        <p>The valuation leaves little room for error, and the customer base is narrow. For an investor who wants this exposure, building a position gradually, before and after the Q3 results, could be preferable to a single entry, with a size that reflects the share's volatility.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sources">
+    <b>Sources.</b> Astera Labs results releases for Q4 2025, Q1 2026 (5 May 2026) and Q2 2026 (4 August 2026); Q2 2026 earnings call; Form 10-K 2025; Form 10-Q for the quarter ended 30 June 2026; Syz Research, Bloomberg; press reports. Market value, net cash, annualised revenue and earnings multiples are a Syz calculation based on the 20 October 2026 close and company guidance. Chart 1 Q1 and Q3 2025 revenue derived from reported quarterly and annual figures.
+  </div>
+
+  <div class="disc">
+    <h4>Important information</h4>
+    <div>
+      <p>This communication has been issued and made available to recipients for the purpose of advertising investment services and/or financial instruments. It has been sent for information purposes and cannot be considered as an offer or a personalised recommendation to buy or sell a financial instrument or any other investment or currency. This communication does not constitute investment research within the meaning of regulatory rules applicable in the European Economic Area, or research under the rules of the U.S. Self-Regulatory Organizations.</p>
+      <p>This information is made solely for professional and institutional clients as defined by the Swiss Financial Services Act, as well as qualified investors according to the Swiss Collective Investment Schemes Act. It is not intended for retail clients or non-qualified investors and consequently cannot be transmitted to any third party.</p>
+      <p>This communication is not directed to any person in any jurisdiction where, by reason of that person's nationality, residence or otherwise, its dissemination or use is prohibited. It cannot be quoted, reproduced, disclosed, distributed or otherwise referred to, in whole or in part, to any third party without the Bank's prior written consent.</p>
+      <p>This communication may contain information on past performances of a financial product, all kinds of economic and financial valuations and analyses, as well as opinions of the Bank or of third parties. Any market valuations, terms and calculation methods, yields and opinions expressed are subject to change without notice. The information and opinions contained herein have been compiled and provided in good faith, based on information obtained from sources believed to be trustworthy. However, such information has not been independently verified. No guarantee, representation, or warranty of any kind, whether express or implied, is provided by the Bank or by relevant data vendors and other sources with respect to the accuracy, reliability, currentness or exhaustiveness of the information communicated, the methodology employed or the prices contained herein.</p>
+    </div>
+    <div>
+      <p>Past performance is not a reliable indicator of current or future results. Any reference to the past performance of an investment does not guarantee its future performance. Fluctuations in exchange rates may adversely affect the value, price or income of any investment.</p>
+      <p>Nothing in the present communication constitutes investment, legal, accounting or tax advice. This information is purely objective since it does not take into consideration the personal situation (including financial knowledge and experience), the investment objectives and risk profile of any recipient. Moreover, certain financial instruments mentioned (in particular, but not exclusively, derivatives, options and futures) involve a high risk of loss and may not be suitable. Accordingly, recipients should consult their own advisors on such matters, including but not limited to the possible tax consequences of investing in any financial product mentioned herein, and make their own assessment of the suitability of such investment product.</p>
+      <p>Should a recipient make an investment on the basis of the present communication, the recipient alone shall bear the consequences thereof. In no event shall the Bank, its directors, employees, affiliates or agents be held responsible for damages of any kind arising out of the use of all or part of the information provided herein.</p>
+    </div>
+  </div>
+
+  <footer><span>Syz Research · Ad-hoc opinion · 22 October 2026</span><span>2 / 2</span></footer>
+</div>
+
+</body>
+</html>
