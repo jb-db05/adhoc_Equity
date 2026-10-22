@@ -4,7 +4,7 @@ DOC_TYPE = "Earnings update"
 THEME = ""   # no sector in the kicker
 DATE = "22 October 2026"
 TICKER = "TSLA"
-TITLE = "Tesla Q3 2026: margins recover, the valuation still rides on AI"
+TITLE = "Tesla Q3 2026: margins up, profit down, all eyes on SpaceX"
 
 STATUS = ("Tesla is on neither the Syz master list nor the focus list, and this update is not a "
           "recommendation to buy the share.")
@@ -27,7 +27,7 @@ KPIS = [
     ("Free cash flow", "USD 1.53bn", "&minus;62% y/y; capex +110%", "neg"),
 ]
 
-H_P1 = "Margins buy time for the AI investment cycle"
+H_P1 = "The car business funds the AI build-out"
 P1 = ("The quarter was better than feared on profitability. The automotive gross margin recovered, energy and services "
       "margins rose, and free cash flow stayed positive despite heavy spending. Revenue, however, was flat and operating "
       "income fell 56%, as research and development for autonomy, Optimus and chips keeps lifting operating "
@@ -41,12 +41,12 @@ C1_COMMENT = ("The margin recovery is the main positive surprise. At 18.1%, the 
               "deliveries in Asia-Pacific. Management flags rising commodity costs and interest rates as continuing "
               "headwinds, so we read the gain as mix, not as a new run-rate.")
 
-BASE_CASE = ("Our stance on Tesla is neutral and cautious: USD 1.53bn of free cash flow and over USD 45bn of "
-             "cash fund the build-out, but do not justify the multiple. The car business is stabilising, with the "
-             "highest order backlog in four years, but the earnings base remains thin: 12-month forward consensus EPS "
-             "is only USD 1.73. The valuation rests on autonomy, Optimus and the Terafab chip project, none yet "
-             "generating revenue at scale, while capex will keep rising. Results move the share sharply: it fell 14.5% "
-             "after the July print. The next tests are EU approval of Full Self-Driving and Cybercab launches beyond "
+BASE_CASE = ("Our stance on Tesla is neutral and cautious. The car business is stabilising, with the highest backlog "
+             "in four years, but the earnings base remains thin, with 12-month forward consensus EPS of USD 1.73, "
+             "while the valuation rests on autonomy, Optimus and the Terafab chip project. All eyes are now on a "
+             "possible combination with SpaceX: both boards have formed special committees of independent "
+             "directors and Elon Musk calls it a good idea, but no terms exist and management declined to discuss "
+             "it on the call. The next tests are EU approval of Full Self-Driving and Cybercab launches beyond "
              "Austin.")
 UPSIDE = ("EU-wide approval of supervised Full Self-Driving by the first quarter of 2027. Cybercab launches in other "
           "cities before year-end, with the cost per paid mile approaching the USD 0.30 target. External Optimus "
@@ -73,13 +73,13 @@ A1 = [
 ]
 H_A2 = "Outlook: capex rises, robotaxis scale in 2027"
 A2 = [
-    ("Capex guidance for 2026 was revised to about USD 20bn, funded mainly from operating cash flow, but management "
+    ("Capex guidance for 2026 was revised to about USD 20bn, but management "
      "expects capex to keep expanding for several years with the robotaxi fleet, Optimus, solar, compute and a chip "
      "fab. Tesla secured USD 30bn of credit lines, undrawn this year. The Terafab "
-     "will need tens of billions of dollars by early 2028 and over USD 100bn in the long run, shared with SpaceX "
-     "in proportions still open. The CFO expects robotaxis to become a significant part of revenue and profit "
-     "in 2027, and external Optimus deliveries are targeted around the end of 2027. A potential SpaceX merger was not "
-     "discussed."),
+     "will need tens of billions of dollars by early 2028 and over USD 100bn in the long run, partly shared with "
+     "SpaceX. The CFO expects robotaxis to become a significant part of revenue and profit "
+     "in 2027, and external Optimus deliveries are targeted around the end of 2027. Management declined to discuss a "
+     "SpaceX merger, after both boards formed special committees on 20 October."),
 ]
 H_C2 = "Valuation: the price runs ahead of earnings"
 C2_TITLE = "TSLA: share price vs. consensus earnings and valuation"
