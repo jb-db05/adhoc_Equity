@@ -40,7 +40,7 @@ def fill_html():
     kpis = "\n".join(f'<td><div class="lbl">{l}</div><div class="val">{v}</div><div class="sub {s}">{d}</div></td>'
                      for l, v, d, s in C.KPIS)
     fill = {
-        "DOC_TYPE": C.DOC_TYPE, "THEME": C.THEME, "DATE": C.DATE, "TITLE": C.TITLE, "QUOTE_BLOCK": quote,
+        "STATUS": C.STATUS, "DOC_TYPE": C.DOC_TYPE, "THEME": C.THEME, "DATE": C.DATE, "TITLE": C.TITLE, "QUOTE_BLOCK": quote,
         "TAKEAWAYS": takeaways, "KPI_TILES": kpis, "H_P1": C.H_P1, "P1_PARAGRAPH": f"<p>{C.P1}</p>",
         "C1_TITLE": C.C1_TITLE, "C1_SUB": C.C1_SUB, "C1_IMG": f"{OUT}/c1_crop.png",
         "C1_COMMENT": f"<p>{C.C1_COMMENT}</p>", "BASE_CASE": C.BASE_CASE, "UPSIDE": C.UPSIDE,
@@ -70,7 +70,7 @@ def fill_json(doc):
     aspect = lambda p: (lambda im: im.size[1] / im.size[0])(Image.open(p))
     data = {
         "LOGO": "/home/claude/syz_logo_hq.png", "GRADBAR": "/home/claude/syz_gradbar.png",
-        "DOC_TYPE": C.DOC_TYPE, "THEME": C.THEME, "DATE": C.DATE, "TITLE": plain(C.TITLE),
+        "STATUS": plain(C.STATUS), "DOC_TYPE": C.DOC_TYPE, "THEME": C.THEME, "DATE": C.DATE, "TITLE": plain(C.TITLE),
         "QUOTE": plain(C.QUOTE), "QUOTE_WHO": plain(C.QUOTE_WHO),
         "TAKEAWAYS": [{"tag": c, "label": l, "text": plain(t)} for c, l, t in C.TAKEAWAYS],
         "KPIS": [{"label": plain(l), "value": plain(v), "sub": plain(d), "sign": s} for l, v, d, s in C.KPIS],

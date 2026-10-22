@@ -76,7 +76,13 @@ const th = hOf(F.TITLE, 17, CW, 1.22);
 s.addText(F.TITLE, { x: ML, y, w: CW, h: th, fontFace: FONT, fontSize: 17, color: NAVY, bold: true, margin: 0, isTextBox: true, valign: "top", lineSpacingMultiple: mult(1.22) });
 y += th + 0.04;
 s.addText(`${F.DATE} · Syz Research`, { x: ML, y, w: CW, h: 0.18, fontFace: FONT, fontSize: 8.5, color: GREY, bold: true, margin: 0, isTextBox: true, valign: "top" });
-y += 0.18 + 0.13;
+y += 0.18 + 0.05;
+if (F.STATUS) {
+  const sh = hOf(F.STATUS, 8.5, CW, 1.3);
+  s.addText(F.STATUS, { x: ML, y, w: CW, h: sh, fontFace: FONT, fontSize: 8.5, color: ORANGE, bold: true, margin: 0, isTextBox: true, valign: "top", lineSpacingMultiple: mult(1.3) });
+  y += sh;
+}
+y += 0.13;
 
 if (F.QUOTE) {
   const qw = CW - 0.2, qh = hOf(F.QUOTE, 9.8, qw, 1.35);

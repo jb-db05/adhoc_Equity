@@ -6,6 +6,9 @@ DATE = "22 October 2026"
 TICKER = "TSLA"
 TITLE = "Tesla Q3 2026: margins recover, the valuation still rides on AI"
 
+STATUS = ("Tesla is on neither the Syz master list nor the focus list, and this update is not a "
+          "recommendation to buy the share.")
+
 QUOTE = ("We are in a huge investment cycle to set us up for the future. Therefore, as previously guided, operating "
          "expenses continue to increase sequentially.")
 QUOTE_WHO = "Vaibhav Taneja, Chief Financial Officer, Q3 2026 earnings call, 21 October 2026"
@@ -38,8 +41,8 @@ C1_COMMENT = ("The margin recovery is the main positive surprise. At 18.1%, the 
               "deliveries in Asia-Pacific. Management flags rising commodity costs and interest rates as continuing "
               "headwinds, so we read the gain as mix, not as a new run-rate.")
 
-BASE_CASE = ("Our stance on Tesla is neutral and cautious. The share is on neither the Syz master list nor the focus "
-             "list, and this update is not a recommendation to buy it. The car business is stabilising, with the "
+BASE_CASE = ("Our stance on Tesla is neutral and cautious: USD 1.53bn of free cash flow and over USD 45bn of "
+             "cash fund the build-out, but do not justify the multiple. The car business is stabilising, with the "
              "highest order backlog in four years, but the earnings base remains thin: 12-month forward consensus EPS "
              "is only USD 1.73. The valuation rests on autonomy, Optimus and the Terafab chip project, none yet "
              "generating revenue at scale, while capex will keep rising. Results move the share sharply: it fell 14.5% "

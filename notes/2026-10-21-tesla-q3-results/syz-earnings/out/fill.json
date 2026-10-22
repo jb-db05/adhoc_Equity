@@ -1,6 +1,7 @@
 {
  "LOGO": "/home/claude/syz_logo_hq.png",
  "GRADBAR": "/home/claude/syz_gradbar.png",
+ "STATUS": "Tesla is on neither the Syz master list nor the focus list, and this update is not a recommendation to buy the share.",
  "DOC_TYPE": "Earnings update",
  "THEME": "",
  "DATE": "22 October 2026",
@@ -63,7 +64,7 @@
  "C1_ASPECT": 0.312,
  "W1": 66,
  "C1_COMMENT": "The margin recovery is the main positive surprise. At 18.1%, the automotive gross margin excluding regulatory credits is 1.8 points above Q2 and 1.4 points above consensus, helped by a higher share of deliveries in Asia-Pacific. Management flags rising commodity costs and interest rates as continuing headwinds, so we read the gain as mix, not as a new run-rate.",
- "BASE_CASE": "Our stance on Tesla is neutral and cautious. The share is on neither the Syz master list nor the focus list, and this update is not a recommendation to buy it. The car business is stabilising, with the highest order backlog in four years, but the earnings base remains thin: 12-month forward consensus EPS is only USD 1.73. The valuation rests on autonomy, Optimus and the Terafab chip project, none yet generating revenue at scale, while capex will keep rising. Results move the share sharply: it fell 14.5% after the July print. The next tests are EU approval of Full Self-Driving and Cybercab launches beyond Austin.",
+ "BASE_CASE": "Our stance on Tesla is neutral and cautious: USD 1.53bn of free cash flow and over USD 45bn of cash fund the build-out, but do not justify the multiple. The car business is stabilising, with the highest order backlog in four years, but the earnings base remains thin: 12-month forward consensus EPS is only USD 1.73. The valuation rests on autonomy, Optimus and the Terafab chip project, none yet generating revenue at scale, while capex will keep rising. Results move the share sharply: it fell 14.5% after the July print. The next tests are EU approval of Full Self-Driving and Cybercab launches beyond Austin.",
  "UPSIDE": "EU-wide approval of supervised Full Self-Driving by the first quarter of 2027. Cybercab launches in other cities before year-end, with the cost per paid mile approaching the USD 0.30 target. External Optimus deliveries around the end of 2027, as planned.",
  "DOWNSIDE": "The automotive margin falling back below 17% as the Asia mix normalises. Capex and Terafab spending drawing on the new USD 30bn credit lines. Robotaxi miles failing to turn into revenue in 2027. A SpaceX combination on terms unfavourable to Tesla shareholders.",
  "P2_TITLE": "Beyond the key takeaways",
