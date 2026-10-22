@@ -16,7 +16,7 @@ QUOTE_WHO = "Vaibhav Taneja, Chief Financial Officer, Q3 2026 earnings call, 21 
 TAKEAWAYS = [
     ("pos", "Beat", "Adjusted EPS of USD 0.48, 9% above consensus, on flat revenue; reported EPS was USD 0.22."),
     ("pos", "Margin", "Automotive gross margin excluding credits rose to 18.1% from 16.3%, 1.4 points above consensus."),
-    ("neg", "Watch", "Operating expenses keep rising with AI and robotics spending; capex to expand beyond the 2026 level."),
+    ("neg", "Watch", "Operating income fell 56% to USD 718m, a 2.6% margin, as AI and robotics spending lifted costs."),
     ("neu", "Valuation", "223.7x forward earnings, 64% above the 2020 to 2026 average: the price discounts autonomy and robots."),
 ]
 
@@ -24,13 +24,13 @@ KPIS = [
     ("Revenue", "USD 28.05bn", "In line with consensus", "neu"),
     ("Adjusted EPS", "USD 0.48", "+9.1% vs. consensus", "pos"),
     ("Auto gross margin excl. credits", "18.1%", "+140bp vs. consensus", "pos"),
-    ("Free cash flow", "USD 1.53bn", "Capex guide about USD 20bn", "neu"),
+    ("Free cash flow", "USD 1.53bn", "&minus;62% y/y; capex +110%", "neg"),
 ]
 
 H_P1 = "Margins buy time for the AI investment cycle"
 P1 = ("The quarter was better than feared on profitability. The automotive gross margin recovered, energy and services "
-      "margins rose, and free cash flow stayed positive despite heavy spending. Revenue, however, was flat and reported "
-      "net income fell 43%, as research and development for autonomy, Optimus and chips keeps lifting operating "
+      "margins rose, and free cash flow stayed positive despite heavy spending. Revenue, however, was flat and operating "
+      "income fell 56%, as research and development for autonomy, Optimus and chips keeps lifting operating "
       "expenses. The core business is stabilising, but it does not yet carry a valuation built on robotaxis and "
       "humanoid robots.")
 
@@ -64,12 +64,12 @@ A1 = [
      "Self-Driving is the main demand driver: over 75% of North American buyers took a paid subscription at delivery, "
      "and the paid base passed 1.7 million customers. Energy storage deployments reached 13.7 GWh, the second-best "
      "quarter, with Megapacks for 2027 almost sold out, and services and other margins hit a record 15.9%."),
-    ("Energy gross margin jumped to 33.1% from 20.4%, but mostly on tariff refunds and warranty adjustments, which we "
-     "treat as one-offs. Operating expenses rose again on AI compute, chip development and pre-production costs for "
-     "Optimus, Megapack 3 and the Semi, and management expects them to keep rising until these products are "
-     "commercialised. Reported net income fell 43% to USD 787m, or USD 0.22 per share, including a USD 142m loss on "
-     "the SpaceX stake and a USD 290m Bitcoin gain. Free cash flow was USD 1.53bn and cash and investments exceed "
-     "USD 45bn."),
+    ("Total gross margin rose to 19.6% from 18.0%, but operating income fell 56% to USD 718m, a 2.6% margin against "
+     "5.8% a year earlier, as AI compute, chip development and pre-production costs for Optimus, Megapack 3 and the "
+     "Semi lifted operating expenses, which management expects to keep rising until these products are "
+     "commercialised. The 33.1% energy gross margin was flattered by tariff refunds. Net income fell 43% to "
+     "USD 787m, or USD 0.22 per share. Free cash flow fell 62% to USD 1.53bn as capex more than doubled to "
+     "USD 4.7bn; cash and investments exceed USD 45bn."),
 ]
 H_A2 = "Outlook: capex rises, robotaxis scale in 2027"
 A2 = [
