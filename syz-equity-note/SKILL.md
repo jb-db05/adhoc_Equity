@@ -26,7 +26,7 @@ Use this skill whenever a Syz equity note is requested: an ad-hoc opinion on a s
 - Be explicit about the house view when there is one ("We remain negative on European carmakers"), and make the structure consistent with it (order of strategies, conclusions, value-trap framing).
 - Avoid "hold" as a lazy default. When reviewing positions, offer **two or three distinct strategies** (e.g. patience, simplify, reduce gradually on rebounds, rotate) with a clear trade-off each, and point out overlapping exposures (e.g. Dior and LVMH, Porsche SE and Volkswagen). Flag the risk of chasing performance when suggesting a rotation.
 - Avoid peremptory statements; prefer "could" and "would" for forward-looking calls.
-- **Focus List status:** every note states whether each company covered is on the Syz Focus List, in one sentence on the cover just after the price date line ("Prices are as of the close on DD Month YYYY. Astera Labs is not on the Syz Focus List." or "... is on the Syz Focus List."). In a note covering several companies, name each one. Ask the author when the status is not known; never guess it.
+- **Important notice and Focus List status:** every note carries a one-line important notice on the cover, just below the price date line, stating whether each company covered is on the Syz Focus List: "**Important notice.** Astera Labs is not on the Syz Focus List. No price target and no recommendation to buy or sell." (or "... is on the Syz Focus List."). In a note covering several companies, name each one. Ask the author when the status is not known; never guess it.
 - Sources stay simple: "Syz Research, Bloomberg", company publications by name and date, "press reports" for labour or media items. No links on the page.
 
 ## 3. Page set
@@ -196,6 +196,6 @@ Should a recipient make an investment on the basis of the present communication,
 - Logo is the Sunburnt signature, top right, with clear space and at least 40 px wide.
 - No broker names, target prices, entry prices or losses; "an investor", not "the client".
 - Prices and dates consistent across tiles, text, charts and sources.
-- Focus List status stated on the cover for every company covered.
+- Important notice with the Focus List status on the cover for every company covered.
 - Every figure traceable to a company publication, Bloomberg, a named press report or a labelled Syz calculation.
 - Tell the author which facts from their inputs were corrected or dropped.
