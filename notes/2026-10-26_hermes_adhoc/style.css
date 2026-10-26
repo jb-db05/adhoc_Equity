@@ -51,3 +51,4 @@ b,strong{font-weight:800}
 .small{font-size:10.5px;line-height:1.5}
 .small p{margin:0 0 7px}
 footer{margin-top:auto;display:flex;justify-content:space-between;font-size:10.5px;padding-top:8px}
+.page>*{flex-shrink:0}
