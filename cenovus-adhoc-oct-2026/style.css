@@ -1,0 +1,51 @@
+@font-face{font-family:Nunito;font-weight:300;src:local('Nunito Light'),local('Nunito-Light'),url('https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTM.ttf')}
+@font-face{font-family:Nunito;font-weight:400;src:local('Nunito Regular'),local('Nunito-Regular'),url('https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf')}
+@font-face{font-family:Nunito;font-weight:700;src:local('Nunito Bold'),local('Nunito-Bold'),url('https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM.ttf')}
+@font-face{font-family:Nunito;font-weight:800;src:local('Nunito ExtraBold'),local('Nunito-ExtraBold'),url('https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmRTM.ttf')}
+:root{--space:#202945;--blueberry:#4B5F80;--tiger:#FF6C0E;--mango:#FFA400;--gold:#FFC545;--mint:#3BAF90;--line:#D9D9D9;
+  --grad-orange:linear-gradient(90deg,#FF6C0E 0%,#FFA400 50%,#FFC545 100%)}
+@page{size:794px 1123px;margin:0}
+html,body{margin:0;padding:0;background:#fff}
+.page{width:794px;height:1123px;box-sizing:border-box;padding:28px 52px 30px;display:flex;flex-direction:column;
+  background:#fff;color:var(--space);font-family:'Maison Neue',Nunito,Arial,sans-serif;font-weight:400;font-size:13px;line-height:1.5;overflow:hidden}
+header{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.logo{height:46px;min-width:40px}
+.cover .logo{height:70px}
+.bar{align-self:stretch;height:4px;background:var(--grad-orange)}
+.label{margin-top:18px;color:var(--blueberry);font-weight:300;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase}
+.headline{margin:8px 0 4px;font-size:28px;line-height:1.2;font-weight:800;background:var(--grad-orange);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub1{font-weight:300;font-size:15px}
+.sub2{font-weight:700;color:var(--tiger);font-size:13.5px;margin:0 0 4px}
+h2{margin:16px 0 6px;font-size:17px;font-weight:800;color:var(--space)}
+h3{margin:10px 0 3px;font-size:13.5px;font-weight:800;color:var(--space)}
+p{margin:0 0 9px;text-align:justify}
+.small{font-size:11px;line-height:1.45}
+.box{background:#fff;border:2px solid var(--space);border-radius:14px;color:var(--space);padding:12px 16px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:0;overflow:hidden}
+.grid4>div{padding:9px 14px;border-left:1px solid var(--line)}.grid4>div:first-child{border-left:0}
+.boxlabel{color:var(--tiger);font-weight:700;font-size:10px;letter-spacing:.08em}
+.kpilabel{color:var(--blueberry);font-weight:700;font-size:10.5px}
+.boxvalue{font-size:16px;font-weight:800;line-height:1.3}
+.boxnote{font-size:10px;font-weight:300;line-height:1.3}
+.pos{color:var(--mint)}.neg{color:var(--tiger)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+.fiche p{font-size:11.8px;line-height:1.42;margin:0 0 5px}
+.fiche h3{font-size:12.5px;margin:6px 0 1px}
+.fiche h3 .n{color:var(--tiger)}
+.chartcap{margin-top:14px;font-weight:700;font-size:13.5px}
+.chartcap .n{color:var(--tiger)}
+.chartsub{color:var(--blueberry);font-size:11.5px;margin-bottom:6px}
+.chartbox{padding:8px}
+.chartbox img{width:100%;display:block}
+.src{font-size:10px;margin-top:4px}
+ul.srclist{margin:4px 0 8px;padding-left:16px;font-size:11px;line-height:1.45}
+.disclaimer p{font-size:9.6px;line-height:1.42;margin:0 0 6px}
+table.compact{width:100%;border-collapse:collapse;font-size:12px;border-top:1.5px solid var(--space);border-bottom:1.5px solid var(--space)}
+table.compact th{color:var(--blueberry);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.06em;text-align:right;padding:6px 8px;border-bottom:1px solid var(--line)}
+table.compact th:first-child,table.compact td:first-child{text-align:left}
+table.compact td{padding:5px 8px;text-align:right;border-bottom:1px solid var(--line);font-weight:400}
+table.compact tr:last-child td{border-bottom:0}
+.tabletitle{color:var(--tiger);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin:10px 0 6px}
+/* children keep their height; overflow is caught by the render check */
+.page>*{flex-shrink:0}
+footer{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;font-size:10.5px}
