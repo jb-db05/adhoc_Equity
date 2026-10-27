@@ -29,8 +29,8 @@ p{margin:0 0 9px;text-align:justify}
 .boxnote{font-size:10px;font-weight:300;line-height:1.3}
 .pos{color:var(--mint)}.neg{color:var(--tiger)}
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
-.fiche p{font-size:11.8px;line-height:1.42;margin:0 0 5px}
-.fiche h3{font-size:12.5px;margin:6px 0 1px}
+.fiche p{font-size:12.2px;line-height:1.48;margin:0 0 6px}
+.fiche h3{font-size:13px;margin:9px 0 2px}
 .fiche h3 .n{color:var(--tiger)}
 .chartcap{margin-top:14px;font-weight:700;font-size:13.5px}
 .chartcap .n{color:var(--tiger)}
