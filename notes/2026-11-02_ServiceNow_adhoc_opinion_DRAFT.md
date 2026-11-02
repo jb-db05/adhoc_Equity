@@ -6,7 +6,7 @@
 
 **Date line:** 2 November 2026 · Syz Research
 
-*Prices are as of the close on 2 November 2026.* [DRAFT: USD 108.23 is an intraday price; replace with the official Bloomberg close before release.]
+*Prices are as of the close on 30 October 2026.*
 
 ## Software and the AI debate
 
@@ -14,7 +14,7 @@
 
 Software stocks have been through a long and deep correction. Since early 2025, investors have increasingly priced in the risk that AI agents will take over tasks that companies currently pay software vendors for, licence by licence. This would erode the subscription model on which the sector has been built. ServiceNow, long seen as one of the highest-quality names in the sector, has not been spared: its share has lost more than half of its value from its January 2025 peak.
 
-The reaction to third-quarter results on 29 October shows how fragile sentiment remains. ServiceNow and Fortinet both fell sharply after their releases, and the move spread to other large software names such as Salesforce and Workday.
+The reaction to third-quarter results on 29 October shows how fragile sentiment remains. ServiceNow fell 27% in a single session, its largest one-day fall on record, and Fortinet fell by a similar amount. The move spread to other large software names such as Salesforce and Workday.
 
 **Right column**
 
@@ -36,7 +36,7 @@ Lower valuations alone are not enough to call the bottom in software. The sector
 
 | Price | From all-time high | 2026 subscription revenue growth (guidance) | 2026 free cash flow margin (guidance) |
 |---|---|---|---|
-| USD 108.23* | about -54%* | 21% (constant currency) | 36% |
+| USD 105.12 | -55% | 21% (constant currency) | 36% |
 
 **Left column**
 
@@ -52,7 +52,7 @@ The customer base is large and loyal. ServiceNow works with a large majority of 
 **Right column**
 
 **4. Cheap, or a value trap?**
-The share peaked at about USD 234 in January 2025 (adjusted for the five-for-one split of December 2025). It fell to about USD 83 in April 2026, recovered to around USD 150 ahead of the results, and has given up most of that rebound since. At around USD 110bn of market value, it trades at roughly 18 to 19 times the free cash flow expected for 2026 (Syz calculation), well below its historical range. This is not a sign of a broken business: revenue still grows at about 20% a year and cash generation keeps improving. But a derating of this scale reflects a lasting change in how the market values software. A lower multiple could prove justified if growth keeps slowing, so the valuation alone is not enough to make the case.
+The share peaked at about USD 234 in January 2025 (adjusted for the five-for-one split of December 2025). It fell to USD 83 in April 2026, recovered to USD 150 ahead of the results, and has given up most of that rebound since. It now trades at about 18 times the free cash flow expected for 2026 (Syz calculation), well below its historical range. This is not a sign of a broken business: revenue still grows at about 20% a year and cash generation keeps improving. But a derating of this scale reflects a lasting change in how the market values software. A lower multiple could prove justified if growth keeps slowing, so the valuation alone is not enough to make the case.
 
 **5. Main risks**
 - Contracted revenue for the next twelve months (cRPO) is expected to grow 18.5% in constant currency in Q4, after 21% in Q3. Management points to technical factors (more on-premise contracts, early renewals pulled into Q3), but a further slowdown in 2027 would weaken that explanation.
@@ -80,11 +80,8 @@ Syz Research, Bloomberg; ServiceNow, third-quarter 2026 results release and earn
 
 ## Notes for the author (not for publication)
 
-- **What changed:** I dropped "franchise intact". The headline, subtitle, cover, section 4 (now "Cheap, or a value trap?") and the conclusion now start from the drawdown since January 2025, not only the post-results fall. The tone stays balanced: the drawdown reflects a real loss of confidence in growth, while cash generation and the customer base show this is not a company in difficulty.
-- **Drawdown figures to confirm on Bloomberg (*):** these come from press and chart sites, not Bloomberg. Split-adjusted all-time closing high about USD 234 (28 January 2025, sources range from 234 to 240); April 2026 low about USD 83; pre-results price about USD 150. At USD 108.23 the share is about 54% below its peak. The 5-for-1 split took effect on 18 December 2025.
-- **Price and market value (*):** USD 108.23 is intraday. Your USD 108.7bn market value implies about 1.00bn shares; at about 1.04bn diluted shares the market value would be about USD 113bn. The 18 to 19x multiple is a Syz calculation: market value divided by 36% of about USD 16.3bn of 2026 revenue (USD 15.785bn subscriptions plus an estimated USD 0.5bn of services).
-- **Technical box:** left out. After a downtrend of nearly two years, a box would add little. A chart page showing the share since 2025 could help if you want one; I would need the Bloomberg export.
-- **Corrected or dropped from your inputs:**
-  - The post-results fall was larger than "around 20%" (19% intraday, 23 to 27% at the close).
-  - Removed: "trifecta quarter", the subscription margin falling from 80% to 75%, the ~USD 12bn of acquisitions (only Armis is confirmed), the tenfold rise in AI use, "68% undeployed", the AI Passport and Control Tower Alliance details, Serval, and all brokers and target prices.
-  - Corrected: "34.31% FCF margin expansion" is the 2025 margin, not an increase. "90% of the Fortune 500" is about 85% per the company. The forward P/E of 53x was replaced by price to free cash flow.
+- The laid-out version is in `2026-11-02_ServiceNow/` (PDF, HTML, chart). This text matches it, apart from the risk and watch lists, which are shortened in the PDF to fit the page.
+- Prices use the last official close (30 October 2026, USD 105.12) from Yahoo Finance daily data, not Bloomberg. Before release, check the close and the chart against a Bloomberg export, and change "Source: Yahoo Finance" if you replace the data.
+- Drawdown figures are split-adjusted closes: peak USD 234.08 on 28 January 2025, low USD 83.00 on 10 April 2026, USD 150.13 on 28 October, USD 109.67 on 29 October (-27%).
+- The 18x free cash flow multiple is a Syz calculation: a market value of about USD 105bn to 109bn (1.00bn to 1.04bn shares), divided by 36% of about USD 16.3bn of 2026 revenue.
+- Corrections and dropped items from your inputs are unchanged from the earlier drafts (see the git history of this file).
