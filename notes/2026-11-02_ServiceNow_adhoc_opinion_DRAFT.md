@@ -1,7 +1,7 @@
 # ServiceNow (NOW US): a sharp correction, not a broken business
 
 *Ad-hoc opinion · Information Technology · 2 November 2026 · Syz Research*
-*Prices are as of the close on [DD Month 2026] (Bloomberg). To be updated before release.*
+*Prices are as of the close on 2 November 2026.* [DRAFT: USD 108.23 is an intraday price; replace with the official Bloomberg close before release.]
 
 ---
 
@@ -27,7 +27,7 @@ Acquisitions add a second layer of caution. The purchase of Armis (cybersecurity
 
 - **A deeply embedded customer base.** ServiceNow works with a large majority of the Fortune 500 and has historically renewed around 98% of its contracts. Customers that use several of its products would find it costly and disruptive to replace them.
 - **A highly cash-generative model.** Free cash flow was USD 4.5bn in 2025 (a margin of about 34%), and the company now targets a 36% margin for 2026.
-- **A more reasonable valuation.** After the fall, the market value is around USD 109bn. Based on the company's own 2026 guidance, this is roughly 18 times expected free cash flow (Syz calculation). The share now trades at a clearly lower multiple than it did for most of the past decade, even though the company still grows at about 20% a year.
+- **A more reasonable valuation.** At USD 108.23, the market value is around USD 110bn. Based on the company's own 2026 guidance, this is roughly 18 to 19 times expected free cash flow (Syz calculation). The share now trades at a clearly lower multiple than it did for most of the past decade, even though the company still grows at about 20% a year.
 
 ## Main risks
 
@@ -79,7 +79,7 @@ ServiceNow remains a high-quality business, but its growth story has become hard
 - **Forward P/E of 53x:** almost certainly GAAP and misleading after acquisition charges. I used price to free cash flow instead.
 
 **Syz calculation (please check)**
-- Market cap USD 108.7bn (your input)* / FY26 FCF ≈ 36% × about USD 16.3bn revenue (USD 15.785bn subscriptions plus about USD 0.5bn professional services*) ≈ USD 5.9bn → about 18x, FCF yield about 5.4%.
+- Price USD 108.23 (intraday 2 Nov, replace with close). Your input market cap of USD 108.7bn implies about 1.00bn shares; at about 1.04bn diluted shares it would be about USD 113bn. Please take the market cap from Bloomberg at the close.* Market cap / FY26 FCF ≈ 36% × about USD 16.3bn revenue (USD 15.785bn subscriptions plus about USD 0.5bn professional services*) ≈ USD 5.9bn → about 18x to 19x, FCF yield about 5.2% to 5.4%.
 
 **Dropped (unconfirmed, or excluded by house rules)**
 - Subscription margin falling "from 80% to about 75%": not confirmed; one report says the subscription gross margin guide was held at about 81%.
