@@ -10,7 +10,7 @@ plt.rcParams.update({'font.family':'Nunito','font.size':10.5,'text.color':SPACE,
 ws=openpyxl.load_workbook(f'{S}/bbg/data.xlsx',data_only=True)['Sheet1']
 r=sorted([x[:5] for x in ws.iter_rows(min_row=2,values_only=True) if x[0] and x[0]<=dt.datetime(2026,10,30)])
 d=[x[0] for x in r]; p=[x[1] for x in r]; eps=[x[2] for x in r]; ma=[x[3] for x in r]
-fig,ax=plt.subplots(figsize=(8.4,5.6),dpi=220)
+fig,ax=plt.subplots(figsize=(8.4,4.9),dpi=220)
 ax2=ax.twinx()
 ax.plot(d,eps,color=GOLD,lw=2.2)
 ax2.plot(d,p,color=SPACE,lw=1.2); ax2.plot(d,ma,color=TIGER,lw=1.4)
