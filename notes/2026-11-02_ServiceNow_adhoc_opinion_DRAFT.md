@@ -1,95 +1,90 @@
-# ServiceNow (NOW US): a sharp correction, not a broken business
+# Cover page
 
-*Ad-hoc opinion · Information Technology · 2 November 2026 · Syz Research*
+**Label:** Ad-hoc opinion · Information Technology
+
+**Headline:** ServiceNow: expectations reset, franchise intact
+
+**Date line:** 2 November 2026 · Syz Research
+
 *Prices are as of the close on 2 November 2026.* [DRAFT: USD 108.23 is an intraday price; replace with the official Bloomberg close before release.]
 
----
+## Software and the AI debate
 
-## Where we stand
+**Left column**
 
-ServiceNow is no longer among our preferred ideas, but it remains in our coverage universe. In other words, we are not adding to the name today. We also see no reason to treat the position as a mistake that has to be sold off immediately. The quarter raised fair questions about how fast the company can grow. It did not show a business in trouble.
+Software stocks have had a difficult year. Investors increasingly worry that AI agents will take over tasks that companies currently pay software vendors for, licence by licence. This could erode the subscription model on which the sector has been built. In this environment, any sign of slower growth is read as evidence that the pressure is real, whatever its actual cause.
 
-## What happened
+The reaction to third-quarter results on 29 October illustrates this. ServiceNow and Fortinet both fell sharply after their releases, and the move spread to other large software names such as Salesforce and Workday.
 
-- **The share price fell sharply after the third-quarter release on 28 October**, one of the largest one-day drops in the company's history. The trigger was guidance, not the quarter itself. Contracted revenue for the next twelve months (cRPO) is expected to grow 18.5% in constant currency in Q4, after 21% in Q3. Adjusted earnings per share also came in slightly below market expectations.
-- **The quarter itself was solid.** Subscription revenue reached USD 3.99bn, up 21% year on year. Management raised its full-year targets for subscription revenue (USD 15.785bn at the midpoint) and for the free cash flow margin (36%, from 35%). It also raised its target for annual contract value from AI products to more than USD 1.7bn, the second increase this year.
-- **Part of the cRPO slowdown is technical.** Management pointed to a larger share of on-premise contracts and to early renewals that pulled business into Q3. These effects are real, but the market will need one or two quarters of evidence before it accepts them.
+**Right column**
 
-## Why the market reacted so strongly
+The picture is more nuanced than the share prices suggest. Software vendors that sit deep inside their customers' processes, and that can sell AI on top of an existing platform, could be among the beneficiaries of the shift rather than its victims. The market is not yet willing to give them that benefit, and wants to see AI lift overall growth first.
 
-The reaction was less about one quarter and more about a debate that hangs over the whole software sector. Investors worry that AI agents will increasingly do the work that companies currently pay software vendors for, licence by licence. Any slowdown in a software company's growth is now read through that lens. On the same day, Fortinet fell even more sharply and other large software names such as Salesforce and Workday also declined.
+**What this means for investors**
 
-ServiceNow argues that it is on the right side of this shift. Its platform already runs a large share of large companies' IT, HR and customer-service workflows, and it is positioning itself as the layer that coordinates and controls AI agents across a company. AI products are growing quickly, but at around USD 1.7bn of contract value they remain small next to a group that should generate over USD 16bn of revenue in 2026. Until AI visibly lifts overall growth, the debate is likely to continue.
-
-Acquisitions add a second layer of caution. The purchase of Armis (cybersecurity, USD 7.75bn) and several smaller deals have been financed partly with debt and weigh on margins in the short term. They also make it harder to see how fast the core business is growing on its own.
-
-## What has not changed
-
-- **A deeply embedded customer base.** ServiceNow works with a large majority of the Fortune 500 and has historically renewed around 98% of its contracts. Customers that use several of its products would find it costly and disruptive to replace them.
-- **A highly cash-generative model.** Free cash flow was USD 4.5bn in 2025 (a margin of about 34%), and the company now targets a 36% margin for 2026.
-- **A more reasonable valuation.** At USD 108.23, the market value is around USD 110bn. Based on the company's own 2026 guidance, this is roughly 18 to 19 times expected free cash flow (Syz calculation). The share now trades at a clearly lower multiple than it did for most of the past decade, even though the company still grows at about 20% a year.
-
-## Main risks
-
-- cRPO growth keeps slowing in 2027, which would suggest the slowdown is not only technical.
-- AI-related costs (computing capacity and hyperscaler partnerships) and acquisitions keep putting pressure on margins.
-- Smaller competitors win share in simpler IT service needs, especially among mid-sized companies.
-- Sentiment towards software stays negative whatever the company reports.
-
-## What to watch next
-
-- Q4 2026 results (late January 2027): actual cRPO growth against the 18.5% guidance, and the first 2027 targets.
-- Signs that AI revenue is starting to lift overall subscription growth, not only its own line.
-- Progress on integrating Armis and paying down the acquisition debt.
-
-## What this means for investors
-
-ServiceNow remains a high-quality business, but its growth story has become harder to prove and the share could stay volatile until the next results. We would not use the correction to add. Selling outright after a fall of this size, however, would lock in the move just as the valuation has become more reasonable. Two approaches seem sensible:
-
-1. **Keep the position at its current weight, without adding.** This suits an investor with a long horizon who can live with volatility. Q4 results and the 2027 guidance would be the natural point to review the position.
-2. **Reduce gradually into rebounds.** This suits an investor for whom the position is large, or who holds other US software names (for example Salesforce or Microsoft) and is therefore exposed to the same AI debate several times over. Proceeds could be redeployed into names currently on our preferred list.
-
-**In every case**, ServiceNow should not be a large position within a portfolio, and its weight should be considered together with other software and US technology holdings.
+Valuations across the sector have come down, but sentiment is likely to stay fragile until AI revenue becomes visible in reported growth. Selectivity matters more than ever: the quality of the customer base, cash generation and balance-sheet strength are the main differences between names.
 
 ---
 
-*Sources: Syz Research, Bloomberg; ServiceNow, third-quarter 2026 results release and earnings call (28 October 2026); ServiceNow, Form 10-Q for Q1 2026; press reports.*
+# Company fiche
+
+## ServiceNow (NOW US)
+
+**Subtitle (orange):** A high-quality platform whose growth now has to be proven again
+
+**KPI tiles**
+
+| Price | Market value | 2026 subscription revenue growth (guidance) | 2026 free cash flow margin (guidance) |
+|---|---|---|---|
+| USD 108.23* | about USD 110bn* | 21% (constant currency) | 36% |
+
+**Left column**
+
+**1. What the company does**
+ServiceNow sells a cloud platform that large companies use to run and automate their internal workflows, starting with IT and extending to HR, customer service, security and finance. It now positions itself as the layer that coordinates and controls AI agents across a company, above the applications they already use.
+
+**2. Why it could do well**
+AI is already a meaningful growth driver. Management has raised its target for annual contract value from AI products twice this year, to more than USD 1.7bn. Because ServiceNow already holds the data and workflows of its customers, it can sell AI to an installed base rather than win new clients from scratch. The company also generates a great deal of cash: free cash flow was USD 4.5bn in 2025, and management now targets a 36% margin for 2026, up from 35%.
+
+**3. What sets it apart**
+The customer base is large and loyal. ServiceNow works with a large majority of the Fortune 500 and has historically renewed around 98% of its contracts. Customers that use several of its products would find it costly and disruptive to replace them, which gives the company a degree of protection that simpler software tools do not have.
+
+**Right column**
+
+**4. Is the share cheap?**
+The share has fallen sharply since the results. At around USD 110bn of market value, it trades at roughly 18 to 19 times the free cash flow the company expects for 2026 (Syz calculation). This is clearly below the levels of most of the past decade, for a business that still grows at about 20% a year. The discount reflects a real question, though: whether growth can hold up as the software model changes.
+
+**5. Main risks**
+- Contracted revenue for the next twelve months (cRPO) is expected to grow 18.5% in constant currency in Q4, after 21% in Q3. Management points to technical factors (more on-premise contracts, early renewals pulled into Q3), but a further slowdown in 2027 would weaken that explanation.
+- Acquisitions, led by Armis (cybersecurity, USD 7.75bn), have been financed partly with debt. They weigh on margins in the short term and make the underlying growth of the core business harder to read.
+- AI brings additional computing costs, which could limit margin gains.
+- Simpler and cheaper competitors are active among mid-sized companies.
+- Sentiment towards software could stay negative regardless of company results.
+
+**6. What to watch next**
+- Q4 2026 results (late January 2027): actual cRPO growth against the 18.5% guidance, and the first targets for 2027.
+- Signs that AI is lifting overall subscription growth, not only its own line.
+- Progress on integrating Armis and reducing the acquisition debt.
+
+## Conclusion
+
+The third quarter did not show a business in difficulty. Subscription revenue grew 21% to USD 3.99bn, and management raised its full-year targets for revenue, cash flow and AI. What changed is the market's confidence in the pace of future growth, in a sector where the AI debate magnifies every sign of slowing. ServiceNow keeps clear strengths: an embedded customer base, strong cash generation and a credible AI offer. The share could stay volatile until these strengths show up in reported growth. The next two quarters, and the 2027 outlook in particular, would be decisive for a lasting recovery in the share.
+
+---
+
+# Sources
+
+Syz Research, Bloomberg; ServiceNow, third-quarter 2026 results release and earnings call (28 October 2026); ServiceNow, Form 10-Q for Q1 2026; press reports.
 
 ---
 
 ## Notes for the author (not for publication)
 
-**Fact check.** Our data feed (Quartr) needs re-authentication and SEC/CNBC are blocked in this session, so figures were checked against press coverage of the release and call transcripts. Please confirm the items marked * against Bloomberg or the release before layout.
-
-**Kept and confirmed**
-- Q3 subscription revenue USD 3,988m, +21% (20.5% cc); total revenue USD 4,106m; Q3 cRPO USD 13.65bn, +20.5% reported / 21% cc.
-- Q4 cRPO guide 18.5% cc; management explanation (on-prem mix, early renewals in Q3).
-- FY26 subscription revenue guide raised to USD 15.785bn midpoint; FCF margin guide raised 35% to 36% (lower capex).
-- AI ACV target raised a second time, to over USD 1.7bn.
-- Adjusted EPS USD 1.00 vs about USD 1.02 expected.
-- Armis USD 7.75bn, closed April 2026, partly debt-financed (USD 4bn term loan, later refinanced in bonds).
-- Fortinet, Salesforce and Workday fell on the same day.
-
-**Corrected**
-- **Share fall:** reports range from about 19% intraday to 23-27% at the close (record one-day drop). "Around 20%" in the first bullet points understates it; I used "one of the largest one-day drops" pending the Bloomberg close.*
-- **"Trifecta quarter" beating on revenue, margins and AI:** inconsistent with the EPS miss; dropped.
-- **"Revenue growth set to slow in 2026":** FY26 subscription guide is +21% cc, similar to 2025. What slows is organic growth once acquisitions are excluded; rephrased accordingly.
-- **"FCF margin expansion (YoY) 34.31%":** this is the FY25 FCF margin (4,533 / 13,278 = 34.1%), not an expansion.
-- **Fortune 500 coverage:** the company usually says "about 85%", not 90%; I wrote "a large majority".*
-- **Forward P/E of 53x:** almost certainly GAAP and misleading after acquisition charges. I used price to free cash flow instead.
-
-**Syz calculation (please check)**
-- Price USD 108.23 (intraday 2 Nov, replace with close). Your input market cap of USD 108.7bn implies about 1.00bn shares; at about 1.04bn diluted shares it would be about USD 113bn. Please take the market cap from Bloomberg at the close.* Market cap / FY26 FCF ≈ 36% × about USD 16.3bn revenue (USD 15.785bn subscriptions plus about USD 0.5bn professional services*) ≈ USD 5.9bn → about 18x to 19x, FCF yield about 5.2% to 5.4%.
-
-**Dropped (unconfirmed, or excluded by house rules)**
-- Subscription margin falling "from 80% to about 75%": not confirmed; one report says the subscription gross margin guide was held at about 81%.
-- "Around USD 12bn of acquisitions": only Armis (USD 7.75bn) is confirmed. Moveworks and Veza amounts were not confirmed in company documents.
-- "Customer AI use up more than tenfold" and "AI contracts won by adding free services": not found in company material.
-- "68% of products undeployed after 180 days": third-party claim, source unknown.
-- AI Passport, Control Tower Alliance members, Action Fabric / ChatGPT integration: could not verify in this session; kept only a generic description of the strategy.
-- Serval and its USD 3bn valuation: press only; replaced with "smaller competitors".
-- All broker names, ratings and target prices, per house rules.
-
-**Points to decide**
-- Whether to name the focus-list removal explicitly. The draft says "no longer among our preferred ideas but remains in our coverage universe"; soften it if this should stay internal.
-- Whether to include a technical box. The share has fallen sharply, so a chart would mainly show the drop. I suggest leaving it out.
+- **What changed from the first draft:** it now follows the standard ad-hoc opinion layout (cover with sector section, then company fiche and conclusion). I removed the parts about the focus list, the holding and the strategies.
+- **Tone:** the note neither recommends buying nor suggests a disaster. The conclusion points to quality, a lower valuation and growth that has to be proven again.
+- **To confirm (*):** the Bloomberg close and market value. Your USD 108.7bn market value implies about 1.00bn shares; at about 1.04bn diluted shares the market value at USD 108.23 would be about USD 113bn. The 18 to 19x multiple is a Syz calculation: market value divided by 36% of about USD 16.3bn of 2026 revenue (USD 15.785bn subscriptions plus an estimated USD 0.5bn of services).
+- **Corrected or dropped from your inputs:**
+  - The fall was larger than "around 20%" (19% intraday, 23 to 27% at the close), so the note says "fallen sharply".
+  - Removed: "trifecta quarter", the subscription margin falling from 80% to 75%, the ~USD 12bn of acquisitions (only Armis is confirmed), the tenfold rise in AI use, "68% undeployed", the AI Passport and Control Tower Alliance details, Serval, and all brokers and target prices.
+  - Corrected: "34.31% FCF margin expansion" is the 2025 margin, not an increase. "90% of the Fortune 500" is about 85% per the company. The forward P/E of 53x was replaced by price to free cash flow.
+- **Technical box:** left out. After a drop of this size, a chart would mainly show the fall.
