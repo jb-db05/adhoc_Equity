@@ -2,7 +2,7 @@
 const { chromium } = require('playwright'); const path = require('path');
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 794, height: 1123 }, deviceScaleFactor: 1 });
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= 4; i++) {
     await p.goto('file://' + path.resolve(__dirname, `page${i}.html`)); await p.evaluate(() => document.fonts.ready);
     const o = await p.evaluate(() => { const pg = document.querySelector('.page'); const f = document.querySelector('footer');
       const kids = [...pg.children].filter(e => e.tagName !== 'FOOTER'); const last = kids[kids.length - 1].getBoundingClientRect().bottom;

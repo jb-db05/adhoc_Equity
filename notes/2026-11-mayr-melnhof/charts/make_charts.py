@@ -69,9 +69,9 @@ def chart_price_pe(rows, out):
     fig.savefig(out, facecolor='white', bbox_inches='tight', pad_inches=.15); plt.close(fig)
     return avg, sd
 
-def chart_sotp(price, out, shares=20.0, net_cash=(0.8, 0.85, 0.9), stake=0.4, special=(0.5, 0.6)):
+def chart_sotp(price, out, shares=20.0, net_cash=(0.8, 0.85, 0.9), stake=0.4, special=(0.5, 0.6), figsize=(10, 5.4)):
     nc_lo, nc, nc_hi = (x * 1000 / shares for x in net_cash); st_ = stake * 1000 / shares; bp = price - nc - st_
-    fig, ax = plt.subplots(figsize=(10, 5.4), dpi=200)
+    fig, ax = plt.subplots(figsize=figsize, dpi=200)
     w = .56; xs = [0, 1, 2, 3.25]
     # waterfall: net cash, stake, Board & Paper, share price
     ax.bar(xs[0], nc, w, color=SPACE)
@@ -120,7 +120,7 @@ def chart_bridge(out):
              ('Net cash\nafter closing', 0.85, 'total', '0.8 to 0.9'),
              ('Special\ndistribution', -0.55, 'delta', '-0.5 to -0.6\nEUR 25 to 30\nper share'),
              ('Cash kept\nby MM', 0.3, 'total', 'about 0.3\nEUR 15\nper share')]
-    fig, ax = plt.subplots(figsize=(10, 3.9), dpi=200); w = .62; level = 0
+    fig, ax = plt.subplots(figsize=(10, 3.0), dpi=200); w = .62; level = 0
     colors = {'Packaging\nEV (100%)': SPACE, 'Cash to MM': BLUE, 'Net cash\nafter closing': BLUE, 'Cash kept\nby MM': BLUE}
     for i, (name, v, kind, lab) in enumerate(steps):
         if kind == 'total':
@@ -195,3 +195,30 @@ def chart_quarterly(out):
 
 if __name__ == '__main__':
     chart_quarterly(f'{sys.argv[2]}/chart_quarterly.png')
+
+if __name__ == '__main__':
+    chart_sotp(load(sys.argv[1])[-1][1], f'{sys.argv[2]}/chart_sotp_compact.png', figsize=(5.4, 4.5))
+
+def chart_sotp_compact(price, out, shares=20.0):
+    """Half-width version of the sum of the parts for the 4-page note."""
+    nc, st_ = 42.5, 20.0; bp = price - nc - st_
+    fig, ax = plt.subplots(figsize=(5.4, 4.3), dpi=200); w = .62; xs = [0, 1, 2, 3.15]
+    ax.bar(xs[0], nc, w, color=SPACE); ax.bar(xs[1], st_, w, bottom=nc, color=BLUE)
+    ax.bar(xs[2], bp, w, bottom=nc + st_, color=TIGER); ax.bar(xs[3], price, w, color='white', edgecolor=SPACE, lw=1.6)
+    for a, b, y in ((0, 1, nc), (1, 2, nc + st_), (2, 3, price)):
+        ax.plot([xs[a] + w / 2, xs[b] - w / 2], [y, y], color=SPACE, lw=.7, ls=(0, (2, 2)))
+    lab = dict(ha='center', va='center', fontproperties=fp(XB, 13))
+    ax.text(xs[0], nc / 2, f'{nc:.1f}', color='white', **lab)
+    ax.text(xs[1], nc + st_ / 2, f'{st_:.1f}', color='white', **lab)
+    ax.text(xs[2], nc + st_ + bp / 2, f'{bp:.1f}', color='white', **lab)
+    ax.text(xs[3], price / 2, f'{price:.2f}', color=SPACE, **lab)
+    ax.text(xs[2], price + 2, f'EUR {bp * shares / 1000:.2f}bn', ha='center', va='bottom', fontproperties=fp(XB, 10), color=TIGER)
+    ax.text(xs[1], nc + st_ + 2, f'{(nc + st_) / price:.0%}\nof the price', ha='center', va='bottom', fontproperties=fp(BOLD, 9), color=BLUE)
+    ax.set_xticks(xs, ['Net cash', '30% stake in\nPackaging', 'Board &\nPaper', 'Share\nprice'])
+    style(ax); ax.grid(False); ax.spines['left'].set_visible(False); ax.set_yticks([])
+    for l in ax.get_xticklabels(): l.set_fontproperties(fp(BOLD, 9.5))
+    ax.set_xlim(-.5, 3.6); ax.set_ylim(0, price * 1.2)
+    fig.savefig(out, facecolor='white', bbox_inches='tight', pad_inches=.12); plt.close(fig)
+
+if __name__ == '__main__':
+    chart_sotp_compact(load(sys.argv[1])[-1][1], f'{sys.argv[2]}/chart_sotp_compact.png')

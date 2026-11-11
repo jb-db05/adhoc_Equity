@@ -2,7 +2,7 @@
 import re, pathlib
 HERE = pathlib.Path(__file__).parent
 DATE = '11 November 2026'
-N = 7
+N = 4
 skill = (HERE / '../../../syz-equity-note/SKILL.md').read_text()
 disc = skill.split('## 5. Important information (disclaimer, verbatim)')[1].split('## 6.')[0].strip()
 disc_html = ''.join(f'<p class="small">{p.strip()}</p>' for p in disc.split('\n\n'))
@@ -52,8 +52,8 @@ Prices are as of the close on {DATE}. The special distribution is planned, not a
 <div class="boxlabel">What this means for investors</div>
 <ul style="margin-top:5px">
 <li>The special distribution is real, but it is not free money: it is cash that will already sit on the balance sheet, and the share price would fall by the same amount on the ex-date.</li>
-<li>What the market does not price is what remains after the cash and the stake: at EUR 74.10, Board &amp; Paper is valued at about EUR 0.23bn, less than 2x its 2025 EBITDA (Syz calculation, page 5).</li>
-<li>The case suits investors with an appetite for family-controlled small caps who can wait until 2027: liquidity is limited, and the amount, timing and form of the payout are not locked.</li>
+<li>What the market does not price is what remains after the cash and the stake: at EUR 74.10, Board &amp; Paper is valued at about EUR 0.23bn, less than 2x its 2025 EBITDA (Syz calculation, page 2).</li>
+<li>The case suits investors comfortable with a family-owned small cap and a 2027 horizon: the free float is 42%, about EUR 2.2m trades a day, and the amount, timing and form of the payout are not locked.</li>
 </ul></div>
 '''
 
@@ -121,7 +121,7 @@ P3 = '''
 
 P4 = '''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
-<h2 style="margin-top:8px">Is the share cheap?</h2>
+<h2 style="margin:10px 0 4px">Is the share cheap?</h2>
 <div class="chart-title"><span>Chart 4</span> · MMK AV: what EUR 74.10 buys</div>
 <div class="chart-sub">Sum of the parts, EUR per share, mid-point of the company's net cash range (Syz calculation)</div>
 <div class="box chartbox"><img src="../charts/chart_sotp.png" alt="Sum of the parts"></div>
@@ -177,8 +177,49 @@ P5 = '''
 </div>
 '''
 
-PBP = '''
+P2N = '''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
+<h2 style="margin-top:8px">The deal in numbers</h2>
+<div class="chart-title" style="margin-top:4px"><span>Chart 1</span> · MM: from EUR 2.4bn to the special distribution</div>
+<div class="chart-sub">Expected cash proceeds from the transaction, EUR bn, rounded as published by the company</div>
+<div class="box chartbox"><img src="../charts/chart_bridge.png" alt="Cash bridge"></div>
+<div class="source">Source: Mayr-Melnhof, investor presentation of 9 November 2026; Syz Research</div>
+<p style="margin:6px 0 0">The EUR 0.4bn is what MM invests to keep 30%. It is below 30% of EUR 2.4bn because the new holding will carry about EUR 1.0bn of debt (Syz calculation): the stake is leveraged equity.</p>
+
+<h2 style="margin:10px 0 4px">Is the share cheap?</h2>
+<div class="cols" style="column-gap:24px">
+<div>
+<div class="chart-title" style="margin-top:0"><span>Chart 2</span> · What EUR 74.10 buys</div>
+<div class="chart-sub">EUR per share; net cash includes the EUR 25 to 30 distribution</div>
+<div class="box chartbox" style="padding:6px 8px"><img src="../charts/chart_sotp_compact.png" alt="Sum of the parts"></div>
+<div class="source">Source: Mayr-Melnhof; Syz Research, Bloomberg</div>
+</div>
+<div>
+<table class="compact" style="margin-top:0">
+<caption>Sum of the parts (Syz calculation)</caption>
+<tr><th>EUR per share</th><th>Low</th><th>Mid</th><th>High</th></tr>
+<tr><td>Net cash after closing</td><td>40.0</td><td>42.5</td><td>45.0</td></tr>
+<tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
+<tr class="total"><td>Cash and stake</td><td>60.0</td><td>62.5</td><td>65.0</td></tr>
+<tr class="total"><td>Implied Board &amp; Paper</td><td>14.1</td><td>11.6</td><td>9.1</td></tr>
+<tr><td>Times 2025 EBITDA</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
+</table>
+<p class="small">Net cash of EUR 0.8 to 0.9bn after closing (before the distribution) plus the stake at the EUR 0.4bn MM invests, over 20m shares. KPS pays about 9x EBITDA for Packaging; the share price values Board &amp; Paper at under 2x, and below 4x even on the depressed last twelve months. The distribution itself is not the opportunity: it is paid from cash already in the price.</p>
+
+</div>
+</div>
+<div class="box" style="margin-top:8px;padding:9px 16px">
+<div class="boxlabel">Risks and what to watch</div>
+<ul class="small" style="margin:4px 0 0">
+<li><b>Payout not locked:</b> approvals, the tax bill and acquisitions (the planned Arnsberg mill) could reduce or delay it.</li>
+<li><b>Stake can shrink to 20%</b> if Packaging misses its 2027 EBITDA targets, about EUR 7 per share.</li>
+<li><b>Board &amp; Paper</b> is loss-making at operating level; higher prices and orders are early signs of a turn (annex).</li>
+<li><b>Swiss investors:</b> a dividend bears 27.5% Austrian withholding tax, 15% after the treaty reclaim; the form of the payout is still open.</li>
+</ul></div>
+'''
+
+PBP = '''
+<div class="label">Annex · Paper &amp; Packaging</div>
 <h2 style="margin-top:8px">Packaging vs. Board &amp; Paper: two markets moving apart</h2>
 <p>The third quarter, published four days before the deal, shows why a buyer wanted Packaging and why the market gives little value to Board &amp; Paper.</p>
 <div class="chart-title"><span>Chart 3</span> · MM: quarterly adjusted EBITDA by business</div>
@@ -216,6 +257,6 @@ P6 = f'''
 {disc_html}
 '''
 
-for n, (body, cover) in enumerate([(P1, True), (P2, False), (PBP, False), (P3, False), (P4, False), (P5, False), (P6, False)], 1):
+for n, (body, cover) in enumerate([(P1, True), (P2N, False), (PBP, False), (P6, False)], 1):
     (HERE / f'page{n}.html').write_text(page(n, body, cover))
 print('ok')
