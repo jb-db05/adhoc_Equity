@@ -34,7 +34,7 @@ def chart_price_pe(rows, out):
     d = [r[0] for r in rows]; px = [r[1] for r in rows]; ma = [r[3] for r in rows]; pe = [r[4] for r in rows]
     last = rows[-1]; start10 = last[0] - dt.timedelta(days=3652)
     pe10 = [r[4] for r in rows if r[0] >= start10]; avg, sd = st.mean(pe10), st.pstdev(pe10)
-    fig, (a1, a2) = plt.subplots(2, 1, figsize=(10, 7.2), dpi=200, sharex=True, gridspec_kw=dict(height_ratios=[1.7, 1], hspace=.12))
+    fig, (a1, a2) = plt.subplots(2, 1, figsize=(10, 6.6), dpi=200, sharex=True, gridspec_kw=dict(height_ratios=[1.7, 1], hspace=.12))
     # price panel
     a1.plot(d, px, color=SPACE, lw=1.4, label='Share price')
     a1.plot(d, ma, color=TIGER, lw=1.4, label='40-week moving average')
@@ -120,7 +120,7 @@ def chart_bridge(out):
              ('Net cash\nafter closing', 0.85, 'total', '0.8 to 0.9'),
              ('Special\ndistribution', -0.55, 'delta', '-0.5 to -0.6\nEUR 25 to 30\nper share'),
              ('Cash kept\nby MM', 0.3, 'total', 'about 0.3\nEUR 15\nper share')]
-    fig, ax = plt.subplots(figsize=(10, 5.2), dpi=200); w = .62; level = 0
+    fig, ax = plt.subplots(figsize=(10, 3.9), dpi=200); w = .62; level = 0
     colors = {'Packaging\nEV (100%)': SPACE, 'Cash to MM': BLUE, 'Net cash\nafter closing': BLUE, 'Cash kept\nby MM': BLUE}
     for i, (name, v, kind, lab) in enumerate(steps):
         if kind == 'total':
@@ -145,7 +145,7 @@ def chart_two_businesses(price, out, shares=20.0):
             ('2025 adjusted EBITDA, EUR m', 260, 138, '{:.0f}'),
             ('Value, EUR bn', 2.4, bp_value, '{:.2f}'),
             ('Value / 2025 EBITDA', 2400 / 260, bp_value * 1000 / 138, '{:.1f}x')]
-    fig, axes = plt.subplots(1, 4, figsize=(10, 4.3), dpi=200, gridspec_kw=dict(wspace=.35))
+    fig, axes = plt.subplots(1, 4, figsize=(10, 2.9), dpi=200, gridspec_kw=dict(wspace=.35))
     for ax, (title, a, b, f) in zip(axes, data):
         ax.bar([0, 1], [a, b], .62, color=[BLUE, TIGER])
         for x, v in ((0, a), (1, b)):
