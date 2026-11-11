@@ -159,3 +159,39 @@ def chart_two_businesses(price, out, shares=20.0):
 if __name__ == '__main__':
     chart_bridge(f'{sys.argv[2]}/chart_bridge.png')
     chart_two_businesses(load(sys.argv[1])[-1][1], f'{sys.argv[2]}/chart_two_businesses.png')
+
+# ---- Quarterly adjusted EBITDA by business (Trading Statement Q1-3 2026, pro forma excl. TANN) ----
+QUARTERS = ['Q1 25', 'Q2 25', 'Q3 25', 'Q4 25', 'Q1 26', 'Q2 26', 'Q3 26']
+FOOD_PREMIUM = [51.4, 45.6, 53.0, 55.4, 48.4, 49.5, 54.3]
+PHARMA = [19.6, 20.5, 20.4, 17.2, 22.0, 23.6, 22.6]
+BOARD_PAPER = [33.8, 36.5, 16.6, 28.1, 33.5, 23.3, -18.1]
+Q3_26_STANDSTILL = 36.0  # company: expenses related to the maintenance standstills in Q3 2026, about EUR 36m
+
+def chart_quarterly(out):
+    import numpy as np
+    pack = [a + b for a, b in zip(FOOD_PREMIUM, PHARMA)]
+    x = np.arange(len(QUARTERS)); w = .36
+    fig, ax = plt.subplots(figsize=(10, 3.9), dpi=200)
+    ax.bar(x - w / 2, pack, w, color=BLUE, label='Packaging')
+    ax.bar(x + w / 2, BOARD_PAPER, w, color=TIGER, label='Board & Paper')
+    # maintenance add-back on Q3 26
+    i = len(QUARTERS) - 1
+    ax.bar(x[i] + w / 2, Q3_26_STANDSTILL, w, bottom=BOARD_PAPER[i], facecolor='white', edgecolor=TIGER, hatch='////', lw=1.2, zorder=0)
+    ax.annotate('about EUR 36m of planned\nmill maintenance in Q3 26', (x[i] + w / 2 + w / 2, BOARD_PAPER[i] + Q3_26_STANDSTILL * .7),
+                xytext=(10, 18), textcoords='offset points', fontproperties=fp(BOLD, 8.6), color=TIGER, ha='left',
+                arrowprops=dict(arrowstyle='-', color=TIGER, lw=.8), annotation_clip=False)
+    for xi, v in zip(x - w / 2, pack):
+        ax.text(xi, v + 2, f'{v:.0f}', ha='center', va='bottom', fontproperties=fp(XB, 9), color=BLUE)
+    for xi, v in zip(x + w / 2, BOARD_PAPER):
+        ax.text(xi, v + 2 if v >= 0 else v - 2, f'{v:.0f}', ha='center', va='bottom' if v >= 0 else 'top', fontproperties=fp(XB, 9), color=TIGER)
+    ax.axhline(0, color=SPACE, lw=.8)
+    style(ax); ax.set_xticks(x, QUARTERS)
+    for l in ax.get_xticklabels(): l.set_fontproperties(fp(BOLD, 9.5))
+    ax.set_ylabel('EUR M', fontproperties=fp(BOLD, 9), style='italic')
+    ax.set_ylim(-30, 95); ax.set_xlim(-.6, len(QUARTERS) + .4)
+    leg = ax.legend(loc='upper left', frameon=False, prop=fp(BOLD, 9.5), ncol=2)
+    for t, c in zip(leg.get_texts(), (BLUE, TIGER)): t.set_color(c)
+    fig.savefig(out, facecolor='white', bbox_inches='tight', pad_inches=.15); plt.close(fig)
+
+if __name__ == '__main__':
+    chart_quarterly(f'{sys.argv[2]}/chart_quarterly.png')
