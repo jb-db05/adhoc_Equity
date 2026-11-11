@@ -79,7 +79,7 @@ P3 = '''
 <div class="sub2">A cash box with a cyclical mill attached, priced as if the mill were worth almost nothing</div>
 <div class="box grid4" style="margin-top:6px">
   <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
-  <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">about 20m shares, 42% free float</div></div>
+  <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
   <div><div class="kpilabel">Planned distribution</div><div class="boxvalue">EUR 25 to 30</div><div class="boxnote">per share, after closing in H1 2027</div></div>
   <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.8x</div><div class="boxnote">10-year average 12.4x</div></div>
 </div>
@@ -102,7 +102,7 @@ P3 = '''
 <li><b>Board &amp; Paper</b> made an operating loss over nine months, and management still expects sustained margin pressure.</li>
 <li><b>Acquisitions:</b> MM plans to buy the Arnsberg cartonboard mill; more deals could absorb cash that would otherwise be returned.</li>
 <li><b>Iran:</b> MM keeps its operations there (sales of about EUR 60m), a small but real geopolitical exposure.</li>
-<li><b>Liquidity:</b> family control, a 42% free float and a small market cap mean wider spreads and harder exits in stressed markets.</li>
+<li><b>Liquidity:</b> about 30,000 shares a day on average over the last 15 trading days, or about EUR 2.2m. With family control and a 42% free float, exits can be slow in stressed markets.</li>
 </ul>
 <h3>6. What to watch next</h3>
 <ul>
@@ -139,7 +139,7 @@ P4 = '''
 <tr><td>In EUR bn</td><td>0.28</td><td>0.23</td><td>0.18</td></tr>
 <tr><td>Times 2025 EBITDA</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
 </table>
-<p class="small">Method: net cash guided by MM after closing (EUR 0.8 to 0.9bn, before the special distribution), plus the 30% stake at the EUR 0.4bn MM is investing, divided by about 20m shares. The remainder is what the share price implies for Board &amp; Paper. If the stake is cut to 20%, its value falls by about EUR 7 per share.</p>
+<p class="small">Method: net cash guided by MM after closing (EUR 0.8 to 0.9bn, before the special distribution), plus the 30% stake at the EUR 0.4bn MM is investing, divided by 20m shares. The remainder is what the share price implies for Board &amp; Paper. If the stake is cut to 20%, its value falls by about EUR 7 per share.</p>
 </div>
 <div>
 <h3 style="margin-top:0">Why the distribution itself is not the opportunity</h3>
@@ -173,7 +173,7 @@ P5 = '''
 <div class="box" style="margin-top:6px">
 <div class="boxlabel">A family company, with the trade-offs that come with it</div>
 <p style="margin:5px 0 4px">The founding families hold about 58% of the shares through a syndicate; the rest is free float. For an outside shareholder, family control cuts both ways. It brings a long horizon, a conservative balance sheet and a habit of returning cash, and here incentives are aligned: the families receive 58% of any special distribution, which makes it more likely to happen. The deal also shows the families are open to bold portfolio moves and to outside capital, something the market had not assumed.</p>
-<p style="margin:0">On the other side, a takeover premium is unlikely, minority shareholders have little say on the use of the cash that remains (MM mentions strategic opportunities as well as debt repayment), and a 42% free float on a EUR 1.5bn company limits liquidity.</p>
+<p style="margin:0">On the other side, a takeover premium is unlikely, minority shareholders have little say on the use of the cash that remains (MM mentions strategic opportunities as well as debt repayment), and a 42% free float on a EUR 1.5bn company limits liquidity: about EUR 2.2m traded a day on average over the last 15 trading days.</p>
 </div>
 '''
 
@@ -211,7 +211,7 @@ P6 = f'''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
 <h2 style="margin-top:8px">Sources</h2>
 <p class="small" style="margin-bottom:2px">Mayr-Melnhof Karton AG: investor presentation and press release of 9 November 2026 (sale of a majority stake in the Packaging business to KPS Capital Partners and planned special distribution); Trading Statement for the first three quarters of 2026, 5 November 2026; shareholder structure, company website.</p>
-<p class="small">Syz Research, Bloomberg (prices, moving average, consensus earnings and forward P/E as of the close on {DATE}). Syz calculation: sum of the parts, implied equity value and debt of the new Packaging holding, implied value of Board &amp; Paper.</p>
+<p class="small">Syz Research, Bloomberg (prices, traded volumes, moving average, consensus earnings and forward P/E as of the close on {DATE}). Syz calculation: sum of the parts, implied equity value and debt of the new Packaging holding, implied value of Board &amp; Paper.</p>
 <h2>Important information</h2>
 {disc_html}
 '''
