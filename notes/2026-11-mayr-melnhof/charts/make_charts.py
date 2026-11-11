@@ -107,3 +107,55 @@ if __name__ == '__main__':
     rows = load(sys.argv[1]); out = sys.argv[2]
     print('P/E avg, sd:', chart_price_pe(rows, f'{out}/chart_price_pe.png'))
     print('SOTP per share:', chart_sotp(rows[-1][1], f'{out}/chart_sotp.png'))
+
+# ---- Charts built from the 9 November 2026 deal presentation (company figures, mid-points of ranges) ----
+
+def chart_bridge(out):
+    """Slide 6 cash bridge, EUR bn. Ranges shown with their mid-point and labelled with the range."""
+    steps = [('Packaging\nEV (100%)', 2.4, 'total', '2.4'),
+             ('Taxes, costs,\ncash left', -0.15, 'delta', '-0.1 to -0.2'),
+             ('MM reinvests\nfor its 30%', -0.4, 'delta', '-0.4'),
+             ('Cash to MM', 1.85, 'total', '1.8 to 1.9'),
+             ('Repay MM\nnet debt', -1.0, 'delta', '-1.0'),
+             ('Net cash\nafter closing', 0.85, 'total', '0.8 to 0.9'),
+             ('Special\ndistribution', -0.55, 'delta', '-0.5 to -0.6\nEUR 25 to 30\nper share'),
+             ('Cash kept\nby MM', 0.3, 'total', 'about 0.3\nEUR 15\nper share')]
+    fig, ax = plt.subplots(figsize=(10, 5.2), dpi=200); w = .62; level = 0
+    colors = {'Packaging\nEV (100%)': SPACE, 'Cash to MM': BLUE, 'Net cash\nafter closing': BLUE, 'Cash kept\nby MM': BLUE}
+    for i, (name, v, kind, lab) in enumerate(steps):
+        if kind == 'total':
+            ax.bar(i, v, w, color=colors[name]); top = v; level = v
+        else:
+            c = MANGO if 'Special' in name else TIGER
+            ax.bar(i, -v, w, bottom=level + v, color=c); top = level; level = level + v
+        ax.text(i, top + .05, lab, ha='center', va='bottom', fontproperties=fp(XB, 10),
+                color=SPACE if kind == 'total' else (MANGO if 'Special' in name else TIGER))
+        if i < len(steps) - 1:
+            ax.plot([i + w / 2, i + 1 - w / 2], [level, level], color=SPACE, lw=.7, ls=(0, (2, 2)))
+    ax.set_xticks(range(len(steps)), [s[0] for s in steps])
+    style(ax); ax.grid(False); ax.spines['left'].set_visible(False); ax.set_yticks([])
+    for l in ax.get_xticklabels(): l.set_fontproperties(fp(BOLD, 8.6))
+    ax.set_ylim(0, 2.75)
+    fig.savefig(out, facecolor='white', bbox_inches='tight', pad_inches=.15); plt.close(fig)
+
+def chart_two_businesses(price, out, shares=20.0):
+    """Same sales, very different price tags. 2025A company figures; Board & Paper value = Syz calculation."""
+    bp_value = (price - 42.5 - 20.0) * shares / 1000
+    data = [('2025 sales, EUR bn', 2.0, 2.0, '{:.1f}'),
+            ('2025 adjusted EBITDA, EUR m', 260, 138, '{:.0f}'),
+            ('Value, EUR bn', 2.4, bp_value, '{:.2f}'),
+            ('Value / 2025 EBITDA', 2400 / 260, bp_value * 1000 / 138, '{:.1f}x')]
+    fig, axes = plt.subplots(1, 4, figsize=(10, 4.3), dpi=200, gridspec_kw=dict(wspace=.35))
+    for ax, (title, a, b, f) in zip(axes, data):
+        ax.bar([0, 1], [a, b], .62, color=[BLUE, TIGER])
+        for x, v in ((0, a), (1, b)):
+            ax.text(x, v + max(a, b) * .03, f.format(v), ha='center', va='bottom', fontproperties=fp(XB, 12), color=[BLUE, TIGER][x])
+        ax.set_title(title, fontproperties=fp(BOLD, 9.5), color=SPACE, pad=10)
+        ax.set_ylim(0, max(a, b) * 1.25); ax.set_yticks([]); ax.set_xticks([0, 1], ['Packaging', 'Board &\nPaper'])
+        for s in ('top', 'right', 'left'): ax.spines[s].set_visible(False)
+        for l in ax.get_xticklabels(): l.set_fontproperties(fp(BOLD, 9))
+    fig.savefig(out, facecolor='white', bbox_inches='tight', pad_inches=.2); plt.close(fig)
+
+if __name__ == '__main__':
+    chart_bridge(f'{sys.argv[2]}/chart_bridge.png')
+    chart_two_businesses(load(sys.argv[1])[-1][1], f'{sys.argv[2]}/chart_two_businesses.png')

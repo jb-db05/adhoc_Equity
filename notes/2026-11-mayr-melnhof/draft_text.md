@@ -34,7 +34,7 @@ Items flagged [CHECK] must be confirmed before layout.
 Folding cartons for food, consumer brands and pharma sell on service, design and proximity to the customer. Margins are steadier, demand follows consumption rather than the paper cycle, and the pharma part keeps growing. In the first nine months of 2026, Food & Premium and Pharma & Healthcare Packaging both improved their adjusted EBITDA on a like-for-like basis. That is exactly the type of asset private equity pays for, and 9x EBITDA is a full price for it: it crystallises value the market was not paying for inside a group dominated by a cyclical mill business.
 
 **Board & Paper: the part the market is ignoring.**
-Cartonboard and kraft paper are a commodity business with heavy fixed costs. Europe has too much capacity, energy and fibre costs stay high, and customers have been destocking. Board & Paper is the main reason group operating profit fell 39% to EUR 93m over nine months, even with slightly higher volumes and utilisation. After closing, it becomes MM's core business and an independent supplier to the packaging industry, including the Packaging business it just sold. The upside is real when the cycle turns, because a mill with high fixed costs gains a lot of profit from a small rise in prices, but nobody can date that turn today.
+Cartonboard and kraft paper are a commodity business with heavy fixed costs. Europe has too much capacity, energy and fibre costs stay high, and customers have been destocking. Board & Paper is the main reason group operating profit fell 39% to EUR 93m over nine months, even with slightly higher volumes and utilisation. Packaging alone is now worth more than the whole group was valued at before the deal: EUR 2.4bn vs. a group enterprise value of EUR 2.3bn, which traded at about 6x EBITDA vs. about 9x for Packaging. After closing, it becomes MM's core business and an independent supplier to the packaging industry, including the Packaging business it just sold. The upside is real when the cycle turns, because a mill with high fixed costs gains a lot of profit from a small rise in prices, but nobody can date that turn today.
 
 ### A family company, with the trade-offs that come with it (short note)
 
@@ -103,11 +103,32 @@ The special distribution is not what makes the case; it only returns cash the ma
 
 ---
 
-## Page 3 · Charts (built from MMK Chart.xlsx)
+## Page 3 · Charts
 
-- **Chart 1 · MMK AV: what EUR 74.10 buys** (Syz calculation). Stacked bar: net cash EUR 42.5, Packaging stake EUR 20, Board & Paper EUR 11.6, next to the share price; low/high range marked. The key chart of the note.
-- **Chart 2 · MMK AV: share price and 40-week moving average**, January 2014 to today. Marks: January 2022 peak (EUR 186), 23 October 2026 low (EUR 64.10, lowest since 2014), deal announcement on 9 November 2026.
-- **Chart 3 · MMK AV: forward P/E vs. its 10-year average** (12.4x, with ±1 standard deviation band), last point 9.8x, with the EPS consensus revision from EUR 6.61 to 7.55 noted.
+- **Chart 1 · MMK AV: what EUR 74.10 buys** (Syz calculation, `charts/chart_sotp.png`). Net cash EUR 42.5, Packaging stake EUR 20, Board & Paper EUR 11.6.
+- **Chart 2 · MM: from EUR 2.4bn to the special distribution** (company figures, `charts/chart_bridge.png`). The cash bridge from slide 6 of the deal presentation.
+- **Chart 3 · Same sales, very different price tags** (`charts/chart_two_businesses.png`). Packaging vs. Board & Paper: 2025 sales (EUR 2.0bn each), 2025 adjusted EBITDA (EUR 260m vs. 138m), value (EUR 2.4bn deal value vs. EUR 0.23bn implied by the share price) and value/EBITDA (about 9x vs. 1.7x). Caption: Board & Paper figures include the remaining packaging operations in Iran and Tunisia; Packaging value is the KPS deal value, about 9x expected 2026 EBITDA.
+- **Chart 4 · MMK AV: share price, 40-week average and forward P/E vs. its 10-year average** (`charts/chart_price_pe.png`).
+
+Suggested use: Chart 2 and Chart 3 on page 1 with the deal; Chart 1 in the fiche; Chart 4 on the charts page.
+
+## Points worth keeping from the broker note (rephrased, checked, no attribution)
+
+| Point | Status | Use in the note |
+|---|---|---|
+| Packaging EV (EUR 2.4bn) exceeds MM's whole pre-deal EV | Confirmed: MM's own presentation puts the group EV at EUR 2.3bn on 6 November (EUR 1.3bn market cap, EUR 1.0bn net debt) | Strong line for page 1 |
+| MM traded at about 5x EBITDA before the deal | Use the company figure instead: about 6x, its 3-year average EV/next-year EBITDA, vs. about 9x for Packaging | Page 1 |
+| Net cash plus the 30% stake roughly equals the pre-deal market cap | Confirmed at EUR 67 (EUR 0.9bn + 0.4bn = EUR 1.3bn); at EUR 74.10 the residual is about EUR 0.23bn | Already in Chart 1 |
+| Board & Paper made an operating loss in Q3, mainly due to maintenance | Not yet confirmed from MM documents [CHECK in the Q3 report] | Only if confirmed |
+| Cartonboard price increase announced in September, effective October | [CHECK in the Q3 report or a price release] | What to watch next |
+| Average order backlog 183kt in 9M 2026 vs. 157kt in 9M 2025 | MM reports this figure [CHECK in the Q3 report]; the broker's own quarterly estimate is not used | Why it could do well, if confirmed |
+| Long-term cartonboard supply agreement with Packaging | Confirmed, slide 3 | Already in the text |
+| The family has shown it is open to third-party capital, which could extend to strategic options at group level | Our own reading, fits the family-company note | Family box |
+| Packaging margins well above the group | Use company figures: about 12% average adjusted EBITDA margin 2021 to 2025, vs. about 9% for Board & Paper | Page 1 |
+| 20.0m shares net of treasury shares | Consistent with MM's EUR 1.3bn market cap at EUR 66.80 [CHECK in the annual report] | KPI tile |
+| Board & Paper "owes most of the group's debt", "the remaining 40%", divisional EV of EUR 1.5bn, target price, rating | Dropped: unverifiable, ambiguous or broker-proprietary | Not used |
+
+New point found in the presentation: the Iran operations (sales of about EUR 60m, EBITDA of about EUR 23m) stay with MM. With the conflict involving Iran mentioned in the press, that is a small but real risk to flag in Main risks.
 
 ## Page 4 · Sources and Important information
 Sources: Mayr-Melnhof Karton AG, investor presentation and press release of 9 November 2026 (sale of a majority stake in Packaging to KPS Capital Partners) and 9-month 2026 trading update of 5 November 2026; Mayr-Melnhof, shareholder structure (company website); Syz Research, Bloomberg; Syz calculation (sum of the parts).
