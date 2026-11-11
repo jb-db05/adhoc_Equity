@@ -30,11 +30,11 @@ def load(path):
     rows = sorted(r for r in ws.iter_rows(min_row=2, values_only=True) if r[0])
     return rows
 
-def chart_price_pe(rows, out):
+def chart_price_pe(rows, out, figsize=(10, 6.6)):
     d = [r[0] for r in rows]; px = [r[1] for r in rows]; ma = [r[3] for r in rows]; pe = [r[4] for r in rows]
     last = rows[-1]; start10 = last[0] - dt.timedelta(days=3652)
     pe10 = [r[4] for r in rows if r[0] >= start10]; avg, sd = st.mean(pe10), st.pstdev(pe10)
-    fig, (a1, a2) = plt.subplots(2, 1, figsize=(10, 6.6), dpi=200, sharex=True, gridspec_kw=dict(height_ratios=[1.7, 1], hspace=.12))
+    fig, (a1, a2) = plt.subplots(2, 1, figsize=figsize, dpi=200, sharex=True, gridspec_kw=dict(height_ratios=[1.7, 1], hspace=.12))
     # price panel
     a1.plot(d, px, color=SPACE, lw=1.4, label='Share price')
     a1.plot(d, ma, color=TIGER, lw=1.4, label='40-week moving average')
@@ -50,7 +50,7 @@ def chart_price_pe(rows, out):
     a1.annotate('KPS deal\n9 Nov 2026', (deal, 150), xytext=(-6, 0), textcoords='offset points', ha='right',
                 fontproperties=fp(BOLD, 9), color=BLUE)
     tag(a1, last[0], last[1], f'{last[1]:.2f}'); tag(a1, last[0], last[3] + 9, f'{last[3]:.1f}', TIGER)
-    a1.set_ylim(35, 215); style(a1)
+    a1.set_ylim(20, 215); style(a1)
     a1.set_ylabel('EUR', fontproperties=fp(BOLD, 9), style='italic')
     leg = a1.legend(loc='upper left', frameon=False, prop=fp(BOLD, 9.5))
     for t, c in zip(leg.get_texts(), (SPACE, TIGER)): t.set_color(c)
@@ -222,3 +222,6 @@ def chart_sotp_compact(price, out, shares=20.0):
 
 if __name__ == '__main__':
     chart_sotp_compact(load(sys.argv[1])[-1][1], f'{sys.argv[2]}/chart_sotp_compact.png')
+
+if __name__ == '__main__':
+    chart_price_pe(load(sys.argv[1]), f'{sys.argv[2]}/chart_price_pe_compact.png', figsize=(10, 5.3))

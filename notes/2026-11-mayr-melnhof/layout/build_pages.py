@@ -2,7 +2,7 @@
 import re, pathlib
 HERE = pathlib.Path(__file__).parent
 DATE = '11 November 2026'
-N = 4
+N = 5
 skill = (HERE / '../../../syz-equity-note/SKILL.md').read_text()
 disc = skill.split('## 5. Important information (disclaimer, verbatim)')[1].split('## 6.')[0].strip()
 disc_html = ''.join(f'<p class="small">{p.strip()}</p>' for p in disc.split('\n\n'))
@@ -218,11 +218,43 @@ P2N = '''
 </ul></div>
 '''
 
+PF = '''
+<div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
+<h2 style="margin:8px 0 2px;font-size:20px">Mayr-Melnhof Karton AG (MMK AV)</h2>
+<div class="sub2">A cash box with a cyclical mill attached, priced as if the mill were worth almost nothing</div>
+<div class="box grid4" style="margin-top:6px">
+  <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
+  <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
+  <div><div class="kpilabel">Planned distribution</div><div class="boxvalue">EUR 25 to 30</div><div class="boxnote">per share, after closing in H1 2027</div></div>
+  <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.8x</div><div class="boxnote">10-year average 12.4x</div></div>
+</div>
+<div class="chart-title"><span>Chart 3</span> · MMK AV: share price, 40-week moving average and forward P/E</div>
+<div class="chart-sub">Weekly data since September 2014; forward P/E with its 10-year average and a band of plus or minus one standard deviation</div>
+<div class="box chartbox"><img src="../charts/chart_price_pe_compact.png" alt="Share price and P/E"></div>
+<div class="source">Source: Syz Research, Bloomberg</div>
+<div class="cols" style="margin-top:8px">
+<div>
+<h3 style="margin-top:0">What the company does</h3>
+<p>MM is the world's largest producer of recycled cartonboard outside China. After the deal it becomes a board and paper producer with about EUR 2.0bn of sales, net cash and a 30% stake in its former Packaging business.</p>
+<h3>Why it could do well</h3>
+<p>The deal turns a complex group into something simple to value. The consensus earnings estimate was raised from EUR 6.61 to EUR 7.55 per share in the week of the deal, and Board &amp; Paper would gain most from any recovery in board prices.</p>
+</div>
+<div>
+<h3 style="margin-top:0">Where the share stands</h3>
+<p>The share is still about 60% below its January 2022 peak (EUR 186) and below its 40-week average (EUR 80.2). A move back above that level could confirm the deal has changed the trend; the October low of EUR 64.10 is the level to watch on the downside. The trap would be a long downturn in board prices and cash spent on acquisitions rather than returned.</p>
+</div>
+</div>
+<div class="box conclusion" style="margin-top:4px;padding:9px 16px">
+<div class="boxlabel">Conclusion</div>
+<p style="margin:4px 0 0">After the cash and the stake, an investor buys a European board and paper business for about EUR 0.2bn at a low point of its cycle. The case suits investors with a 2027 horizon who see a recovery in board prices as an option rather than a certainty.</p>
+</div>
+'''
+
 PBP = '''
 <div class="label">Annex · Paper &amp; Packaging</div>
 <h2 style="margin-top:8px">Packaging vs. Board &amp; Paper: two markets moving apart</h2>
 <p>The third quarter, published four days before the deal, shows why a buyer wanted Packaging and why the market gives little value to Board &amp; Paper.</p>
-<div class="chart-title"><span>Chart 3</span> · MM: quarterly adjusted EBITDA by business</div>
+<div class="chart-title"><span>Chart 4</span> · MM: quarterly adjusted EBITDA by business</div>
 <div class="chart-sub">EUR m. Packaging: Food &amp; Premium (excluding the TANN business sold in 2025) plus Pharma &amp; Healthcare. Hatched: Q3 2026 maintenance costs</div>
 <div class="box chartbox"><img src="../charts/chart_quarterly.png" alt="Quarterly EBITDA"></div>
 <div class="source">Source: Mayr-Melnhof, Trading Statement for the first three quarters of 2026 (5 November 2026); Syz Research</div>
@@ -257,6 +289,6 @@ P6 = f'''
 {disc_html}
 '''
 
-for n, (body, cover) in enumerate([(P1, True), (P2N, False), (PBP, False), (P6, False)], 1):
+for n, (body, cover) in enumerate([(P1, True), (P2N, False), (PF, False), (PBP, False), (P6, False)], 1):
     (HERE / f'page{n}.html').write_text(page(n, body, cover))
 print('ok')
