@@ -21,9 +21,9 @@ Items flagged [CHECK] must be confirmed before layout.
 | Buyer | KPS Capital Partners (US private equity) |
 | What is sold | 70% of MM Packaging (folding cartons, food, premium and pharma packaging) |
 | Enterprise value | EUR 2.4bn, about 9x the 2026 EBITDA expected for Packaging |
-| What MM keeps | 30% of the new Packaging holding, an investment of about EUR 0.4bn |
-| Cash to MM | EUR 1.8 to 1.9bn, net of that reinvestment |
-| After closing | Net cash of about EUR 0.8 to 0.9bn [CHECK: before or after the special distribution] |
+| What MM keeps | 30% of the new Packaging holding, for which MM itself invests about EUR 0.4bn |
+| Cash to MM | EUR 1.8 to 1.9bn: EUR 2.4bn, less EUR 0.1 to 0.2bn of deductions (cash transferred, taxes, separation costs) and the EUR 0.4bn reinvestment |
+| After closing | Net cash of about EUR 0.8 to 0.9bn after repaying about EUR 1.0bn of existing net debt, before the special distribution; about EUR 0.3bn is retained afterwards |
 | Special distribution | EUR 0.5 to 0.6bn planned after closing, about EUR 25 to 30 per share, 34 to 40% of today's price |
 | Timing | Closing expected in H1 2027, subject to approvals |
 | Adjustment | MM's 30% can fall to as low as 20% if Packaging misses agreed 2027 earnings targets, with no extra payment from KPS |
@@ -80,7 +80,9 @@ The price tag on Packaging comes from a real transaction, not from an analyst's 
 | In EUR bn | 0.28 | 0.23 | 0.18 |
 
 Method: net cash guided by MM after closing plus the 30% stake at the price MM is reinvesting, divided by 20m shares; the remainder is what the market pays for Board & Paper. Cash and stake explain 84% of the share price. The stock trades at 9.8x forward earnings vs. a 10-year average of 12.4x, and is still 60% below its January 2022 peak (EUR 186).
-[CHECK] If the EUR 0.8 to 0.9bn net cash is already *after* the special distribution, the cash per share is higher by EUR 25 to 30 and Board & Paper is valued at below zero. The transcript of the 10 November call settles this.
+The deal presentation confirms the net cash is measured before the special distribution (EUR 0.5 to 0.6bn paid out, about EUR 0.3bn retained), so the calculation holds. On 2025 adjusted EBITDA of EUR 138m (Board & Paper and remaining packaging operations), EUR 0.23bn is less than 2x EBITDA, for a business that averaged a 9% EBITDA margin over 2021 to 2025.
+
+The EUR 0.4bn for 30% is not 30% of EUR 2.4bn (EUR 0.72bn): it implies about EUR 1.3bn of equity for 100%, so the new holding would carry about EUR 1.0 to 1.1bn of debt (Syz calculation). MM's stake is leveraged equity: more upside if KPS executes, more downside if it does not.
 
 **5. Main risks**
 - Amount, timing and form of the distribution are not locked: approvals, the tax bill on the disposal and M&A ambitions can all reduce it.
@@ -108,7 +110,7 @@ The special distribution is not what makes the case; it only returns cash the ma
 - **Chart 3 · MMK AV: forward P/E vs. its 10-year average** (12.4x, with ±1 standard deviation band), last point 9.8x, with the EPS consensus revision from EUR 6.61 to 7.55 noted.
 
 ## Page 4 · Sources and Important information
-Sources: Mayr-Melnhof Karton AG, press release of 9 November 2026 (sale of a majority stake in Packaging to KPS Capital Partners) and 9-month 2026 trading update of 5 November 2026; Mayr-Melnhof, shareholder structure (company website); Syz Research, Bloomberg; Syz calculation (sum of the parts).
+Sources: Mayr-Melnhof Karton AG, investor presentation and press release of 9 November 2026 (sale of a majority stake in Packaging to KPS Capital Partners) and 9-month 2026 trading update of 5 November 2026; Mayr-Melnhof, shareholder structure (company website); Syz Research, Bloomberg; Syz calculation (sum of the parts).
 Disclaimer: verbatim from the skill.
 
 ---
@@ -116,4 +118,4 @@ Disclaimer: verbatim from the skill.
 ## Corrected or dropped from the earlier draft
 - **AlphaValue valuation of Board & Paper (EUR 1.5bn): dropped.** House rule: no broker names or broker valuations.
 - **"Board & Paper is loss-making today": softened.** Public sources confirm weaker Board & Paper earnings and a 39% fall in group operating profit over nine months, not a divisional loss. Keep "loss-making" only if the 9-month report or the call confirms it.
-- **Net cash before or after the special distribution: still open.** It changes the conclusion (see page 2), so it must be settled before publication.
+- **Net cash before or after the special distribution: settled** by the 9 November presentation (page 6): before. About EUR 0.3bn is retained after the payout.
