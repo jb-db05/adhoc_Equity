@@ -24,13 +24,13 @@ P1 = f'''
 Prices are as of the close on {DATE}. The special distribution is planned, not approved: its amount, timing and form depend on the closing of the transaction, expected in H1 2027.</div>
 
 <h2>A deal that splits the group in two</h2>
-<p>On 9 November, Mayr-Melnhof (MM) agreed to sell 70% of its Packaging business to the US private equity firm KPS Capital Partners and announced a special distribution to shareholders. The share rose 11% over the week to EUR 74.10, still close to its 23 October low (EUR 64.10), the lowest since at least 2014. Does the market price the distribution? It prices the cash. What it barely prices is the business that remains.</p>
+<p>On 9 November, Mayr-Melnhof (MM) agreed to sell 70% of its Packaging business to the US private equity firm KPS Capital Partners and announced a special distribution to shareholders. The share rose 10% over the week to EUR 73.40, still close to its 23 October low (EUR 64.10), the lowest since at least 2014. Does the market price the distribution? It prices the cash. What it barely prices is the business that remains.</p>
 
 <div class="box grid4 two-rows">
   <div><div class="kpilabel">Enterprise value</div><div class="boxvalue">EUR 2.4bn</div><div class="boxnote">100% of Packaging, about 9x 2026 EBITDA</div></div>
   <div><div class="kpilabel">MM keeps</div><div class="boxvalue">30%</div><div class="boxnote">of the new holding, for about EUR 0.4bn</div></div>
   <div><div class="kpilabel">Cash to MM</div><div class="boxvalue">EUR 1.8 to 1.9bn</div><div class="boxnote">after costs, taxes and reinvestment</div></div>
-  <div><div class="kpilabel">Special distribution</div><div class="boxvalue">EUR 0.5 to 0.6bn</div><div class="boxnote">EUR 25 to 30 a share, 34 to 40% of the price</div></div>
+  <div><div class="kpilabel">Special distribution</div><div class="boxvalue">EUR 0.5 to 0.6bn</div><div class="boxnote">EUR 25 to 30 a share, 34 to 41% of the price</div></div>
   <div><div class="kpilabel">Net cash after closing</div><div class="boxvalue">EUR 0.8 to 0.9bn</div><div class="boxnote">before the distribution; EUR 0.3bn kept after</div></div>
   <div><div class="kpilabel">Closing</div><div class="boxvalue">H1 2027</div><div class="boxnote">subject to approvals</div></div>
   <div><div class="kpilabel">Adjustment</div><div class="boxvalue">30% to 20%</div><div class="boxnote">if 2027 EBITDA targets are missed</div></div>
@@ -52,7 +52,7 @@ Prices are as of the close on {DATE}. The special distribution is planned, not a
 <div class="boxlabel">What this means for investors</div>
 <ul style="margin-top:5px">
 <li>The special distribution is real, but it is not free money: it is cash that will already sit on the balance sheet, and the share price would fall by the same amount on the ex-date.</li>
-<li>What the market does not price is what remains after the cash and the stake: at EUR 74.10, Board &amp; Paper is valued at about EUR 0.23bn, less than 2x its 2025 EBITDA (page 2).</li>
+<li>What the market does not price is what remains after the cash and the stake: at EUR 73.40, Board &amp; Paper is valued at about EUR 0.22bn, less than 2x its 2025 EBITDA (page 2).</li>
 <li>The case suits investors comfortable with a family-owned small cap and a 2027 horizon: the free float is 42%, about EUR 2.2m trades a day, and the amount, timing and form of the payout are not locked.</li>
 </ul></div>
 '''
@@ -69,7 +69,7 @@ P2 = '''
 <div class="chart-title"><span>Chart 2</span> · Same sales, very different price tags</div>
 <div class="chart-sub">Packaging vs. Board &amp; Paper: 2025 sales and adjusted EBITDA, value and value/EBITDA</div>
 <div class="box chartbox"><img src="../charts/chart_two_businesses.png" alt="Packaging vs Board and Paper"></div>
-<div class="source">Packaging value: KPS deal value. Board &amp; Paper value: implied by the share price at EUR 74.10 (Syz calculation). Board &amp; Paper figures include the remaining packaging operations in Iran and Tunisia. Source: Mayr-Melnhof, investor presentation of 9 November 2026; Syz Research, Bloomberg</div>
+<div class="source">Packaging value: KPS deal value. Board &amp; Paper value: implied by the share price at EUR 73.40 (Syz calculation). Board &amp; Paper figures include the remaining packaging operations in Iran and Tunisia. Source: Mayr-Melnhof, investor presentation of 9 November 2026; Syz Research, Bloomberg</div>
 
 '''
 
@@ -78,21 +78,21 @@ P3 = '''
 <h2 style="margin:8px 0 2px;font-size:20px">Mayr-Melnhof Karton AG (MMK AV)</h2>
 <div class="sub2">A cash box with a cyclical mill attached: a cheap option on the board cycle</div>
 <div class="box grid4" style="margin-top:6px">
-  <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
+  <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 73.40</div><div class="boxnote pos">+9.9% over the week</div></div>
   <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
   <div><div class="kpilabel">Planned distribution</div><div class="boxvalue">EUR 25 to 30</div><div class="boxnote">per share, after closing in H1 2027</div></div>
-  <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.8x</div><div class="boxnote">10-year average 12.4x</div></div>
+  <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.7x</div><div class="boxnote">10-year average 12.4x</div></div>
 </div>
 <div class="cols" style="margin-top:4px">
 <div>
 <h3>1. What the company does</h3>
 <p>MM is the world's largest producer of recycled cartonboard outside China and, until this deal, one of Europe's largest folding carton makers. After the deal it becomes a board and paper producer with seven sites, about EUR 2.0bn of sales, net cash and a 30% stake in its former Packaging business.</p>
 <h3>2. Why it could do well</h3>
-<p>The deal turns a complex group into something simple to value: cash, a stake priced by a private equity buyer, and a mill business. The special distribution would return 34 to 40% of today's share price, and the consensus earnings estimate for the next twelve months was raised from EUR 6.61 to EUR 7.55 per share in the week of the deal.</p>
+<p>The deal turns a complex group into something simple to value: cash, a stake priced by a private equity buyer, and a mill business. The special distribution would return 34 to 41% of today's share price, and the consensus earnings estimate for the next twelve months was raised from EUR 6.61 to EUR 7.55 per share in the week of the deal.</p>
 <h3>3. What sets it apart</h3>
 <p>The value of Packaging comes from a real transaction, not from a model, and MM keeps a share of the upside. Few European small caps go from net debt of about EUR 1.0bn to net cash in one step, and the supply contract with Packaging gives Board &amp; Paper a stable outlet.</p>
 <h3>4. Cheap, or a value trap?</h3>
-<p>Net cash and the stake explain about 84% of the share price (page 5). The remaining EUR 12 per share values Board &amp; Paper at less than 2x its 2025 EBITDA of EUR 138m, a business that averaged a 9% EBITDA margin over 2021 to 2025. Even on the depressed last twelve months (divisional EBITDA of about EUR 67m), the multiple stays below 4x. The trap would be a downturn long enough to keep the division loss-making, and cash spent on acquisitions instead of being returned.</p>
+<p>Net cash and the stake explain about 85% of the share price (page 5). The remaining EUR 11 per share values Board &amp; Paper at less than 2x its 2025 EBITDA of EUR 138m, a business that averaged a 9% EBITDA margin over 2021 to 2025. Even on the depressed last twelve months (divisional EBITDA of about EUR 67m), the multiple stays below 4x. The trap would be a downturn long enough to keep the division loss-making, and cash spent on acquisitions instead of being returned.</p>
 </div>
 <div>
 <h3>5. Main risks</h3>
@@ -122,7 +122,7 @@ P3 = '''
 P4 = '''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
 <h2 style="margin:10px 0 4px">Is the share cheap?</h2>
-<div class="chart-title"><span>Chart 4</span> · MMK AV: what EUR 74.10 buys</div>
+<div class="chart-title"><span>Chart 4</span> · MMK AV: what EUR 73.40 buys</div>
 <div class="chart-sub">Sum of the parts, EUR per share, mid-point of the company's net cash range (Syz calculation)</div>
 <div class="box chartbox"><img src="../charts/chart_sotp.png" alt="Sum of the parts"></div>
 <div class="source">Source: Mayr-Melnhof, investor presentation of 9 November 2026; Syz Research, Bloomberg</div>
@@ -134,12 +134,12 @@ P4 = '''
 <tr><td>Net cash after closing</td><td>40.0</td><td>42.5</td><td>45.0</td></tr>
 <tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
 <tr class="total"><td>Cash and stake</td><td>60.0</td><td>62.5</td><td>65.0</td></tr>
-<tr><td>Share price</td><td>74.10</td><td>74.10</td><td>74.10</td></tr>
-<tr class="total"><td>Implied Board &amp; Paper</td><td>14.1</td><td>11.6</td><td>9.1</td></tr>
-<tr><td>In EUR bn</td><td>0.28</td><td>0.23</td><td>0.18</td></tr>
-<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
-<tr><td>Times last 12 months (EUR 67m)</td><td>4.2x</td><td>3.5x</td><td>2.7x</td></tr>
-<tr><td>Times normalised (about EUR 170m)</td><td>1.7x</td><td>1.4x</td><td>1.1x</td></tr>
+<tr><td>Share price</td><td>73.40</td><td>73.40</td><td>73.40</td></tr>
+<tr class="total"><td>Implied Board &amp; Paper</td><td>13.4</td><td>10.9</td><td>8.4</td></tr>
+<tr><td>In EUR bn</td><td>0.27</td><td>0.22</td><td>0.17</td></tr>
+<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>1.9x</td><td>1.6x</td><td>1.2x</td></tr>
+<tr><td>Times last 12 months (EUR 67m)</td><td>4.0x</td><td>3.3x</td><td>2.5x</td></tr>
+<tr><td>Times normalised (about EUR 170m)</td><td>1.6x</td><td>1.3x</td><td>1.0x</td></tr>
 </table>
 <p class="small">Method: net cash guided by MM after closing (EUR 0.8 to 0.9bn, before the special distribution), plus the 30% stake at the EUR 0.4bn MM is investing, divided by 20m shares. The remainder is what the share price implies for Board &amp; Paper. If the stake is cut to 20%, its value falls by about EUR 7 per share.</p>
 </div>
@@ -164,11 +164,11 @@ P5 = '''
 <div class="cols" style="margin-top:12px">
 <div>
 <h3 style="margin-top:0">A long decline, a first rebound</h3>
-<p>The share fell about 60% from its January 2022 peak of EUR 186, as the end of post-Covid destocking, higher energy costs and weak demand hit board prices and earnings. The deal triggered the first sharp rebound in months, from EUR 66.80 to EUR 74.10 in a week.</p>
+<p>The share fell about 60% from its January 2022 peak of EUR 186, as the end of post-Covid destocking, higher energy costs and weak demand hit board prices and earnings. The deal triggered the first sharp rebound in months, from EUR 66.80 to EUR 73.40 in a week.</p>
 </div>
 <div>
 <h3 style="margin-top:0">Levels to watch</h3>
-<p>The share is still below its 40-week moving average (EUR 80.2). A move back above that level could confirm that the deal has changed the trend; the October low of EUR 64.10 is the level to watch on the downside. At 9.8x, the forward P/E sits just below the lower end of its usual range, more than one standard deviation under its 10-year average of 12.4x.</p>
+<p>The share is still below its 40-week moving average (EUR 80.2). A move back above that level could confirm that the deal has changed the trend; the October low of EUR 64.10 is the level to watch on the downside. At 9.7x, the forward P/E sits just below the lower end of its usual range, more than one standard deviation under its 10-year average of 12.4x.</p>
 </div>
 </div>
 
@@ -191,7 +191,7 @@ P2N = '''
 <h2 style="margin:10px 0 4px">Is the share cheap?</h2>
 <div class="cols" style="column-gap:24px">
 <div>
-<div class="chart-title" style="margin-top:0"><span>Chart 2</span> · What EUR 74.10 buys</div>
+<div class="chart-title" style="margin-top:0"><span>Chart 2</span> · What EUR 73.40 buys</div>
 <div class="chart-sub">EUR per share; net cash includes the EUR 25 to 30 distribution</div>
 <div class="box chartbox" style="padding:6px 8px"><img src="../charts/chart_sotp_compact.png" alt="Sum of the parts"></div>
 <div class="source">Source: Mayr-Melnhof; Syz Research, Bloomberg</div>
@@ -203,10 +203,10 @@ P2N = '''
 <tr><td>Net cash after closing</td><td>40.0</td><td>42.5</td><td>45.0</td></tr>
 <tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
 <tr class="total"><td>Cash and stake</td><td>60.0</td><td>62.5</td><td>65.0</td></tr>
-<tr class="total"><td>Implied Board &amp; Paper</td><td>14.1</td><td>11.6</td><td>9.1</td></tr>
-<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
-<tr><td>Times last 12 months (EUR 67m)</td><td>4.2x</td><td>3.5x</td><td>2.7x</td></tr>
-<tr><td>Times normalised (about EUR 170m)</td><td>1.7x</td><td>1.4x</td><td>1.1x</td></tr>
+<tr class="total"><td>Implied Board &amp; Paper</td><td>13.4</td><td>10.9</td><td>8.4</td></tr>
+<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>1.9x</td><td>1.6x</td><td>1.2x</td></tr>
+<tr><td>Times last 12 months (EUR 67m)</td><td>4.0x</td><td>3.3x</td><td>2.5x</td></tr>
+<tr><td>Times normalised (about EUR 170m)</td><td>1.6x</td><td>1.3x</td><td>1.0x</td></tr>
 </table>
 <p class="small" style="margin-bottom:0">The Board &amp; Paper figure is an enterprise value: net cash is after repaying all group debt, so no debt is left to add. Pension and similar provisions are not deducted; each EUR 100m would cost about EUR 5 per share. Normalised: 9% average 2021 to 2025 margin on about EUR 1.9bn of sales. KPS pays about 9x for Packaging. The distribution is paid from cash already in the price.</p>
 
@@ -227,10 +227,10 @@ PF = '''
 <h2 style="margin:8px 0 2px;font-size:20px">Mayr-Melnhof Karton AG (MMK AV)</h2>
 <div class="sub2">A cash box with a cyclical mill attached: a cheap option on the board cycle</div>
 <div class="box grid4" style="margin-top:6px">
-  <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
+  <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 73.40</div><div class="boxnote pos">+9.9% over the week</div></div>
   <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
   <div><div class="kpilabel">Planned distribution</div><div class="boxvalue">EUR 25 to 30</div><div class="boxnote">per share, after closing in H1 2027</div></div>
-  <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.8x</div><div class="boxnote">10-year average 12.4x</div></div>
+  <div><div class="kpilabel">Forward P/E</div><div class="boxvalue">9.7x</div><div class="boxnote">10-year average 12.4x</div></div>
 </div>
 <div class="chart-title"><span>Chart 3</span> · MMK AV: share price, 40-week moving average and forward P/E</div>
 <div class="chart-sub">Weekly data since September 2014; forward P/E with its 10-year average and a band of plus or minus one standard deviation</div>
