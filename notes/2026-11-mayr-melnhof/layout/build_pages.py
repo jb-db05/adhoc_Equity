@@ -52,7 +52,7 @@ Prices are as of the close on {DATE}. The special distribution is planned, not a
 <div class="boxlabel">What this means for investors</div>
 <ul style="margin-top:5px">
 <li>The special distribution is real, but it is not free money: it is cash that will already sit on the balance sheet, and the share price would fall by the same amount on the ex-date.</li>
-<li>What the market does not price is what remains after the cash and the stake: at EUR 74.10, Board &amp; Paper is valued at about EUR 0.23bn, less than 2x its 2025 EBITDA (Syz calculation, page 2).</li>
+<li>What the market does not price is what remains after the cash and the stake: at EUR 74.10, Board &amp; Paper is valued at about EUR 0.23bn, less than 2x its 2025 EBITDA (page 2).</li>
 <li>The case suits investors comfortable with a family-owned small cap and a 2027 horizon: the free float is 42%, about EUR 2.2m trades a day, and the amount, timing and form of the payout are not locked.</li>
 </ul></div>
 '''
@@ -129,7 +129,7 @@ P4 = '''
 <div class="cols" style="margin-top:10px">
 <div>
 <table class="compact">
-<caption>Sum of the parts (Syz calculation)</caption>
+<caption>Sum of the parts</caption>
 <tr><th>EUR per share</th><th>Low</th><th>Mid</th><th>High</th></tr>
 <tr><td>Net cash after closing</td><td>40.0</td><td>42.5</td><td>45.0</td></tr>
 <tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
@@ -186,7 +186,7 @@ P2N = '''
 <div class="chart-sub">Expected cash proceeds from the transaction, EUR bn, rounded as published by the company</div>
 <div class="box chartbox"><img src="../charts/chart_bridge.png" alt="Cash bridge"></div>
 <div class="source">Source: Mayr-Melnhof, investor presentation of 9 November 2026; Syz Research</div>
-<p style="margin:6px 0 0">The EUR 0.4bn is what MM invests to keep 30%. It is below 30% of EUR 2.4bn because the new holding will carry about EUR 1.0bn of debt (Syz calculation): the stake is leveraged equity.</p>
+<p style="margin:6px 0 0">The EUR 0.4bn is what MM invests to keep 30%. It is below 30% of EUR 2.4bn because the new holding will carry about EUR 1.0bn of debt: the stake is leveraged equity.</p>
 
 <h2 style="margin:10px 0 4px">Is the share cheap?</h2>
 <div class="cols" style="column-gap:24px">
@@ -198,7 +198,7 @@ P2N = '''
 </div>
 <div>
 <table class="compact" style="margin-top:0">
-<caption>Sum of the parts (Syz calculation)</caption>
+<caption>Sum of the parts</caption>
 <tr><th>EUR per share</th><th>Low</th><th>Mid</th><th>High</th></tr>
 <tr><td>Net cash after closing</td><td>40.0</td><td>42.5</td><td>45.0</td></tr>
 <tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
