@@ -120,7 +120,7 @@ def chart_bridge(out):
              ('Net cash\nafter closing', 0.85, 'total', '0.8 to 0.9'),
              ('Special\ndistribution', -0.55, 'delta', '-0.5 to -0.6\nEUR 25 to 30\nper share'),
              ('Cash kept\nby MM', 0.3, 'total', 'about 0.3\nEUR 15\nper share')]
-    fig, ax = plt.subplots(figsize=(10, 3.0), dpi=200); w = .62; level = 0
+    fig, ax = plt.subplots(figsize=(10, 2.75), dpi=200); w = .62; level = 0
     colors = {'Packaging\nEV (100%)': SPACE, 'Cash to MM': BLUE, 'Net cash\nafter closing': BLUE, 'Cash kept\nby MM': BLUE}
     for i, (name, v, kind, lab) in enumerate(steps):
         if kind == 'total':
@@ -202,7 +202,7 @@ if __name__ == '__main__':
 def chart_sotp_compact(price, out, shares=20.0):
     """Half-width version of the sum of the parts for the 4-page note."""
     nc, st_ = 42.5, 20.0; bp = price - nc - st_
-    fig, ax = plt.subplots(figsize=(5.4, 4.3), dpi=200); w = .62; xs = [0, 1, 2, 3.15]
+    fig, ax = plt.subplots(figsize=(5.4, 3.8), dpi=200); w = .62; xs = [0, 1, 2, 3.15]
     ax.bar(xs[0], nc, w, color=SPACE); ax.bar(xs[1], st_, w, bottom=nc, color=BLUE)
     ax.bar(xs[2], bp, w, bottom=nc + st_, color=TIGER); ax.bar(xs[3], price, w, color='white', edgecolor=SPACE, lw=1.6)
     for a, b, y in ((0, 1, nc), (1, 2, nc + st_), (2, 3, price)):

@@ -2,7 +2,7 @@
 import re, pathlib
 HERE = pathlib.Path(__file__).parent
 DATE = '11 November 2026'
-N = 5
+N = 4
 skill = (HERE / '../../../syz-equity-note/SKILL.md').read_text()
 disc = skill.split('## 5. Important information (disclaimer, verbatim)')[1].split('## 6.')[0].strip()
 disc_html = ''.join(f'<p class="small">{p.strip()}</p>' for p in disc.split('\n\n'))
@@ -18,7 +18,7 @@ def page(n, body, cover=False):
 
 P1 = f'''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
-<h1 class="headline">Mayr-Melnhof: the cash is priced, the rest is almost free</h1>
+<h1 class="headline">Mayr-Melnhof: the cash is priced, the rest comes cheap</h1>
 <div class="sub1">{DATE} · Syz Research</div>
 <div class="box notice"><span class="boxlabel">Important notice</span><br>
 Prices are as of the close on {DATE}. The special distribution is planned, not approved: its amount, timing and form depend on the closing of the transaction, expected in H1 2027.</div>
@@ -76,7 +76,7 @@ P2 = '''
 P3 = '''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
 <h2 style="margin:8px 0 2px;font-size:20px">Mayr-Melnhof Karton AG (MMK AV)</h2>
-<div class="sub2">A cash box with a cyclical mill attached, priced as if the mill were worth almost nothing</div>
+<div class="sub2">A cash box with a cyclical mill attached: a cheap option on the board cycle</div>
 <div class="box grid4" style="margin-top:6px">
   <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
   <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
@@ -137,7 +137,9 @@ P4 = '''
 <tr><td>Share price</td><td>74.10</td><td>74.10</td><td>74.10</td></tr>
 <tr class="total"><td>Implied Board &amp; Paper</td><td>14.1</td><td>11.6</td><td>9.1</td></tr>
 <tr><td>In EUR bn</td><td>0.28</td><td>0.23</td><td>0.18</td></tr>
-<tr><td>Times 2025 EBITDA</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
+<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
+<tr><td>Times last 12 months (EUR 67m)</td><td>4.2x</td><td>3.5x</td><td>2.7x</td></tr>
+<tr><td>Times normalised (about EUR 170m)</td><td>1.7x</td><td>1.4x</td><td>1.1x</td></tr>
 </table>
 <p class="small">Method: net cash guided by MM after closing (EUR 0.8 to 0.9bn, before the special distribution), plus the 30% stake at the EUR 0.4bn MM is investing, divided by 20m shares. The remainder is what the share price implies for Board &amp; Paper. If the stake is cut to 20%, its value falls by about EUR 7 per share.</p>
 </div>
@@ -202,18 +204,20 @@ P2N = '''
 <tr><td>30% stake in Packaging</td><td>20.0</td><td>20.0</td><td>20.0</td></tr>
 <tr class="total"><td>Cash and stake</td><td>60.0</td><td>62.5</td><td>65.0</td></tr>
 <tr class="total"><td>Implied Board &amp; Paper</td><td>14.1</td><td>11.6</td><td>9.1</td></tr>
-<tr><td>Times 2025 EBITDA</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
+<tr><td>Times 2025 EBITDA (EUR 138m)</td><td>2.0x</td><td>1.7x</td><td>1.3x</td></tr>
+<tr><td>Times last 12 months (EUR 67m)</td><td>4.2x</td><td>3.5x</td><td>2.7x</td></tr>
+<tr><td>Times normalised (about EUR 170m)</td><td>1.7x</td><td>1.4x</td><td>1.1x</td></tr>
 </table>
-<p class="small">Net cash of EUR 0.8 to 0.9bn after closing (before the distribution) plus the stake at the EUR 0.4bn MM invests, over 20m shares. KPS pays about 9x EBITDA for Packaging; the share price values Board &amp; Paper at under 2x, and below 4x even on the depressed last twelve months. The distribution itself is not the opportunity: it is paid from cash already in the price.</p>
+<p class="small" style="margin-bottom:0">The Board &amp; Paper figure is an enterprise value: net cash is after repaying all group debt, so no debt is left to add. Pension and similar provisions are not deducted; each EUR 100m would cost about EUR 5 per share. Normalised: 9% average 2021 to 2025 margin on about EUR 1.9bn of sales. KPS pays about 9x for Packaging. The distribution is paid from cash already in the price.</p>
 
 </div>
 </div>
 <div class="box" style="margin-top:8px;padding:9px 16px">
 <div class="boxlabel">Risks and what to watch</div>
 <ul class="small" style="margin:4px 0 0">
-<li><b>Payout not locked:</b> approvals, the tax bill and acquisitions (the planned Arnsberg mill) could reduce or delay it.</li>
-<li><b>Stake can shrink to 20%</b> if Packaging misses its 2027 EBITDA targets, about EUR 7 per share.</li>
-<li><b>Board &amp; Paper</b> is loss-making at operating level; higher prices and orders are early signs of a turn (annex).</li>
+<li><b>Payout not locked:</b> approvals and the tax bill could reduce or delay it; the planned Arnsberg mill would likely use part of the EUR 0.3bn kept.</li>
+<li><b>The 30% stake</b> is a leveraged minority in a KPS-controlled holding, valued here at cost; it falls to 20% (about EUR 7 per share) if 2027 targets are missed.</li>
+<li><b>Board &amp; Paper</b> is loss-making at operating level; its capex and free cash flow are not published, nor are the terms of the supply contract with KPS. Price increases since October and a higher order book are early signs of a turn.</li>
 <li><b>Swiss investors:</b> a dividend bears 27.5% Austrian withholding tax, 15% after the treaty reclaim; the form of the payout is still open.</li>
 </ul></div>
 '''
@@ -221,7 +225,7 @@ P2N = '''
 PF = '''
 <div class="label">Ad-hoc opinion · Paper &amp; Packaging</div>
 <h2 style="margin:8px 0 2px;font-size:20px">Mayr-Melnhof Karton AG (MMK AV)</h2>
-<div class="sub2">A cash box with a cyclical mill attached, priced as if the mill were worth almost nothing</div>
+<div class="sub2">A cash box with a cyclical mill attached: a cheap option on the board cycle</div>
 <div class="box grid4" style="margin-top:6px">
   <div><div class="kpilabel">Share price</div><div class="boxvalue">EUR 74.10</div><div class="boxnote pos">+10.9% over the week</div></div>
   <div><div class="kpilabel">Market cap</div><div class="boxvalue">EUR 1.5bn</div><div class="boxnote">20m shares, 42% free float</div></div>
@@ -246,7 +250,7 @@ PF = '''
 </div>
 <div class="box conclusion" style="margin-top:4px;padding:9px 16px">
 <div class="boxlabel">Conclusion</div>
-<p style="margin:4px 0 0">After the cash and the stake, an investor buys a European board and paper business for about EUR 0.2bn at a low point of its cycle. The case suits investors with a 2027 horizon who see a recovery in board prices as an option rather than a certainty.</p>
+<p style="margin:4px 0 0">After the cash and the stake, an investor buys a European board and paper business for about EUR 0.2bn at a low point of its cycle: not a free asset, but a cheap option on a recovery. The case suits investors with a 2027 horizon who see a recovery in board prices as an option rather than a certainty.</p>
 </div>
 '''
 
@@ -289,6 +293,7 @@ P6 = f'''
 {disc_html}
 '''
 
-for n, (body, cover) in enumerate([(P1, True), (P2N, False), (PF, False), (PBP, False), (P6, False)], 1):
+PAGES = [(P1, True), (P2N, False), (PF, False), (P6, False)]
+for n, (body, cover) in enumerate(PAGES, 1):
     (HERE / f'page{n}.html').write_text(page(n, body, cover))
 print('ok')
