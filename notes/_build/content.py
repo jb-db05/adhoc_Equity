@@ -149,9 +149,10 @@ NOTES = {
     'reshaping its portfolio: the coffee sale removes a slower business and reduces debt, and the USD 700m investment level '
     'is planned to continue in 2027.'),
    ('Cheap, or a value trap?',
-    'With a market value of USD 28.7bn and net debt of about USD 17.5bn, the enterprise value is around 7.9 times FY2025 '
-    'adjusted EBITDA of USD 5.85bn, and leverage is about 3 times (Syz calculation). This is a low multiple for brands of '
-    'this quality, but it reflects falling volumes: the share is cheap only if the investment brings volumes back.'),
+    'The market value is USD 28.7bn, against FY2025 adjusted EBITDA of USD 5.85bn, a 23.5% margin. Net debt stood at 3.3 '
+    'times EBITDA at the end of the third quarter of 2026, a level that leaves limited room for error. The valuation is '
+    'low for brands of this quality, but it reflects falling volumes: the share is cheap only if the investment brings '
+    'volumes back.'),
    ('Main risks',
     'North American volumes have been falling for several years; organic sales fell 1.1% in the third quarter, and 3.2% in '
     'North America. Cost inflation is expected slightly above 5% in 2027, which would require price increases that could '
