@@ -55,14 +55,8 @@ NOTES = {
   conclusion=('Imperial Brands could suit an investor looking for income and buybacks from a defensive sector. The share offers '
               'a high cash yield but limited growth, as the next-generation business is not yet large enough to change the '
               'picture. The FY2026 results will show whether the five-year plan is on track.'),
-  sources=[
-   'Syz Research, Bloomberg; AlphaSense (market data as of 12 November 2026).',
-   'Imperial Brands, pre-close trading update, 8 October 2026.',
-   'Imperial Brands, interim results for the six months ended 31 March 2026.',
-   'Imperial Brands, acquisition of Black Buffalo, May 2026; acquisition of Yoik Group AB, September 2026.',
-   'Syz calculation: free cash flow yield = FY2026 free cash flow guidance / market capitalisation; '
-   'buyback yield = FY2027 buyback / market capitalisation.',
-  ]),
+  short='Imperial Brands',
+  sources=['Syz Research, Bloomberg, Imperial Brands.']),
 
  'prudential': dict(
   sector='Insurance',
@@ -115,12 +109,8 @@ NOTES = {
   conclusion=('Prudential could suit an investor seeking long-term exposure to Asian growth through a single stock. The China '
               'setback is real but limited, and the rest of the group is growing at a double-digit rate. The full-year results '
               'will show whether the 2027 targets remain within reach.'),
-  sources=[
-   'Syz Research, Bloomberg; AlphaSense (market data as of 12 November 2026).',
-   'Prudential plc, Q3 2026 business performance update, 5 November 2026.',
-   'Prudential plc, 2026 half year results and half year financial report, 27 August 2026.',
-   'Press reports on the Bharti Life acquisition and bancassurance in mainland China.',
-  ]),
+  short='Prudential',
+  sources=['Syz Research, Bloomberg, Prudential plc.']),
 
  'kraft-heinz': dict(
   sector='Consumer staples',
@@ -173,11 +163,6 @@ NOTES = {
   conclusion=('Kraft Heinz is a recovery case rather than a defensive income stock. The valuation is low and the first signs are '
               'encouraging, but the volume turnaround is not yet proven. An investor could wait for stabilising North American '
               'volumes before building a position, accepting that part of a re-rating could be missed.'),
-  sources=[
-   'Syz Research, Bloomberg (FY2025 adjusted EBITDA); AlphaSense (market data as of 12 November 2026).',
-   'The Kraft Heinz Company, third quarter 2026 results, 4 November 2026; second quarter 2026 results.',
-   'The Kraft Heinz Company, sale of the North American coffee business to One Rock Capital Partners, 3 November 2026.',
-   'Syz calculation: net debt derived from FY2025 reported EBITDA and the net debt / EBITDA ratio (AlphaSense); '
-   'enterprise value = market capitalisation + net debt; EV / adjusted EBITDA. FY2025 reported EBITDA was negative because of impairments.',
-  ]),
+  short='Kraft Heinz',
+  sources=['Syz Research, Bloomberg, The Kraft Heinz Company.']),
 }

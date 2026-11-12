@@ -72,6 +72,7 @@ def cover(c):
 <div class="sub1">{DATE} · Syz Research</div>
 <div class="sub1" style="font-size:12.5px">Market data as of {DATE}.</div>
 <div class="box notice"><div class="boxlabel">IMPORTANT NOTICE</div>
+{c['short']} is not part of the Syz Focus List and is neither actively recommended nor followed by Syz Research.
 This document is intended only for professional and institutional clients and qualified investors. It is not a personalised
 recommendation. Please read the important information at the end of this document.</div>
 <p class="lead">{c['lead']}</p>
