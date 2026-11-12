@@ -34,6 +34,7 @@ p{margin:0 0 11px;text-align:justify}
 .boxlabel{color:var(--tiger);font-weight:700;font-size:10.5px;letter-spacing:.08em}
 .kpilabel{color:var(--blueberry);font-weight:700;font-size:10.5px;line-height:1.3;min-height:28px}
 .boxvalue{font-size:18px;font-weight:800;margin-top:4px}
+.tight{font-size:15px;white-space:nowrap;padding-top:2px}
 .pos{color:var(--mint)}.neg{color:var(--tiger)}
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}
 .sec{margin-bottom:18px}

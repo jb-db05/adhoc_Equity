@@ -132,7 +132,7 @@ NOTES = {
   name='The Kraft Heinz Company', ticker='KHC US',
   subtitle='Reinvesting heavily to bring US volumes back to growth',
   kpis=[('Market capitalisation', 'USD 28.7bn', ''),
-        ('Organic sales, 2026 guidance', '-0.5% to -1.25%', 'neg'),
+        ('Organic sales, 2026 guidance', '-0.5% to -1.25%', 'neg tight'),
         ('Adjusted EBITDA margin, FY2025', '23.5%', ''),
         ('Extra investment, 2026', 'USD 700m', '')],
   sections=[
