@@ -162,11 +162,11 @@ for ph in cover.placeholders:
         for x in r[1:]: x.text = ""
 
 # ---------- 2. synthèse ----------
-s = new_slide("INCY en cœur de portefeuille, IMVT en satellite, VKTX en spéculatif",
+s = new_slide("INCY le plus solide, IMVT en partie validé, VKTX le plus binaire",
               "Synthèse fondamentale · classement par niveau de risque · " + DATE)
-cards = [("INCY · Cœur de portefeuille", "Incyte · rentable, 2028 à franchir", BLUE),
-         ("IMVT · Satellite", "Immunovant · pré-revenus, plateforme validée", TIGER),
-         ("VKTX · Spéculatif", "Viking · un actif, un résultat binaire en 2027", GOLD)]
+cards = [("INCY · Profil défensif", "Incyte · rentable, 2028 à franchir", BLUE),
+         ("IMVT · Risque intermédiaire", "Immunovant · pré-revenus, plateforme validée", TIGER),
+         ("VKTX · Risque binaire", "Viking · un actif, un résultat binaire en 2027", GOLD)]
 for i, (t, sub, col) in enumerate(cards):
     x = 0.73 + i * 3.49
     rect(s, x, 2.5, 0.06, 0.95, col, name=f"Accent {i+1}")
@@ -178,7 +178,7 @@ table(s, 0.73, 3.7, 10.28, [2.0, 2.76, 2.76, 2.76], [
     ["Ce qui est dans le prix", "Le choc Jakafi 2028", "Le succès dans plusieurs indications", "Beaucoup de doute"],
     ["Prochain test", "Pipeline mutCALR, guidance 2027", "Graves et myasthénie, 2027", "VANQUISH, 2S 2027"],
     ["Risque principal", "Trou de revenus après 2028", "Concurrence FcRn, flottant étroit", "Résultat, financement, prix"],
-    ["Rôle possible", "Position cœur", "Position satellite", "Petite position spéculative"],
+    ["Profil de risque", "Modéré : rentable, risque de pipeline", "Élevé : pré-revenus", "Très élevé : un actif, un résultat"],
 ], size=10, row_h=0.5, align_right_from=99, name="Synthesis table")
 source(s, "Source : Syz Research, Bloomberg, publications des sociétés (T3 2026).")
 
@@ -190,7 +190,7 @@ table(s, 0.73, 2.5, 10.28, [4.0, 2.09, 2.09, 2.1], [
     ["Cours (13.11.2026)", "120,12", "34,09", "26,96"],
     ["Capitalisation (16.11.2026)", "24,7 Md", "7,1 Md", "3,7 Md"],
     ["Trésorerie et placements CT (30.09.2026)", "3,9 Md *", "722 M", "960 M"],
-    ["Valeur d'entreprise (calcul Syz)", "20,8 Md", "6,4 Md", "2,8 Md"],
+    ["Valeur d'entreprise (Bloomberg)", "20,8 Md", "6,2 Md", "2,8 Md"],
     ["Chiffre d'affaires 2025", "5,14 Md", "–", "–"],
     ["Ventes nettes 2026 (guidance relevée)", "5,21–5,30 Md", "–", "–"],
     ["VE / ventes nettes 2026 (calcul Syz)", "≈ 4x", "–", "–"],
@@ -199,7 +199,7 @@ table(s, 0.73, 2.5, 10.28, [4.0, 2.09, 2.09, 2.1], [
     ["Principal catalyseur", "Pipeline 2027–2028", "Données 2027", "VANQUISH 2S 2027"],
 ], size=10.5, row_h=0.4, align_right_from=1, name="Key figures table",
    colors={(8, 3): TIGER, (9, 3): TIGER})
-source(s, "VE = capitalisation moins trésorerie et placements CT, dette non déduite. Couverture VKTX = trésorerie / perte nette T3. "
+source(s, "VE : Bloomberg. VE / ventes = VE Bloomberg / milieu de la guidance 2026. Couverture VKTX = trésorerie / perte nette T3. "
           "* Trésorerie INCY à confirmer après le paiement de Vega. Source : Syz Research, Bloomberg, publications des sociétés.", y=7.15)
 
 # ---------- 4. calendrier ----------
@@ -268,13 +268,13 @@ fiche("Incyte : un leader rentable qui doit remplacer Jakafi d'ici 2028",
         "de la charge Vega."),
        ("À surveiller", "Lancement de la phase 3 en myélofibrose, données mutCALR, adoption de Jakafi XR, guidance 2027.")],
       "Le plus défensif des trois. Les profits laissent le temps de franchir 2028 et la valorisation intègre déjà une "
-      "bonne partie du risque. Peut servir de position cœur.")
+      "bonne partie du risque. Le pipeline 2027–2028 sera le vrai test.")
 
 fiche("Immunovant : une plateforme FcRn en partie validée",
       "Immunovant (IMVT) · anti-FcRn IMVT-1402 · contrôlée à ~56 % par Roivant",
       [("Capitalisation", "7,1 Md USD", "16 novembre 2026", SPACE),
        ("Trésorerie", "722 M USD", "30 septembre 2026", SPACE),
-       ("Valeur d'entreprise", "6,4 Md USD", "Calcul Syz", SPACE),
+       ("Valeur d'entreprise", "6,2 Md USD", "Bloomberg", SPACE),
        ("Prochaines données", "2027", "Graves, myasthénie", SPACE)],
       [("Pourquoi le titre pourrait progresser",
         "En novembre, la dose de 600 mg a atteint son critère principal dans la polyarthrite rhumatoïde difficile à "
@@ -284,7 +284,7 @@ fiche("Immunovant : une plateforme FcRn en partie validée",
         "IMVT-1402 vise une baisse profonde des IgG sans les effets sur l'albumine et le LDL des produits de première "
         "génération. Dans la maladie de Graves, aucun anti-FcRn n'est approuvé : une première possible.")],
       [("Le titre est-il bon marché ?",
-        "Non sur les mesures classiques : 6,4 Md USD de VE sans revenu supposent déjà des succès dans plusieurs "
+        "Non sur les mesures classiques : 6,2 Md USD de VE sans revenu supposent déjà des succès dans plusieurs "
         "indications. La trésorerie doit couvrir les besoins jusqu'à un lancement dans Graves."),
        ("Risques principaux",
         "Concurrence de produits FcRn déjà commercialisés par de grands groupes. Résultat obtenu sur une seule dose, "
@@ -292,7 +292,7 @@ fiche("Immunovant : une plateforme FcRn en partie validée",
         "Flottant étroit."),
        ("À surveiller", "Issue de la réunion FDA fin 2026, design de la prochaine étude, données 2027.")],
       "La société est passée de la promesse à une plateforme en partie validée, mais une bonne partie des bonnes "
-      "nouvelles est dans le prix. Convient à une position satellite.")
+      "nouvelles est dans le prix. Les données 2027 seront le prochain test.")
 
 fiche("Viking : un candidat sérieux dans l'obésité, un test binaire en 2027",
       "Viking Therapeutics (VKTX) · VK2735, double agoniste GLP-1/GIP",
@@ -308,7 +308,7 @@ fiche("Viking : un candidat sérieux dans l'obésité, un test binaire en 2027",
         "En phase 2, les patients passés à une injection toutes les deux semaines ou mensuelle ont conservé 82 à 97 % "
         "de leur perte de poids. Le programme amyline VK3019 ajoute un second mécanisme.")],
       [("Bon marché, ou piège ?",
-        "Une VE d'environ 2,8 Md USD (calcul Syz) paraît faible face au marché de l'obésité, mais le doute est "
+        "Une VE d'environ 2,8 Md USD (Bloomberg) paraît faible face au marché de l'obésité, mais le doute est "
         "rationnel : Viking arriverait des années après les deux leaders, dans un marché où les prix baissent."),
        ("Risques principaux",
         "Le résultat lui-même, y compris la tolérance et les abandons. Le financement : environ 5 trimestres de "
@@ -316,20 +316,20 @@ fiche("Viking : un candidat sérieux dans l'obésité, un test binaire en 2027",
         "très probablement nécessaire. Pas de force de vente."),
        ("À surveiller", "Maintenance partie 2, VK3019, partenariat éventuel, puis VANQUISH au 2S 2027.")],
       "Le potentiel le plus élevé des trois, mais le risque le plus concentré : un actif, une fenêtre de résultats, "
-      "un besoin de financement. Petite position spéculative uniquement, pas sur le seul espoir d'un rachat.")
+      "un besoin de financement. Le profil reste binaire jusqu'à VANQUISH ; l'espoir d'un rachat ne suffit pas à justifier le titre.")
 
 # ---------- 8. lien vers la proposition ----------
 s = new_slide("Du fondamental à la proposition : aligner horizon et échéance",
               "Pistes à faire coter par le desk · prix théoriques indicatifs au 13 novembre 2026")
 table(s, 0.73, 2.5, 10.28, [0.85, 1.45, 1.6, 3.2, 3.18], [
-    ["", "Vue", "Fenêtre clé", "Piste (indicative)", "Point d'attention"],
-    ["INCY", "Cœur", "Guidance 2027, mutCALR",
+    ["", "Profil", "Fenêtre clé", "Piste (indicative)", "Point d'attention"],
+    ["INCY", "Défensif", "Guidance 2027, mutCALR",
      "Détenteur : collar juin 2027, vente CALL 140 / achat PUT 105, coût ≈ nul. Nouvel investisseur : vente PUT mars 2027 strike 110, prime ≈ 8 USD",
      "Volatilité implicite de ~49 % élevée pour Incyte : à vérifier avant de fixer les strikes"],
-    ["IMVT", "Satellite", "Réunion FDA fin 2026, données 2027",
+    ["IMVT", "Intermédiaire", "Réunion FDA fin 2026, données 2027",
      "Vente PUT mars 2027 strike 30, prime ≈ 2,7 USD (entrée effective ≈ 27,3). Ou call spread déc. 2027 35/50, coût ≈ 4 USD pour un gain maximal de 15",
      "Le client doit accepter de détenir le titre. Flottant étroit, short interest élevé : mouvements brutaux"],
-    ["VKTX", "Spéculatif", "VANQUISH, 2S 2027",
+    ["VKTX", "Binaire", "VANQUISH, 2S 2027",
      "Pas de structure à ce stade. Si le client insiste : call spread janv. 2028 30/50, coût ≈ 4 USD pour un gain maximal de 20",
      "Un glissement des données au-delà de janv. 2028 ferait expirer l'option avant le résultat"],
 ], size=9.5, header_size=10, row_h=1.0, align_right_from=99, name="Proposal table")
@@ -337,8 +337,7 @@ box(s, 0.73, 6.35, 10.28, 0.85, name="Avoid box")
 textbox(s, 0.93, 6.4, 9.9, 0.75, [
     ([("À éviter  ", 10.5, True, TIGER),
       ("un produit structuré « worst-of » sur les trois titres. Le coupon serait élevé, mais avec des volatilités de 50 à 70 % "
-       "et deux résultats binaires, la probabilité de toucher la barrière est forte. Dans tous les cas, limiter la taille "
-       "des positions IMVT et VKTX.", 10, False, SPACE)], {"after": 0})], anchor=MSO_ANCHOR.MIDDLE)
+       "et deux résultats binaires, la probabilité de toucher la barrière est forte.", 10, False, SPACE)], {"after": 0})], anchor=MSO_ANCHOR.MIDDLE)
 source(s, "Prix théoriques Black-Scholes calculés par Syz à partir des cours et volatilités implicites du 13.11.2026 (taux 3,75 %), "
           "hors frais et écarts de cotation. Non contractuels : cotation du desk requise.", y=7.3)
 

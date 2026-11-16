@@ -162,11 +162,11 @@ for ph in cover.placeholders:
         for x in r[1:]: x.text = ""
 
 # ---------- 2. synthèse ----------
-s = new_slide("INCY as a core holding, IMVT as a satellite, VKTX as a speculative position",
+s = new_slide("INCY the most robust, IMVT partly validated, VKTX the most binary",
               "Fundamental summary · ranked by risk · " + DATE)
-cards = [("INCY · Core holding", "Incyte · profitable, 2028 to bridge", BLUE),
-         ("IMVT · Satellite", "Immunovant · pre-revenue, platform partly validated", TIGER),
-         ("VKTX · Speculative", "Viking · one asset, one binary readout in 2027", GOLD)]
+cards = [("INCY · Defensive profile", "Incyte · profitable, 2028 to bridge", BLUE),
+         ("IMVT · Intermediate risk", "Immunovant · pre-revenue, platform partly validated", TIGER),
+         ("VKTX · Binary risk", "Viking · one asset, one binary readout in 2027", GOLD)]
 for i, (t, sub, col) in enumerate(cards):
     x = 0.73 + i * 3.49
     rect(s, x, 2.5, 0.06, 0.95, col, name=f"Accent {i+1}")
@@ -178,7 +178,7 @@ table(s, 0.73, 3.7, 10.28, [2.0, 2.76, 2.76, 2.76], [
     ["What is priced in", "The 2028 Jakafi cliff", "Success in several indications", "A lot of doubt"],
     ["Next test", "mutCALR pipeline, 2027 guidance", "Graves' and myasthenia gravis, 2027", "VANQUISH, 2H 2027"],
     ["Main risk", "Revenue gap after 2028", "FcRn competition, narrow float", "Trial outcome, funding, pricing"],
-    ["Possible role", "Core holding", "Satellite position", "Small speculative position"],
+    ["Risk profile", "Moderate: profitable, pipeline risk", "High: pre-revenue", "Very high: one asset, one readout"],
 ], size=10, row_h=0.5, align_right_from=99, name="Synthesis table")
 source(s, "Source: Syz Research, Bloomberg, company publications (Q3 2026).")
 
@@ -190,7 +190,7 @@ table(s, 0.73, 2.5, 10.28, [4.0, 2.09, 2.09, 2.1], [
     ["Share price (13 Nov 2026)", "120.12", "34.09", "26.96"],
     ["Market capitalisation (16 Nov 2026)", "24.7 bn", "7.1 bn", "3.7 bn"],
     ["Cash and short-term investments (30 Sep 2026)", "3.9 bn *", "722 m", "960 m"],
-    ["Enterprise value (Syz calculation)", "20.8 bn", "6.4 bn", "2.8 bn"],
+    ["Enterprise value (Bloomberg)", "20.8 bn", "6.2 bn", "2.8 bn"],
     ["Revenue 2025", "5.14 bn", "–", "–"],
     ["2026 net sales (raised guidance)", "5.21–5.30 bn", "–", "–"],
     ["EV / 2026 net sales (Syz calculation)", "≈ 4x", "–", "–"],
@@ -199,7 +199,7 @@ table(s, 0.73, 2.5, 10.28, [4.0, 2.09, 2.09, 2.1], [
     ["Main catalyst", "Pipeline 2027–2028", "2027 data", "VANQUISH 2H 2027"],
 ], size=10.5, row_h=0.4, align_right_from=1, name="Key figures table",
    colors={(8, 3): TIGER, (9, 3): TIGER})
-source(s, "EV = market capitalisation less cash and short-term investments, debt not deducted. VKTX runway = cash / Q3 net loss. "
+source(s, "EV: Bloomberg. EV / sales = Bloomberg EV / midpoint of 2026 guidance. VKTX runway = cash / Q3 net loss. "
           "* INCY cash to be confirmed after the Vega payment. Source: Syz Research, Bloomberg, company publications.", y=7.15)
 
 # ---------- 4. calendrier ----------
@@ -268,13 +268,13 @@ fiche("Incyte: a profitable leader racing to replace Jakafi by 2028",
         "of the Vega charge."),
        ("What to watch", "Start of the myelofibrosis Phase 3, mutCALR data, Jakafi XR uptake, 2027 guidance.")],
       "The most defensive of the three. Profits buy time to bridge 2028 and the valuation already prices in a "
-      "good part of the risk. Could serve as a core holding.")
+      "good part of the risk. The 2027–2028 pipeline is the real test.")
 
 fiche("Immunovant: an FcRn platform, now partly validated",
       "Immunovant (IMVT) · anti-FcRn IMVT-1402 · ~56% owned by Roivant",
       [("Market cap", "USD 7.1 bn", "16 November 2026", SPACE),
        ("Cash", "USD 722 m", "30 September 2026", SPACE),
-       ("Enterprise value", "USD 6.4 bn", "Syz calculation", SPACE),
+       ("Enterprise value", "USD 6.2 bn", "Bloomberg", SPACE),
        ("Next data", "2027", "Graves', myasthenia gravis", SPACE)],
       [("Why it could do well",
         "In November the 600 mg dose met its primary endpoint in difficult-to-treat rheumatoid "
@@ -284,7 +284,7 @@ fiche("Immunovant: an FcRn platform, now partly validated",
         "IMVT-1402 aims at deep IgG reduction without the albumin and LDL effects of first-generation "
         "agents. No FcRn drug is approved in Graves' disease: a possible first.")],
       [("Is the share cheap?",
-        "Not on conventional measures: USD 6.4 bn of EV without revenue already assumes success in several "
+        "Not on conventional measures: USD 6.2 bn of EV without revenue already assumes success in several "
         "indications. Cash should fund the company to a Graves' launch."),
        ("Main risks",
         "Competition from FcRn drugs already marketed by large groups. The result rests on one dose, "
@@ -292,7 +292,7 @@ fiche("Immunovant: an FcRn platform, now partly validated",
         "Narrow float."),
        ("What to watch", "Outcome of the FDA meeting in late 2026, design of the next trial, 2027 data.")],
       "The company has moved from promise to a partly validated platform, but much of the good "
-      "news is priced in. Suits a satellite position.")
+      "news is priced in. The 2027 data are the next test.")
 
 fiche("Viking: a serious obesity contender facing a binary 2027",
       "Viking Therapeutics (VKTX) · VK2735, dual GLP-1/GIP agonist",
@@ -308,7 +308,7 @@ fiche("Viking: a serious obesity contender facing a binary 2027",
         "In Phase 2, patients switched to every-other-week or monthly injections kept 82% to 97% "
         "of their weight loss. The VK3019 amylin programme adds a second mechanism.")],
       [("Cheap, or a value trap?",
-        "An EV of about USD 2.8 bn (Syz calculation) looks small against the obesity market, but the doubt is "
+        "An EV of about USD 2.8 bn (Bloomberg) looks small against the obesity market, but the doubt is "
         "rational: Viking would arrive years after the two leaders, in a market where prices are falling."),
        ("Main risks",
         "The readout itself, including tolerability and drop-outs. Funding: about five quarters of "
@@ -316,20 +316,20 @@ fiche("Viking: a serious obesity contender facing a binary 2027",
         "very likely be needed. No sales force."),
        ("What to watch", "Maintenance part 2, VK3019, any partnering, then VANQUISH in 2H 2027.")],
       "The highest potential of the three, but the most concentrated risk: one asset, one readout window, "
-      "a funding need. A small speculative position only, not on takeover hopes alone.")
+      "a funding need. The profile stays binary until VANQUISH; takeover hopes alone do not justify the share.")
 
 # ---------- 8. lien vers la proposition ----------
 s = new_slide("From fundamentals to the proposal: match horizon and expiry",
               "Ideas to be priced by the desk · indicative theoretical prices as of 13 November 2026")
 table(s, 0.73, 2.5, 10.28, [0.85, 1.45, 1.6, 3.2, 3.18], [
-    ["", "View", "Key window", "Idea (indicative)", "Watch point"],
-    ["INCY", "Core", "2027 guidance, mutCALR",
+    ["", "Profile", "Key window", "Idea (indicative)", "Watch point"],
+    ["INCY", "Defensive", "2027 guidance, mutCALR",
      "Holder: June 2027 collar, sell 140 call / buy 105 put, cost ≈ zero. New money: sell March 2027 110 put, premium ≈ USD 8",
      "Implied volatility of ~49% looks high for Incyte: check before setting strikes"],
-    ["IMVT", "Satellite", "FDA meeting late 2026, 2027 data",
+    ["IMVT", "Intermediate", "FDA meeting late 2026, 2027 data",
      "Sell March 2027 30 put, premium ≈ USD 2.7 (effective entry ≈ 27.3). Or December 2027 35/50 call spread, cost ≈ USD 4 for a maximum gain of 15",
      "The investor must be willing to own the shares. Narrow float, high short interest: sharp moves"],
-    ["VKTX", "Speculative", "VANQUISH, 2H 2027",
+    ["VKTX", "Binary", "VANQUISH, 2H 2027",
      "No structure at this stage. If the investor insists: January 2028 30/50 call spread, cost ≈ USD 4 for a maximum gain of 20",
      "If the data slip past January 2028, the option expires before the readout"],
 ], size=9.5, header_size=10, row_h=1.0, align_right_from=99, name="Proposal table")
@@ -337,8 +337,7 @@ box(s, 0.73, 6.35, 10.28, 0.85, name="Avoid box")
 textbox(s, 0.93, 6.4, 9.9, 0.75, [
     ([("Avoid  ", 10.5, True, TIGER),
       ("a worst-of structured product on the three names. The coupon would be high, but with volatilities of 50% to 70% "
-       "and two binary readouts, the barrier is likely to be hit. In every case, keep IMVT and VKTX "
-       "positions small.", 10, False, SPACE)], {"after": 0})], anchor=MSO_ANCHOR.MIDDLE)
+       "and two binary readouts, the barrier is likely to be hit.", 10, False, SPACE)], {"after": 0})], anchor=MSO_ANCHOR.MIDDLE)
 source(s, "Theoretical Black-Scholes prices calculated by Syz from 13 Nov 2026 prices and implied volatilities (rate 3.75%), "
           "before fees and bid-ask spreads. Not binding: desk quotes required.", y=7.3)
 
