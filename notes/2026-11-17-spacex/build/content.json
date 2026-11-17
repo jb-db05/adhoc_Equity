@@ -198,15 +198,15 @@
   ],
   [
    "charttitle",
-   "§Chart 1§ · SPCX: revenue by segment"
+   "§Chart 1§ · SPCX: share price and 40-day moving average"
   ],
   [
    "chartsub",
-   "Quarterly revenue in USD bn; Super Intelligence now provides more than half of the group total"
+   "Daily close in USD since the Nasdaq listing on 12 June 2026"
   ],
   [
    "src",
-   "Source: Syz Research, SpaceX Q3 2026 results. Q3 2025 and Q2 2026 segment figures are Syz calculations from the growth rates reported by the company."
+   "Source: Syz Research, Bloomberg."
   ],
   [
    "charttitle",
@@ -218,7 +218,7 @@
   ],
   [
    "src",
-   "Source: Syz Research, SpaceX Q3 2026 results and earnings call. H1 2026 figures are Syz calculations (nine months less third quarter)."
+   "Source: Syz Research, SpaceX Q3 2026 results and earnings call. H1 2026 figures are Syz calculations."
   ]
  ],
  "p4": [
@@ -232,31 +232,7 @@
   ],
   [
    "li",
-   "Syz Research, Bloomberg (share prices)."
-  ],
-  [
-   "li",
-   "SpaceX, third-quarter 2026 results release and earnings call, 20 October 2026."
-  ],
-  [
-   "li",
-   "SpaceX, IPO pricing and over-allotment announcements, June 2026."
-  ],
-  [
-   "li",
-   "SpaceX, finance lease commitment with an Apollo-managed entity, October 2026."
-  ],
-  [
-   "li",
-   "Federal Communications Commission, public notice on the SpaceX and Grain 800 MHz application, 10 November 2026."
-  ],
-  [
-   "li",
-   "Press reports: Starship Flight 15 (13 to 14 November 2026); Tesla and SpaceX special committees (20 October 2026); Starshield in Ukraine (12 November 2026); Vulcan launch failure (ULA statement, 15 November 2026) and New Glenn pad explosion (May 2026); reported price of the Grain spectrum; IPO lock-up schedule."
-  ],
-  [
-   "li",
-   "Syz calculations: market value (diluted share count of 12.475 bn times the 16 November close); revenue and earnings multiples (third-quarter figures annualised, first-quarter 2027 guidance midpoint annualised); full-year 2026 capex (nine months plus fourth-quarter guidance); earlier segment revenue derived from reported growth rates."
+   "Syz Research, Bloomberg, Company data."
   ],
   [
    "h2",

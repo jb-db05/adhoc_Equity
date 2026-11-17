@@ -93,8 +93,8 @@ const p3 = [
 const p4 = [label(txt('p4', 0)), h2(txt('p4', 1)),
   ...C.p4.filter(x => x[0] === 'li').map(x => new Paragraph({ numbering: { reference: 'bullets', level: 0 }, spacing: { after: 30, line: 250, lineRule: LineRuleType.AUTO },
     children: [run(x[1], { size: 17 })] })),
-  h2(txt('p4', 9)),
-  ...C.p4.slice(10).map(x => para(x[1], { size: 15, after: 90, line: 250 }))];
+  h2(C.p4.find(x => x[1] === 'Important information')[1]),
+  ...C.p4.slice(C.p4.findIndex(x => x[1] === 'Important information') + 1).map(x => para(x[1], { size: 15, after: 90, line: 250 }))];
 
 const doc = new Document({
   creator: 'Syz Research', title: 'SpaceX ad-hoc opinion, 17 November 2026',
