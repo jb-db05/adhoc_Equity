@@ -1,0 +1,69 @@
+{
+  "date": "24 November 2026",
+  "label": "Ad-hoc opinion · Video games",
+  "footer": "Syz Research · Ad-hoc opinion · 24 November 2026",
+  "cover": {
+    "headline": "Take-Two: GTA VI delivered, now the long tail",
+    "sub1": "24 November 2026 · Syz Research",
+    "notice": "Prices are as of the close on 24 November 2026. Company figures come from the fiscal second-quarter 2027 results published on 9 November 2026 and the Grand Theft Auto VI launch update of 20 November 2026. Market value, enterprise value and multiples are Syz calculations. This note is not a recommendation for any individual investor.",
+    "kpis": [
+      ["GTA VI day-one sales", "USD 3.79bn", "Retail value, company estimate"],
+      ["Copies sold before launch", "32.5m", "A record across all platforms"],
+      ["FY2027 net bookings", "USD 8.0-8.2bn", "Guidance, vs. USD 6.72bn in FY2026"],
+      ["Share price", "USD 219.10", "-14% since the start of 2026"]
+    ],
+    "h2": "A record launch, a share price that has not re-rated",
+    "left": [
+      {"sub2": "A record that was largely expected"},
+      {"p": "Grand Theft Auto VI went on sale on 19 November 2026 for PlayStation 5 and Xbox Series X|S, thirteen years after its predecessor. Take-Two estimates first-day retail sales at USD 3.79bn, with 32.5 million copies sold before launch and a Metacritic score of 99. On the company's figures, no film, album or game has ever opened bigger."},
+      {"p": "The market had priced much of this in. The shares rose about 22% between 30 October and 11 November, then gave back part of the gain around the launch. At USD 219.10 they are 14% below their level at the start of the year and 15% below the July high."},
+      {"p": "Two details matter for the numbers. The USD 3.79bn is a gross retail value: console makers, digital stores and retailers keep a share, so Take-Two's own net bookings will be lower. And the first full year of GTA VI sales is fiscal 2028, which starts in April 2027."}
+    ],
+    "right": [
+      {"sub2": "Where the debate is now"},
+      {"p": "With the launch behind it, the question moves from whether the game works to how long it will pay. Grand Theft Auto V kept generating revenue for more than a decade after its 2013 release, mostly through its online mode. Investors will watch how online play around GTA VI is monetised, when a PC version arrives (no date has been given) and whether the rest of the pipeline reduces the dependence on one franchise."},
+      {"p": "The rest of the business is softer. In the September quarter net bookings fell 18% and recurrent consumer spending, mainly in-game purchases, fell 9%, worse than guided, because of NBA 2K."},
+      {"sub2": "What this means for investors"},
+      {"p": "The launch removes the largest execution risk in the story, and the shares trade below their level of a year ago. On our numbers the enterprise value is about 5 times this year's guided net bookings, with the first full year of GTA VI still ahead. We are positive and would build positions gradually, using the volatility around sales updates rather than chasing rallies."}
+    ]
+  },
+  "fiche": {
+    "title": "Take-Two Interactive (TTWO US)",
+    "subtitle": "The largest entertainment launch on record, at a share price below last year's",
+    "kpis": [
+      ["Share price", "USD 219.10", "-14% year to date"],
+      ["Market value", "~USD 41bn", "Syz calculation"],
+      ["EV / FY2027 net bookings", "~5.1x", "Guidance midpoint"],
+      ["Net debt", "USD 0.85bn", "30 Sept 2026"]
+    ],
+    "tech": [
+      ["Technical trend", "Recovering"],
+      ["Support", "USD 208 / 190"],
+      ["Resistance", "USD 231 / 258"],
+      ["200-day average", "USD 218.6"]
+    ],
+    "techline": "The share price is back above its 40-day (USD 207.7) and 200-day (USD 218.6) averages. A close above USD 231, the 11 November high, could confirm the recovery; USD 190, the low of March and October, is the level to watch on the downside.",
+    "left": [
+      {"h3": "1. What the company does"},
+      {"p": "Take-Two publishes video games through Rockstar Games (Grand Theft Auto, Red Dead Redemption), 2K (NBA 2K, Borderlands, BioShock, Mafia) and Zynga in mobile. In fiscal 2026, to March, net bookings rose 19% to USD 6.72bn and recurrent consumer spending (in-game purchases, add-on content and in-game advertising) rose 16%."},
+      {"h3": "2. Why it could do well"},
+      {"p": "GTA VI sets a new revenue base: management guides fiscal 2027 net bookings of USD 8.0bn to 8.2bn, with the game contributing only four and a half months. A PC version and the online mode could extend sales for years, as they did for GTA V. Operating cash flow is guided above USD 1bn this year, and the company expects to reach net cash by March 2027."},
+      {"h3": "3. What sets it apart"},
+      {"p": "Few entertainment brands can sell tens of millions of copies before release. Rockstar publishes rarely, but each game becomes a platform that earns for a decade. NBA 2K brings steady yearly revenue, and a pipeline of 29 titles through fiscal 2029, including Judas and a new BioShock, offers some diversification."}
+    ],
+    "right": [
+      {"h3": "4. Is the share cheap?"},
+      {"p": "Fairly priced rather than cheap. On our numbers the enterprise value is about USD 42bn, some 5 times fiscal 2027 guided net bookings. Earnings multiples say little this year: guided GAAP EPS of USD 0.57 to 0.75 reflects revenue deferral and amortisation, not the cash the game brings in. The value case rests on fiscal 2028 and beyond, when GTA VI earns a full year and its online mode matures."},
+      {"h3": "5. Main risks"},
+      {"p": "Concentration on Grand Theft Auto and NBA 2K. Weaker spending elsewhere, with recurrent consumer spending down 9% in the September quarter. Rising development and marketing budgets for large games. High expectations: any sign of slowing sales or a disappointing online offer could weigh on the shares. Leaks and piracy remain a risk for the whole industry."},
+      {"h3": "6. What to watch next"},
+      {"p": "Fiscal third-quarter results, with net bookings guided at USD 3.35bn to 3.50bn before the launch; the first sales updates after day one; dates for a PC version and for new online content; progress on the fiscal 2028 and 2029 pipeline."}
+    ],
+    "conclusion": "Take-Two has delivered the launch the market was waiting for, and the first data point is exceptional. The shares have not re-rated and trade below their level of a year ago, which leaves room for upside if GTA VI becomes a multi-year platform as GTA V did. Concentration and high expectations are the main risks. We are positive and would build positions gradually rather than all at once."
+  },
+  "charts": [
+    {"num": "Chart 1", "title": "TTWO: share price over two years", "sub": "Daily close with 40-day and 200-day simple moving averages, USD, to 24 November 2026; the dashed line marks the GTA VI launch", "img": "chart1_price.png", "src": "Source: Syz Research, Bloomberg"},
+    {"num": "Chart 2", "title": "TTWO: net bookings by fiscal year", "sub": "USD billion, fiscal years ending in March; fiscal 2027 shows the guidance range reiterated on 9 November 2026", "img": "chart2_bookings.png", "src": "Source: Syz Research, Company data"}
+  ],
+  "sources": "Syz Research, Bloomberg, Company data."
+}
