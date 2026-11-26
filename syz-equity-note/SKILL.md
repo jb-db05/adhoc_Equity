@@ -12,7 +12,7 @@ Use this skill whenever a Syz equity note is requested: an ad-hoc opinion on a s
 1. **Gather and verify the facts before writing.** Treat research packs, AI summaries and broker notes as leads, not facts. Check every figure that matters (results, guidance, deliveries, job cuts, recalls, deal terms) against the company's own publications (press releases, ad hoc notices, annual and interim reports) or reliable press. Drop what cannot be confirmed and tell the author what was dropped and why.
 2. **Prices:** use the last official close the author gives (usually Bloomberg). State the date on the cover ("Prices are as of the close on DD Month YYYY"). If a chart or technical take was produced earlier, say so ("Charts as of the week of ...").
 3. **Corporate actions (offers, mergers, buy-outs):** rely only on the official communication. Quote its terms (price formula, payment form, timing, squeeze-out, stakes) and do not add your own estimates, sensitivities or scenario tables unless asked.
-4. **Own calculations** (e.g. a holding discount or NAV) are allowed when the method is simple and the inputs are official; show the method to the author and label it "Syz calculation" in the sources.
+4. **Own calculations** (e.g. a holding discount or NAV) are allowed when the method is simple and the inputs are official; show the method to the author. Do not add it to the sources line, which never changes (see section 2).
 5. Draft the text, let the author read it, then lay it out. Check that every page fits on one A4 page with no overflow before delivering.
 6. **Always deliver two files: the PDF and a PowerPoint (.pptx) version** with the same pages, text, figures and charts. Give them the same name stem, e.g. `Syz_Take-Two_ad-hoc_2026-11-24.pdf` and `Syz_Take-Two_ad-hoc_2026-11-24.pptx`, and save both in the note's folder. Any later correction is applied to both files before redelivering. See section 5 for how to build the PowerPoint.
 
@@ -27,7 +27,7 @@ Use this skill whenever a Syz equity note is requested: an ad-hoc opinion on a s
 - Be explicit about the house view when there is one ("We remain negative on European carmakers"), and make the structure consistent with it (order of strategies, conclusions, value-trap framing).
 - Avoid "hold" as a lazy default. When reviewing positions, offer **two or three distinct strategies** (e.g. patience, simplify, reduce gradually on rebounds, rotate) with a clear trade-off each, and point out overlapping exposures (e.g. Dior and LVMH, Porsche SE and Volkswagen). Flag the risk of chasing performance when suggesting a rotation.
 - Avoid peremptory statements; prefer "could" and "would" for forward-looking calls.
-- Sources stay simple: "Syz Research, Bloomberg", company publications by name and date, "press reports" for labour or media items. No links on the page.
+- **Sources are always exactly one line: "Sources: Syz Research, Bloomberg, company data". Nothing else.** No company publications by name or date, no press reports, no "Syz calculation" label, no data providers other than Bloomberg, no links. The same line is used under every chart and on the sources page.
 
 ## 3. Page set
 
@@ -37,8 +37,8 @@ A4 pages of 794 x 1123 px (CSS), one HTML file per page, exported to PDF. Keep m
 1. Cover: section label, headline, date line, important notice, sector section in two columns ending with "What this means for investors".
 2. Possible strategies (reviews only): intro stating the absence or presence of catalysts, two or three strategy cards, and an "In every case" box.
 3. One fiche per company: name and ticker, one-line orange subtitle, four KPI tiles, optional technical box, two columns with numbered sections (1. What the company does, 2. Why it could do well, 3. What sets it apart, 4. Is the share cheap? or Cheap, or a value trap?, 5. Main risks, 6. What to watch next) and a Conclusion block.
-4. Charts page (optional): one or two charts with a caption and "Source: Syz Research, Bloomberg".
-5. Sources and Important information (the disclaimer below, verbatim).
+4. Charts page (optional): one or two charts with a caption and "Sources: Syz Research, Bloomberg, company data".
+5. Sources ("Sources: Syz Research, Bloomberg, company data", nothing else) and Important information (the disclaimer below, verbatim).
 
 **Earnings update**
 1. Section label "Earnings update · Sector", headline, date line "DD Month YYYY · Syz Research".
@@ -108,7 +108,7 @@ Logo top right, then a 4 px bar with the orange gradient across the page width. 
 - Series colours in this order: Tiger Orange, Gold Yellow, Space Blue, Blueberry Blue, then the secondary palette. In consensus-surprise bar charts, positive bars Blueberry Blue and negative bars Tiger Orange.
 - Graph title centred above the plot, Light, Space Blue. Axis titles Bold italic uppercase, small. Thin Space Blue axis lines with tick marks; no top or right spines; light grid only if needed.
 - Legend on the right: a square colour marker, the variable name in Bold uppercase in the series colour, and a short supporting line in Light below.
-- Charts are built from the author's data (Bloomberg exports), never pasted as Bloomberg screenshots. In the note: "Chart 1 · <Ticker>: <what it shows>" with "Chart 1" in Tiger Orange, a Blueberry Blue subtitle line explaining the measure, the chart inside a framed box, and "Source: Syz Research, Bloomberg" below.
+- Charts are built from the author's data (Bloomberg exports), never pasted as Bloomberg screenshots. In the note: "Chart 1 · <Ticker>: <what it shows>" with "Chart 1" in Tiger Orange, a Blueberry Blue subtitle line explaining the measure, the chart inside a framed box, and "Sources: Syz Research, Bloomberg, company data" below.
 
 ```python
 import matplotlib.pyplot as plt
@@ -239,6 +239,7 @@ Should a recipient make an investment on the basis of the present communication,
 - Logo is the Sunburnt signature, top right, with clear space and at least 40 px wide.
 - No broker names, target prices, entry prices or losses; "an investor", not "the client".
 - Prices and dates consistent across tiles, text, charts and sources.
-- Every figure traceable to a company publication, Bloomberg, a named press report or a labelled Syz calculation.
+- Every figure checked against company data or Bloomberg (or a Syz calculation built from them).
+- Every sources line, on charts and on the sources page, reads exactly "Sources: Syz Research, Bloomberg, company data" and nothing more.
 - Both files delivered: the PDF and the .pptx, with matching content, same page count and no overflow in either.
 - Tell the author which facts from their inputs were corrected or dropped.
