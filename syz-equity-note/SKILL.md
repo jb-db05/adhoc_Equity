@@ -1,6 +1,6 @@
 ---
 name: syz-equity-note
-description: Write and lay out a Syz Research equity note (ad-hoc opinion, review of positions or earnings update) in the Syz house style and visual guidelines, as A4 pages ready for PDF export.
+description: Write and lay out a Syz Research equity note (ad-hoc opinion, review of positions or earnings update) in the Syz house style and visual guidelines, as A4 pages delivered as both a PDF and an editable PowerPoint (.pptx) file.
 ---
 
 # Syz equity note
@@ -14,6 +14,7 @@ Use this skill whenever a Syz equity note is requested: an ad-hoc opinion on a s
 3. **Corporate actions (offers, mergers, buy-outs):** rely only on the official communication. Quote its terms (price formula, payment form, timing, squeeze-out, stakes) and do not add your own estimates, sensitivities or scenario tables unless asked.
 4. **Own calculations** (e.g. a holding discount or NAV) are allowed when the method is simple and the inputs are official; show the method to the author and label it "Syz calculation" in the sources.
 5. Draft the text, let the author read it, then lay it out. Check that every page fits on one A4 page with no overflow before delivering.
+6. **Always deliver two files: the PDF and a PowerPoint (.pptx) version** with the same pages, text, figures and charts. Give them the same name stem, e.g. `Syz_Take-Two_ad-hoc_2026-11-24.pdf` and `Syz_Take-Two_ad-hoc_2026-11-24.pptx`, and save both in the note's folder. Any later correction is applied to both files before redelivering. See section 5 for how to build the PowerPoint.
 
 ## 2. Editorial rules
 
@@ -172,7 +173,50 @@ footer{margin-top:auto;display:flex;justify-content:space-between;font-size:10.5
 
 Lay out two-column text with an explicit grid of two column divs, never CSS `columns`, which overlaps when exported to PDF. If gradient-filled text does not export cleanly to PDF, fall back to solid Tiger Orange for the headline.
 
-## 5. Important information (disclaimer, verbatim)
+## 5. PowerPoint version
+
+The .pptx is a deliverable in its own right, so the author can edit it, not a set of page screenshots. Build it with python-pptx (or the pptx skill when available) from the same content as the HTML pages.
+
+- **Slide size A4 portrait** (210 x 297 mm), one slide per PDF page, in the same order.
+- **Native, editable objects:** text in text boxes, KPI rows and boxes as rounded rectangles (white fill, Space Blue 1.5 pt frame, no shadow), tables as native tables styled as in section 4. Charts are the same PNG files used in the PDF, inserted as pictures.
+- **Font:** Maison Neue, the guideline font for PowerPoint. Sizes are the CSS pixel sizes x 0.75 in points (13 px body becomes about 10 pt, 28 px headline about 21 pt).
+- **Header and footer** as in the PDF: logo top right, orange gradient bar (shape with a gradient fill), footer text and "n / N" page number on every slide.
+- **Headline in solid Tiger Orange**: gradient-filled text is not reliable in PowerPoint.
+- Two columns are two separate text boxes, never one box with columns.
+- **Check before delivery:** convert the .pptx to PDF with LibreOffice (`soffice --headless --convert-to pdf file.pptx`), render the pages to images and look at each one. No text may overflow its box or the slide, and the content must match the PDF.
+
+```python
+from pptx import Presentation
+from pptx.util import Mm, Pt
+from pptx.dml.color import RGBColor
+from pptx.enum.shapes import MSO_SHAPE
+from pptx.enum.text import PP_ALIGN
+SPACE, BLUEBERRY, TIGER, GOLD = (RGBColor.from_string(c) for c in ('202945', '4B5F80', 'FF6C0E', 'FFC545'))
+prs = Presentation(); prs.slide_width, prs.slide_height = Mm(210), Mm(297)
+s = prs.slides.add_slide(prs.slide_layouts[6])  # blank layout
+
+def text(x, y, w, h, txt, size, color=SPACE, bold=False, align=None):
+    tf = s.shapes.add_textbox(x, y, w, h).text_frame; tf.word_wrap = True
+    p = tf.paragraphs[0]; r = p.add_run(); r.text = txt
+    r.font.name, r.font.size, r.font.bold, r.font.color.rgb = 'Maison Neue', Pt(size), bold, color
+    if align: p.alignment = align
+
+s.shapes.add_picture('syz-logo.png', Mm(170), Mm(8), height=Mm(12))
+bar = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Mm(14), Mm(22), Mm(182), Mm(1.1))
+bar.line.fill.background(); bar.fill.gradient(); bar.fill.gradient_angle = 0
+stops = bar.fill.gradient_stops; stops[0].color.rgb, stops[1].color.rgb = TIGER, GOLD
+text(Mm(14), Mm(26), Mm(182), Mm(6), 'AD-HOC OPINION · MEDIA', 7.5, BLUEBERRY)
+text(Mm(14), Mm(32), Mm(182), Mm(14), 'Headline in sentence case', 21, TIGER, bold=True)
+box = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Mm(14), Mm(50), Mm(182), Mm(20))
+box.adjustments[0] = 0.12; box.fill.solid(); box.fill.fore_color.rgb = RGBColor(255, 255, 255)
+box.line.color.rgb = SPACE; box.line.width = Pt(1.5); box.shadow.inherit = False
+s.shapes.add_picture('chart1_price.png', Mm(14), Mm(80), width=Mm(182))
+text(Mm(14), Mm(285), Mm(120), Mm(5), 'Syz Research · Ad-hoc opinion · 24 November 2026', 8)
+text(Mm(160), Mm(285), Mm(36), Mm(5), '1 / 4', 8, align=PP_ALIGN.RIGHT)
+prs.save('Syz_Company_ad-hoc_YYYY-MM-DD.pptx')
+```
+
+## 6. Important information (disclaimer, verbatim)
 
 This communication has been issued and made available to recipients for the purpose of advertising investment services and/or financial instruments. It has been sent for information purposes and cannot be considered as an offer or a personalised recommendation to buy or sell a financial instrument or any other investment or currency. This communication does not constitute investment research within the meaning of regulatory rules applicable in the European Economic Area, or research under the rules of the U.S. Self-Regulatory Organizations.
 
@@ -188,7 +232,7 @@ Nothing in the present communication constitutes investment, legal, accounting o
 
 Should a recipient make an investment on the basis of the present communication, the recipient alone shall bear the consequences thereof. In no event shall the Bank, its directors, employees, affiliates or agents be held responsible for damages of any kind arising out of the use of all or part of the information provided herein.
 
-## 6. Final checks before delivery
+## 7. Final checks before delivery
 
 - Every page fits on one A4 page; nothing overflows into the footer.
 - Colours only from the Syz palette; boxes white with a Space Blue frame and rounded corners, never filled.
@@ -196,4 +240,5 @@ Should a recipient make an investment on the basis of the present communication,
 - No broker names, target prices, entry prices or losses; "an investor", not "the client".
 - Prices and dates consistent across tiles, text, charts and sources.
 - Every figure traceable to a company publication, Bloomberg, a named press report or a labelled Syz calculation.
+- Both files delivered: the PDF and the .pptx, with matching content, same page count and no overflow in either.
 - Tell the author which facts from their inputs were corrected or dropped.
