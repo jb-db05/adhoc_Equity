@@ -6,7 +6,7 @@ charts=v1.charts; fiche=v1.fiche
 s=newslide(); header(s,True); label(s,131); headline(s,150,'From Vision Correction to Eye Health Management',21,40)
 tb(s,52,190,690,22,[dict(text='27 November 2026 · Syz Research',size=11.2)])
 box(s,52,224,690,78); tb(s,70,234,654,64,[dict(text='IMPORTANT NOTICE',size=7.9,color=TIGER,bold=True,after=2),dict(text='Prices are as of the time of writing on 27 November 2026. Company figures come from the 2025 annual results, the first-half 2026 results and the third-quarter revenue release of 20 October 2026. Multiples use Bloomberg consensus earnings. This is not an investment recommendation.',size=8.6,align=J,ls=1.15)])
-kpis(s,316,76,[('Share price','EUR 172.15','−36% since the start of 2026'),('Forward P/E','22.1x','Ten-year average: 27.5x'),('Q3 2026 revenue growth','+7.2%','At constant exchange rates'),('Myopia management','+24%','Q3 2026 revenue growth')])
+kpis(s,316,76,[('Spectacle lens market','~USD 60bn','Retail value, 2025'),('Short-sighted by 2050','Nearly 5bn','About half of humanity'),('Myopia-control lens market','USD 1.6-1.8bn','2025; +10% to 12% a year'),('Smart-glasses shipments','+212%','First half of 2026, year on year')])
 tb(s,52,404,690,24,[dict(text='A defensive market turning into a health-technology ecosystem',size=12.7,bold=True)])
 table(s,52,436,[104,246,340],['Segment','What is happening','Indicators'],[
  ['Core eyewear','Defensive and non-discretionary; replacement cycles can lengthen but remain stable','Spectacle lenses: roughly USD 60bn at retail in 2025; growth of about 4% to 7% a year depending on the source'],
