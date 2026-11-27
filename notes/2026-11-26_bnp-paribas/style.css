@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap');
+@font-face{font-family:'Nunito';font-weight:300;font-style:normal;src:url('fonts/nunito-latin-300-normal.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:300;font-style:italic;src:url('fonts/nunito-latin-300-italic.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:400;font-style:normal;src:url('fonts/nunito-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:400;font-style:italic;src:url('fonts/nunito-latin-400-italic.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:700;font-style:normal;src:url('fonts/nunito-latin-700-normal.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:700;font-style:italic;src:url('fonts/nunito-latin-700-italic.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:800;font-style:normal;src:url('fonts/nunito-latin-800-normal.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-weight:800;font-style:italic;src:url('fonts/nunito-latin-800-italic.woff2') format('woff2')}
 :root{--space:#202945;--blueberry:#4B5F80;--tiger:#FF6C0E;--mango:#FFA400;--gold:#FFC545;--mint:#3BAF90;--line:#D9D9D9;
   --grad-orange:linear-gradient(90deg,#FF6C0E 0%,#FFA400 50%,#FFC545 100%)}
 @page{size:794px 1123px;margin:0}
 html,body{margin:0;padding:0;background:#fff}
 .page{width:794px;height:1123px;box-sizing:border-box;padding:28px 52px 30px;display:flex;flex-direction:column;
-  background:#fff;color:var(--space);font-family:'Maison Neue',Nunito,Arial,sans-serif;font-weight:400;font-size:13px;line-height:1.5;overflow:hidden}
+  background:#fff;color:var(--space);font-family:Nunito,sans-serif;font-weight:400;font-size:13px;line-height:1.5;overflow:hidden}
 header{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .logo{height:46px;min-width:40px}
 .cover .logo{height:70px}
