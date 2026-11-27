@@ -45,4 +45,12 @@ footer{margin-top:auto;display:flex;justify-content:space-between;font-size:10.5
 .disc p{font-size:10.5px;line-height:1.45;margin-bottom:7px}
 .page>*{flex-shrink:0}
 .cover .cols p{font-size:12.5px;line-height:1.45;margin-bottom:8px}
-.cover h2{margin-top:14px}
+.cover h2{margin-top:11px}
+.ctable{width:100%;border-collapse:collapse;font-size:10.5px;line-height:1.35;margin-top:6px}
+.ctable caption{text-align:left;color:var(--tiger);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding-bottom:4px}
+.ctable th{color:var(--blueberry);font-weight:800;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;text-align:left;padding:5px 6px;border-bottom:1.5px solid var(--space);border-top:1.5px solid var(--space)}
+.ctable td{padding:5px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.ctable tr:last-child td{border-bottom:1.5px solid var(--space)}
+.ctable td.m{font-weight:800;width:17%}.ctable td.x{font-weight:700;color:var(--tiger);width:19%}
+.ctable td.num{text-align:right;white-space:nowrap}
+.geo p{font-size:12px;line-height:1.45;margin-bottom:7px}
